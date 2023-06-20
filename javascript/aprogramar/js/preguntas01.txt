@@ -1,0 +1,56 @@
+//Ejercicios, deja tu respuesta en los comentarios bajo es video.
+//cada punto correcto suma1, cuantos puntos lograsta?
+
+//ARITMETICA
+
+1)1.5 + 1.5*2=  
+
+2)(10 % 6)**2=
+
+3)200 + 0 / 0=
+
+-------------------------
+//programacion EN JS
+
+let a=3;
+let b=5;
+let c='resultado'
+const YEAR='2021';
+
+//4)Que muestra esta linea en consola?
+console.log=('resultado');
+
+//5)Que valor guarda c, lo puedes ver, como?
+c=a + b;
+
+//6)Que valor se imprime en consola?
+console.log(++c);
+
+//7)Que valor guarda c ahora?
+c += a;
+
+//8)Que problema tiene esta linea de codigo?
+resultado= b + '10';
+
+//9)Que valor si imprime en consola?
+console.log(a + 'JS');
+
+//10)Que variables usamos hasta ahora, dime sus nombres?
+
+//11)Que valor se imprime en consola?
+
+let covid19='El año de la pandemia';
+ler resultado= covid19 + YEAR;
+console.log(resultado);
+
+//12)Que valor imprime en consola?
+
+console.log ('El año' + (++YEAR) + 'seguro estaremos mejor.')
+
+//BUENAS PRACTICAS
+
+13)var o let?
+14)totalAcumulado o TotalAcumulado?
+15)const meses= 12; o const MESES = 12?
+16)const NUMEROPI o Numero_PI?
+17)let num = 5 o let num = 5; ?

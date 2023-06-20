@@ -1,0 +1,14 @@
+html{
+  font-size: 10px;
+}
+
+body{
+  background:#000
+}
+
+.pokebola{
+  width: 10rem;
+  height: 10rem;
+  background: #fff;
+  border:-radius 50%;
+}

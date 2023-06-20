@@ -1,0 +1,56 @@
+/* @use 'variables'; */
+:root {
+  --primary: $primary;
+}
+
+.nav {
+  background-color: steelblue;
+}
+.nav__container {
+  width: 90%;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1em;
+  /*  &--active{
+       width: 100%;
+   } */
+}
+.nav__item {
+  color: #fff;
+  text-decoration: none;
+}
+.nav--active {
+  text-decoration: underline;
+}
+@media (min-width: 764px) {
+  .nav__container {
+    justify-content: flex-end;
+  }
+}
+
+/*para hacer un parshal en sass se pone un_ en el nombre del archivo  */
+/* este archivo es un prashal y no se compila solo se llama desde otro archivo sass */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "arial";
+}
+
+/* $color1: steelblue;
+
+h2{
+    color: $color1;
+    font-size: 3rem;
+}
+P{
+    color: $color1;
+} */
+/* aca de incluye los estilos del parshal navbar */
+
+/*# sourceMappingURL=style.css.map */

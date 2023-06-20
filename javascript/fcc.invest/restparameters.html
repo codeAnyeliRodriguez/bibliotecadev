@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ES6-REST parameters/ parametros REST</h1>  
+
+    <script>
+/* La sintaxis de lod parametros rest nos permiten representar un numero 
+0indefinido de argumentos como un Array */
+//-----shift + alt + a------
+
+//SINTAXIS
+/* function(a,b ...theArgs){
+    // ...
+} */
+
+//ES5
+function miLista(a,b){
+    console.log("ARGUMENTS");
+    console.log("a="+a);
+    console.log("b="+b);
+    console.log("Resto de elementos de la lista: ",arguments);
+    console.log("tamaño: "+arguments.length);
+    console.log(arguments[2]);
+}
+miLista("pera","manzana","zanahoria","melon","limon","lima");
+
+//ES6
+function miLista2(a,b, ...otrosElementos){
+    console.log("REST");
+    console.log("a="+a);
+    console.log("b="+b);
+    console.log("Resto de elementos de la lista: ",otrosElementos);
+    console.log("tamaño: "+otrosElementos.length);
+    console.log(otrosElementos[2]);
+}
+miLista2("pera","manzana","zanahoria","melon","limon","lima");
+    </script>
+
+    <!-- rest divuelve un array y argument devuelve un objeto -->
+    <!-- ctrl + / comentasr -->
+</body>
+</html>

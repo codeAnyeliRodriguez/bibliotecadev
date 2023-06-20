@@ -1,0 +1,15 @@
+#pregunta fieldset{
+border: none;
+padding: 0;
+margin: 0;
+}
+
+#pregunta legend{
+padding: 0;
+}
+
+#pregunta ul{
+margin: 0;
+padding: 0;
+list-style: none;
+}

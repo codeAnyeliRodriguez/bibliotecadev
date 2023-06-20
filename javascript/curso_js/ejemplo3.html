@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>usando arrays</title>
+	<link rel="stylesheet" href="C:\Users\DELL\Desktop\desarrolladora\curso_js\ejemplo3.css">
+	<script>
+		//formas de declarar un array//
+
+					var articulos=["zapatillas","camiseta","pantalon","calcetines"];
+
+					//var articulos=new array("zapatillas","camiseta","pantalon","calcetines");//
+
+
+					// array vacio//
+
+					//var articulos=[];//
+					
+
+	</script>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="header">
+			<p class="logo"> javascript arrays <i class="mm"> pildoras informaticas</p>
+		</div>
+		<div class="contenido">
+			<div class="principal">
+				<h1>manejando arrays</h1>
+				<script>
+				document.write("<p> el primer articulo es <strong>");
+
+				document.write(articulos [0]+"</strong></p>");
+				// este articulo sale gracias a articulos[0]//
+
+				//alert(articulos.length);//
+				 // el alert nos dice cuantos elementos hay almacenados en este array en este caso 4//
+
+				 document.write("<p> el ultimo elemento es <strong>");
+
+				 //document.write(articulos[3]);//
+
+				 //document.write(articulos[articulos.length-1]);\\
+
+				 document.write(articulos[articulos.length-1] + "</strong></p>");
+				  //este articulo sale gracias a .length//
+
+				 // esta es para acceder a la ultima posicion en caso de no saber cual es la cantidad de posicion o cual posicion es//
+
+				 //en este caso los elementos son 4 pero se ponen 3 porque se empieza desde el 0 entoces seria 0123 en ves de 1234. si pondrias 4 pusiera undefinite en ves de calcetines //
+
+				 articulos.unshift("balon"); 
+				 //articulos.unshift agrega un elemento mas a la primera posicion//
+
+				 document.write("<p> casi nos olvidamos!!! agregamos este elemento: <strong>");
+
+				 document.write(articulos[0]+"</strong></p>");
+
+				 //este articulo sale gracias a articulos 0//
+
+				 document.write("<p>Agregamos un elemento mas al final: <strong>");
+
+				//articulos.push("raqueta");//
+
+				articulos.push(prompt("introduce el articulo"));
+
+				 document.write(articulos[articulos.length-1] + "</strong></p>");
+
+				 document.write("<p>"+ articulos[0]+ "<br/>");
+
+				 document.write(articulos[1]+"<br/>");
+
+				 document.write(articulos[2]+"<br/>");
+
+				 document.write(articulos[3]+"<br/>");
+
+				 document.write(articulos[4]+"<br/>");
+
+				 document.write(articulos[5]+"<br/></P>");
+
+				 alert("borraremos el primer elemento");
+
+				 articulos.shift();
+
+				 document.write("<p>"+ articulos[0]+"<br/>");
+
+				 document.write(articulos[1]+"<br/>");
+
+				 document.write(articulos[2]+"<br/>");
+
+				 document.write(articulos[3]+"<br/>");
+
+				 document.write(articulos[4]+"<br/></p>");
+
+				alert("ahora borraremos el ultimo elemento");
+
+				articulos.pop();
+
+				 document.write("<p>"+ articulos[0]+"<br/>");
+
+
+				document.write(articulos[1]+"<br/>");
+
+				 document.write(articulos[2]+"<br/>");
+
+				 document.write(articulos[3]+"<br/></p>");
+
+
+
+
+
+				</script>
+			</div>
+		</div>
+
+	</div>
+	
+</body>
+</html>

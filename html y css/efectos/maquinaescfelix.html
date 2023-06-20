@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://www.youtube.com/watch?v=XI7QvHgsGj4&t=514s -->
+<!-- https://github.com/FelixGonzalo/Efecto_Maquina_Escribir/blob/master/main.js -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efecto maquina de escribir</title>
+  <style>
+    .maquina-de-escribir {
+      background: yellow;
+      position: relative;
+    }
+
+    .maquina-de-escribir::after {
+      content: "";
+      border-left: 2px solid black;
+      background: white;
+      right: 0;
+      height: 100%;
+      position: absolute;
+      animation: maquinaescribir 2s infinite alternate steps(12);
+    }
+
+    @keyframes maquinaescribir {
+      from {
+        width: 100%;
+      }
+
+      to {
+        width: 0;
+      }
+    }
+
+    /* con JS */
+  #maquina-escribir1{
+    display: inline-block;
+    font-size: 30px;
+    border-right: 3px solid black;
+    margin: 0;
+
+  }
+
+  #maquina-escribir2{
+    border-right: 3px solid black;
+    margin: 0;
+    background: yellow;
+    
+  }
+
+  #maquina-escribir3{
+    border-right: 3px solid black;
+    margin: 0;
+    background: yellow;
+  }
+  .caja{
+    border: 2px solid black;
+    max-width: 200px;
+    height: 100px;
+    padding: 10px;
+  }
+
+  #maquina-escribir4{
+    display: inline;
+    border-right: 3px solid black;
+  }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Efecto maquina de escribir</h1>
+    <h2>con css</h2>
+    <p>hello I'm <span class="maquina-de-escribir">Anyeli. </span></p>
+    <h2>Con JS</h2>
+    <p id="maquina-escribir1">welcomen</p>
+    <p>holaa soy <span id="maquina-escribir2">Anyeli Rodriquez</span></p>
+
+    <p>maquina de <span id="maquina-escribir3">Maquina de escribir</span></p>
+
+    <div class="caja">
+      <p id="maquina-escribir4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor enim illum animi suscipit quisquam ullam, minus magni corrupti, quibusdam magnam velit iure harum quaerat earum minima recusandae quas dolore officiis.</p>
+    </div>
+
+    <p>Valores <span id="maquina-escribir5">Responsabilidad * Calidad * Respeto * Responsabilidad Ambiental</span></p>
+  </div> 
+  <script>
+    const maquina1 = document.getElementById('maquina-escribir1');
+
+    const maquina2 = document.getElementById('maquina-escribir2')
+
+    const maquina3 = document.getElementById('maquina-escribir3');
+
+    const maquina4 = document.getElementById('maquina-escribir4');
+
+    const maquina5 = document.getElementById('maquina-escribir5');
+  
+    // Maquina1
+    const maquinaescribir1 = (text ='',tiempo = 200, etiqueta = '') => {
+      let arrayCaracteres = text.split('');
+      // console.log(arrayCaracteres);
+      etiqueta.innerHTML = ''
+      let cont = 0;
+      let escribir = setInterval(function() {
+        etiqueta.innerHTML += arrayCaracteres[cont]
+        cont++
+        if(cont === arrayCaracteres.length){
+          clearInterval(escribir)
+        }
+      }, tiempo);
+    }
+
+    // Maquina 2
+    // Borrar y volver a escribir
+    const maquinaescribir2 = (text ='',tiempo = 200, etiqueta = '') => {
+      let arrayCaracteres = text.split('');
+      // console.log(arrayCaracteres);
+      etiqueta.innerHTML = ''
+      let cont = 0;
+      let escribir = setInterval(function() {
+        etiqueta.innerHTML += arrayCaracteres[cont]
+        cont++
+        if(cont === arrayCaracteres.length){
+          cont = 0
+          etiqueta.innerHTML = ''
+        }
+      }, tiempo);
+    }
+    
+    // maquina3
+    // escribir e ir borrando uno por uno
+    const maquinaescribir3 = (text ='',tiempo = 200, etiqueta = '') => {
+      let arrayCaracteres = text.split('');
+      // console.log(arrayCaracteres);
+      etiqueta.innerHTML = ''
+      let i = 0;
+      let j= text.length;
+      let escribir = setInterval(function() {
+        if(i === arrayCaracteres.length){
+          // Retroceder
+          etiqueta.innerHTML = text.substring(0,j)
+          j--
+
+          if(j === 0){
+            etiqueta.innerHTML=''
+            i = 0
+            j = text.length
+          }
+        }else{
+          etiqueta.innerHTML += arrayCaracteres[i]
+          i++
+        }
+      }, tiempo);
+    }
+
+    // maquina4
+    const maquinaescribir4 = (text ='',tiempo = 200, etiqueta = '') => {
+      let arrayCaracteres = text.split('');
+      // console.log(arrayCaracteres);
+      etiqueta.innerHTML = ''
+      let i = 0
+      let escribir = setInterval(function() {
+        if(arrayCaracteres[i]=== '*'){
+          etiqueta.innerHTML += '</br>'
+        }else{
+          etiqueta.innerHTML += arrayCaracteres[i]
+        }
+        if(i === arrayCaracteres.length){
+          etiqueta.innerHTML =''
+           i = 0
+        }
+        i++
+      }, tiempo);
+    }
+
+    // llamadas a funciones
+    maquinaescribir1('welcom lorem ipsum',300 , maquina1);
+    
+    maquinaescribir2('holaa soy Anyeli Rodriguez',200 , maquina2);
+
+    maquinaescribir3('escribir ',150 , maquina3);
+
+    maquinaescribir3('Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor enim illum animi suscipit quisquam ullam, minus magni corrupti, quibusdam magnam velit iure harum quaerat earum minima recusandae quas dolore officiis. ',150 , maquina4);
+
+    maquinaescribir4('* Responsabilidad * Calidad * Respeto * Responsabilidad Ambiental.', 150, maquina5)
+  </script>
+</body>
+
+</html>

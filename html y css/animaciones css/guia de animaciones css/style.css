@@ -1,0 +1,15 @@
+#cuadrado{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    animation-name: mianimacion;
+    animation-direction: 4s; 
+}
+
+@keyframes identifier {
+    0%{}
+    25%{}
+    50%{}
+    75%{}
+    100%{}
+}

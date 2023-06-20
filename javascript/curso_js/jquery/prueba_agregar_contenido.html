@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>documento sin titulo</title>
+	<style>
+		.micontenedor {
+			background-color: #0f0;
+		}
+	</style>
+	<!--funciones jquery
+.html()
+.text()
+.after()
+.append()
+.prepend()
+.before()-->
+	<script src="jquery-3.6.1.min.js"></script>
+	<!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
+	<script>
+		/*$(document).ready(function(){
+				alert($("#errores").html());
+				
+			})*/
+		//este codigo muestra el h2 con sus etiquetas
+
+		/*$(document).ready(function(){
+			alert($("#errores h2").html());
+			
+		})*/
+		//este muestra el h2 sin sus etiquetas
+
+		$(document).ready(function () {
+			//alert($("#errores h2").html());
+
+			/*$("#errores").append("<p> hay errores en el formulario</p>"); 
+		})*/
+			//.append() esta funcion lo que hace es agregar un texto es una funcion jquery y lo que hace es agregar el texto a continuacion del contenedor anterior
+			/*  $("#errores").prepend("<p> hay errores en el formulario</p>");
+		}) */ 
+
+		//  $("#errores").before("<p> hay errores en el formulario</p>");
+		// })
+		
+		// $("#errores").after("<p> hay errores en el formulario</p>");
+		// })
+
+		$("#errores").text(" hay errores en el formulario");
+		})
+
+	// .prepend esta funcion agrega contenido antes del h2
+
+	// .html	sustituye
+	// .append	  agrega detras
+	// .prepend	agrega delante
+	// .before
+	// .after
+	// .text 	esta funcion no es capaz de manejar etiquetas en el programa
+	</script>
+	<!--h2 es una etiqueta blocklevel(eso quiere decir 	que viene con espacios como si fuera un bloque y viene implicitamente acompañada de un salto de linea)-->
+</head>
+
+<body>
+	<div id="contenedor">
+		<div id="errores" class="micontenedor">
+			<h2>Errores</h2>
+		</div>
+	</div>
+</body>
+
+</html>

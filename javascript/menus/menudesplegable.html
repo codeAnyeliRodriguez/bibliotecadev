@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  position: relative;
+}
+
+nav li a {
+  display: block;
+  padding: 0 10px;
+  line-height: 50px;
+  background-color: #ccc;
+  color: #000;
+  text-decoration: none;
+}
+
+nav li:hover > ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 200px;
+  background-color: #eee;
+  padding: 0;
+}
+
+nav ul ul li {
+  float: none;
+}
+
+nav ul ul li a {
+  line-height: 40px;
+  padding: 0 20px;
+}
+
+nav ul ul ul {
+  top: 0;
+  left: 200px;
+  width: 150px;
+  background-color: #ccc;
+}
+
+</style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Productos</a>
+            <ul class="submenu">
+              <li><a href="#">Producto 1</a></li>
+              <li><a href="#">Producto 2</a></li>
+              <li><a href="#">Producto 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      
+    
+</body>
+</html>

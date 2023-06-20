@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" id="boton1">
+
+	<input type="button" id="boton2">
+
+	<input type="text" id="micuadro">
+	
+	<script>
+		var miboton=document.getElementById("boton1");
+		//utilizo getElementById (getelementsbytagname) para referirme a mi elemento boton para almacenarlo en la variable OJO: debe estar exactamente asi:getElementById por que el minimo error de sintaxis me dara error. para solucionar el error usar la consola de firefox//
+
+		var miboton2=document.getElementById("boton2");
+
+		var cuadroTexto=document.getElementById("micuadro")
+
+		miboton.style.width="300px";
+		//esta propiedad es para cambiar el ancho del button pero no se esta visualizando correctamente//
+
+		miboton.style.height="300px";
+
+		//miboton.style.backgroundColor="blue";//
+		//para cambiar el color de fondo del background//
+
+		miboton2.style.width="300px";
+
+		miboton2.style.height="300px";
+
+		miboton2.focus();
+
+		cuadroTexto.style.backgroundColor="red";
+		//funciona con backgroundColor o background el cuadro de texto//
+
+		cuadroTexto.value="escriba aqui.....";
+
+		cuadroTexto.style.height="200px";
+
+	</script>
+</body>
+</html>

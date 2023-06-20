@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function aviso(){
+			alert("pildoras imformaticas");
+		}
+	</script>
+</head>
+<body>
+	<!--este codigo da el alert cuando se hace click se llama onclick-->
+	<!--<img style="width: 200px; height: 200pxs;" src="C:\Users\DELL\Pictures\SharedScreenshot.jpg" onclick="aviso()">-->
+	<!--este sistema esta obsoleto y desaconsejado. forma mas basica y obsoleta-->
+
+
+	<!--este codigo ejecuta el alert al pasar el raton por encima se llama onmouseover-->
+	<!--<img style="width: 200px; height: 200pxs;" src="C:\Users\DELL\Pictures\SharedScreenshot.jpg" onmouseover="aviso()">-->
+
+
+	<!--este codigo escuta el alert al dar doble click se llama ondblclick-->
+	<img style="width: 200px; height: 200pxs;" src="C:\Users\DELL\Pictures\SharedScreenshot.jpg" ondblclick="aviso()">
+	
+
+
+
+<!--eventos. que son?
+
+-desencadenantes de la accion.  permiten interactuar con la pagina web
+
+
+-tres niveles marcados por W3C:
+
+	-DOM nivel 1 (modelo basico de eventos)
+
+	-DOM nivel 2 (modelos de eventos estandar)
+
+	-modelo de eventos de internet Explorer
+
+
+	clic btn izquierdo
+
+	alert("pil.....");
+
+	pasar el mouse encima de una imagen
+------------------------------------------------------------------------------------
+evento 		descripcion 			elementos para los que esta definido
+	
+onblur	 deseleccionar el elemento 	 	<button>,<input>,<label>,<select>,<textarea>,
+											<body>
+
+onchange  deseleccionar un elemento 
+				que se ha modificado		<input>,<select>,<textarea>
+
+onclick	 pinchar y soltar con el raton		todos los elementos
+
+ondblclick 	pinchar dos veces seguidas con
+				el raton						todos los elementos
+
+onfocus		selecciona un elemento 			 <button>,<input>,<label>,<select>,<textarea>,
+														<body>
+
+onkeydown	pulsar una tecla(sin soltar)	elementos de formulario y <body>
+
+onkeypress	pulsar una tecla				elementos de formulario y <body>
+
+onkeyup		soltar una tecla pulsada		elementos de formulario y <body>
+---------------------------------------------------------------------------------------------
+
+evento 		descripcion					elementos para los que esta definido
+onload		la pagina se a cargado 			<body>
+				completamente
+
+onmousedown	pulsar (sin soltar)un 		todos los elementos
+				un boton del raton
+
+onmousemove		mover el raton			todos los elementos
+
+onmouseout	el raton "sale" del elemento
+			(pasa por encima del otro		todos los elementos
+				elemento)			
+onmouseover	el raton "entra" en el 
+				elemento (pasa por encima	todos los elementos
+				del otro elemento)
+
+onmouseup	soltar el boton que estaba 
+			pulsado en el raton				todos los elementos
+
+onreset		inicializar el formulario
+			(borrar todos sus datos)		<form>
+
+onresize	se ha modificado el tamaño
+			de la ventana del navegador		<body>
+
+--------------------------------------------------------------------------------------------
+-->
+	
+</body>
+</html>

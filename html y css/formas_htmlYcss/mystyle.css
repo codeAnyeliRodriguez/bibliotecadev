@@ -1,0 +1,22 @@
+body{
+	background-color: darkred;
+	font-size: 20px;
+}
+
+.explain{
+	border: 2px dashed red;
+	font-family: munito, sans-serif;
+	color: blue;
+	margin: 10px;
+	padding: 20px;
+	width: 70%;
+	font-size: 30px;
+}
+
+#final{
+	font-family: tahoma, sans-serif;
+	border: 5px dashed darkblue;
+	font-size: 22px;
+	padding: 10px;
+	width: 50%;
+}

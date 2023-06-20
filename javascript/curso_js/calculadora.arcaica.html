@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script>
+		/*var repetir="si";
+
+		do{
+
+
+		function suma(num1,num2){
+			alert("la suma es: " + (num1+num2));
+		}
+
+				function resta(num1,num2){
+			alert("la resta es: " + (num1-num2));
+		}
+
+				function multiplicar(num1,num2){
+			alert("la multiplicacion es: " + (num1*num2));
+		}
+
+				function dividir(num1,num2){
+			alert("la divicion es: " + (num1/num2));
+		}
+
+		var operacion=prompt("que operacion deseas realizar?");
+
+		var operador1=parseInt(prompt("introduce el primer n"));
+
+		var operador2=parseInt(prompt("introduce el segundo n"));
+
+		if(operacion=="sumar"){
+			suma(operador1,operador2);
+		}
+else if (operacion=="restar"){
+
+	resta (operador1,operador2)
+
+	}
+
+	else if (operacion=="multiplicar"){
+
+	multiplicar (operador1,operador2)
+
+	}
+
+	else if (operacion=="dividir"){
+
+	dividir (operador1,operador2)
+
+	}
+
+
+	else{
+		alert("lo siento operacion no contemplada");
+	}
+
+
+
+repetir=prompt("deseas repetir?");
+
+}while(repetir=="si");*/
+
+//el codigo que esta comentando y el que actualmente esta en uso hacen lo mismo solo que el que esta en uso ahorra recursos porque el bucle do no repite las funciones//
+
+		var repetir="si";
+
+	
+
+		function suma(num1,num2){
+			alert("la suma es: " + (num1+num2));
+		}
+
+				function resta(num1,num2){
+			alert("la resta es: " + (num1-num2));
+		}
+
+				function multiplicar(num1,num2){
+			alert("la multiplicacion es: " + (num1*num2));
+		}
+
+				function dividir(num1,num2){
+			alert("la divicion es: " + (num1/num2));
+		}
+
+		// en este caso se cambia el do para que las funciones no se repitan y optimizar recursos// 
+
+			do{
+
+
+		var operacion=prompt("que operacion deseas realizar?");
+
+		var operador1=parseInt(prompt("introduce el primer n"));
+
+		var operador2=parseInt(prompt("introduce el segundo n"));
+
+		if(operacion=="sumar"){
+			suma(operador1,operador2);
+		}
+else if (operacion=="restar"){
+
+	resta (operador1,operador2)
+
+	}
+
+	else if (operacion=="multiplicar"){
+
+	multiplicar (operador1,operador2)
+
+	}
+
+	else if (operacion=="dividir"){
+
+	dividir (operador1,operador2)
+
+	}
+
+
+	else{
+		alert("lo siento operacion no contemplada");
+	}
+
+
+
+repetir=prompt("deseas repetir?");
+
+}while(repetir=="si");
+
+
+	</script>
+</head>
+<body>
+	<p>hola mundo </p>
+	
+</body>
+</html>

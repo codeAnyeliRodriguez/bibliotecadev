@@ -1,0 +1,158 @@
+Eres imparable
+¡La cuchara no existe, Neo!
+¡Haz que llueva!
+¡Dale que vas!
+¡Al batimóvil!
+¡Súper combo!
+¡Ultra eficiente!
+¡Ovación de pie!
+¡Fuera de serie!¡Fuera de serie!
+¡Hasta la vista, desafío!
+Un bucle para gobernarlos a todos.
+¡Triunfo superlativo!
+¡Tienes una cita con el destino!
+¡Una para los Récords Guinness!
+¡Al batimóvil!
+¡Triunfo superlativo!
+¿Qué clase de brujería es esta?
+¡El mundo lo festeja!
+¡Buena esa!
+¡En tu cara, código!
+¡Pikachu te elige a ti!
+¡Bingo!
+¡Con calma y a codificar!
+¡Triunfo superlativo!
+¡Hacia adelante!
+¡Guauuuu!
+¡Es el momento perfecto para ser histérico!
+Está vivo. ¡Está vivo!
+¡Hacia adelante!
+¡Justo en el blanco!
+¡Corre como el viento!
+¡Al infinito, y más allá!
+¿Qué clase de brujería es esta?
+El Nirvana está llegando, el portal místico espera
+¡Vas por la vereda del sol!
+¡Sabíamos que lo lograrías!
+¡Velocidad ridícula!
+¡Dale que vas!
+¡Ultra eficiente!
+¡Victoria perfecta!
+¡Velocidad ridícula!
+¡Eres lo máximo!
+El Nirvana está llegando, el portal místico espera
+¡Enciende los motores!
+¡Excelente!
+¡En tu cara, código!
+¡A buen paso dale prisa!
+¡Esto es pan comido!
+¡Objectivo destruido!
+¡Enciende los motores!
+¡Siente la velocidad!
+¡Tienes una cita con el destino!
+Tengo un poder. Nunca me rindo.
+¡Eres lo máximo!
+¡Ovación de pie!
+¡Por el poder de Grayskull!
+¡Velocidad ridícula!
+No hay plan B para la pasión!
+¡Eres lo máximo!
+¡Tienes agallas!
+¡Nunca bajes la guardia!
+¡La estás rompiendo!
+¡Tienes el toque!
+¡La cuchara no existe, Neo!
+¡Estás en llamas!
+¡Eres una estrella fugaz!
+¡Tienes el toque!
+¡Por el poder de Grayskull!
+¡Excelente!
+¡La estás rompiendo!
+¡Asalta ese castillo!
+¡Lo tienes!
+Eso no fue volar. Eso fue caer con estilo
+¡Legen... aguarda... dario!
+¡Estallido supersónico!
+¡Haces ver esto fácil!
+¡Supercalifragilísticoespialidoso!
+Velocidad de escape confirmada.
+¡El mundo lo festeja!
+¡Aprobado con honores!
+¡Hasta lo más alto!
+¡La tribuna se enloquece!
+¡A conquistar el mundo!
+¡Excelente!
+¡Esto es pan comido!
+¡Eres un mago, Harry!
+¡Hasta lo más alto!
+Reclama la propiedad de tus sueños!
+¡Triunfo superlativo!
+¡Tienes una cita con el destino!
+Un bucle para gobernarlos a todos.
+¡Victoria perfecta!
+Está vivo. ¡Está vivo!
+¡Esto es pancomido!
+¡Buena esa!
+¡Jaque mate!
+¡Eres imparable!
+Thundercats, ¡guooooo!
+¡Fuera de serie!
+¡Enciende los motores!
+¡Súper combo!
+¡Haces ver esto fácil!
+¡Estallido supersónico!
+¡Al batimóvil!
+¡Ovación de pie!
+¡Estallido supersónico!
+¡Tienes el toque!
+¡En tu cara, código!
+¡Jaque mate!
+¡La tribuna se enloquece!
+No hay plan B para la pasión!
+¡Una para los Récords Guinness!
+¡Haces ver esto fácil!
+¡Eres más fuerte de lo que crees!
+¡Aprobado con honores!
+¡Pikachu te elige a ti!
+¡El mundo lo festeja!
+¡Dale que vas!
+¡Tienes una cita con el destino!
+¡No contaban con tu astucia!
+¡Ríe y el mundo reirá contigo!
+¡Objectivo destruido!
+¡Victoria perfecta!
+¡Ovación de pie!
+¡Pikachu te elige a ti!
+¡Justo en el blanco!
+¡Lo hiciste!
+¡Asalta ese castillo!
+¡Enciende los motores!
+¡Éxito! Has iniciado sesión en tu cuenta. ¡Feliz día programando!
+¡Eres una estrella fugaz!
+¡Con el volumen a 11!
+¡Ultra eficiente!
+¡Guauuuu!
+¡Sabíamos que lo lograrías!
+¡Eres un mago, Harry!
+¡Súper combo!
+¡Nunca bajes la guardia!
+¡Excelente!
+¡Incluso Grumpy Cat lo aprueba!
+¡Eres imparable!
+¡Tienes una cita con el destino!
+¡Jaque mate!
+¡Bingo!
+Un bucle para gobernarlos a todos.
+¡Al batimóvil!
+¡Eres un mago, Harry!
+¡Enciende los motores;
+¡Victoria perfecta!
+
+-----
+Mientras HTML y CSS controlan el contenido y el estilo de una página, JavaScript se utiliza para hacerlo interactivo. En la certificación Algoritmos de JavaScript y Estructuras de Datos, aprenderás los fundamentos de JavaScript incluyendo variables, arreglos, objetos, bucles y funciones.
+
+Una vez que tengas los fundamentos, aplicarás ese conocimiento creando algoritmos para manipular cadenas, factorizar números e incluso calcular la órbita de la Estación Espacial Internacional.
+
+A lo largo del camino, también aprenderás dos estilos o paradigmas importantes de programación: la Programación Orientada a Objetos (OOP), y la Programación Funcional (FP).
+
+Nota: Algunas extensiones del navegador, como bloq

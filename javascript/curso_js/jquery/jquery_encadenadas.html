@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>documento sin titulo</title>
+	<style>
+		#anuncio {
+			background-color: #000;
+			color: #fff;
+			font-size: 24px;
+		}
+	</style>
+	<script src="jquery-3.6.1.min.js"></script>
+	<script>
+		/*$(document).ready(function(){
+			$("#anuncio").width(500).height(500).text("vende!!").hide().fadeIn(10000);
+		})*/
+		$(document).ready(function () {
+			$("#anuncio").width(500)
+				.height(500)
+				.text("vende!!")
+				.hide()
+				.fadeIn(10000);
+		})
+	//el codigo javascript se puede poner de ambas formas
+	</script>
+	<!--libreria javascript-->
+</head>
+
+<body>
+	<div id="anuncio">
+		compra!!
+	</div>
+	<!--<script>
+	var anuncio=document.getElementById("anuncio");
+	anuncio.style.width="500px";
+	anuncio.style.height="500px";
+	anuncio.innerHTML="vende!!";
+</script>-->
+	<!--codigo javascript tracional-->
+</body>
+
+</html>

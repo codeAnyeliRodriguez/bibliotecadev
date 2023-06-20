@@ -1,0 +1,213 @@
+herramientas para programadores
+google
+w3schools
+(mozilla))mdn
+stackoverflow
+grepper  extencion de google https://www.codegrepper.com 
+ 
+ mas extenciones
+https://chrome.google.com/webstore/detail/grepper/amaaokahonnfjjemodnpmeenfpnnbkco/related
+
+etiqueta para forzar estilos css:  !important;
+
+codepen.io
+
+
+mecanografia
+
+typing club 
+artypist
+the typing cat
+velosidadtiles
+typing.com
+keybr.com
+monkey type
+10 fast fingers.com
+mecanogrfia online.com
+ztype
+
+consejos: 
+-se puede mirar el teclado de vez en cuando(no mucho lo ideal es no mirarlo o mirarlo lo menos posible)
+-tratar de memorizarse el teclado (esto es para un nivel mas avanzado para asi no mirarlo)
+-chatear mucho el objetivo es pasar  mucho tiempo tipeando
+------------------------------------------------------------------------------------------
+
+ la redireccion 301: la redireccion 301 es que las paginas web puedan aparecer sin necesidad de escribier www. 
+--------------------------------------------------------------------------
+primera pagina web
+
+http://info.cern.ch/
+
+http://info.cern.ch/hypertext/WWW/TheProject.html
+--------------------------------------------------------------------------
+verificar dominios
+
+https://whois.domaintools.com/
+------------------------------------------------------------------------------------------------
+errores con php/mysql
+
+si ocurre algun error copiar el codigo o el texto y pegarlo en el navegador para  tratar de encontrar una solucion al error
+
+------------------------------------------------------------------------------------------------
+arrancar wamp
+
+cuando esta rojo: todos los servicios estan detenidos.
+
+cuando esta amarillo(ambar): algunos servicios detenidos.
+
+cuando esta verde: todos los servicios arrancados.(todo funciona perfectamente)
+
+------------------------------------------------------------------------------------------------
+IIS es otro servidor que tiene los computadores con windows.
+
+puerto 80: puerto para salir a internet.
+
+el puerto 80 lo utilizan tanto el servidor apache como IIS por eso suele dar problemas.
+-----------------------------------------------------------------------------------------------
+    editores web que se puedes usar con php y mysql
+sublime text
+notepad++                       windows 
+netbeans
+eclipse+php tools
+
+textmate
+bbedit                          macos
+
+
+gedit                           linux
+kate
+
+ se puede utilizar cualquier editor incluso el blog de notas
+
+ las paginas web para comporbar su funcionamito debe de estar en wamp y luego en www
+ 
+especificamente aqui:
+ C:\wamp\www
+ ---------------------------------------------------------------------------------------------
+
+alt+v mostrar menu de sublime text 3
+
+li*4    +tab
+
+lorem*5     +tab
+
+Descarga Sublime: https://www.sublimetext.com/3
+
+Instalar primero https://packagecontrol.io/installation
+1. Adaptive.sublime-theme
+Tema oscuro para la interfaz de Sublime Text
+
+2. Monokai Dark
+Color Schema que utilizo en Sublime Text 
+https://packagecontrol.io/packages/Mo...
+
+3. FileIcons
+Visualiza los íconos de acuerdo a su extensión en el selector de archivos
+https://packagecontrol.io/packages/Fi...
+
+4. Babel
+Selector automático de sintaxis para JavaScript: ECMAScript, TypeScript,  React
+https://packagecontrol.io/packages/Babel
+
+5. BracketHighlighter
+Plugins que permite visualizar donde comienza y termina un bloque de código
+https://packagecontrol.io/packages/Br...
+
+6. Emmet
+Atajos para agilizar la escritura de código HTML: Tecla o etiqueta + Tabulador https://packagecontrol.io/packages/Emmet
+
+7. Comment-Snippets
+Atajos para crear bloques de comentario: comm-section ó comm-html-section
+https://packagecontrol.io/packages/Co...
+
+8. AutoFileName
+Autocompleta la búsqueda de archivos: CTRL + SPACE
+https://packagecontrol.io/packages/Au...
+
+9. Emmet CSS Snippets
+Autocompleta la escritura en CSS: CTRL + SPACE
+https://packagecontrol.io/packages/Em...
+
+10. Color Highlighter
+Plugin que permite visualizar el tono del color en CSS
+https://packagecontrol.io/packages/Co...
+
+
+11. HTML Minifier
+Guarda los archivos en formato .min
+https://packagecontrol.io/packages/HT...
+
+12. Console Wrap
+Atajo que permite sacar Consolas de Javascript y Print_r() de PHP: CTRL  + SHIFT + Q
+https://packagecontrol.io/packages/Co...
+
+13. JsFormat-master
+Atajo para indentar código Javascript: CTRL + ALT + F
+https://packagecontrol.io/packages/Js...
+
+14. JSPrettier
+Requiere ser instalado a través de NodeJS: npm install --global prettier
+https://packagecontrol.io/packages/Js...
+
+15. Bootstrap 4 Autocomplete
+Autocompletador de Clases para Bootstrap 4
+https://packagecontrol.io/packages/Bo...
+
+16. Bootstrap 4x Snippets
+Autocompletador de bloques de código de Bootstrap 4
+https://packagecontrol.io/packages/Bo...
+
+17. jQuery
+Autocompletador de acciones y métodos de jQuery
+https://packagecontrol.io/packages/jQ...
+
+18. Angular CLI
+Atajos de comandos de Angular CLI incorporados en Sublime Text
+https://packagecontrol.io/packages/An...
+
+19. JavaScript & NodeJS Snippets
+Autocompletador con siglas para ahorrar tiempo de escritura 
+https://packagecontrol.io/packages/Ja...
+
+20. Sublime ES7 React/Redux/React-Native/JS snippets
+Autocompletador con siglas para ahorrar tiempo de escritura 
+https://packagecontrol.io/packages/Su...
+
+Configuración personalizada de Usuario ( Preferences – Settings – Lado user ):
+{
+ "auto_complete_triggers":
+ [
+  {
+   "characters": "b4",
+   "selector": "text.html"
+  }
+ ],
+ "color_scheme": "Packages/Monokai Dark/Monokai Dark.tmTheme",
+ "font_size": 12,
+ "highlight_modified_tabs": true,
+ "ignored_packages":
+ [
+ ],
+ "open_files_in_new_window": false,
+ "save_on_focus_lost": true,
+ "tab_size": 4,
+ "theme": "Adaptive.sublime-theme"
+}
+
+Configuración personalizada de Atajos ( Preferences – Key Bindings - Lado User ):
+ [
+ { "keys": ["ctrl+."], "command": "toggle_side_bar" },
+ { "keys": ["ctrl+,"], "command": "reindent" }
+]
+
+-----------------------------------------
+Intalacion:
+
+puede realizarse desde el administrador de paquetes de sublime en menú > preferences > package-control y posteriormente buscando la opción “Install Package”.
+
+Nota: si no tienes el package-control este link te ayudara para activarlo: https://styde.net/gitgutter-para-sublime-text/
+
+-----------------------------------------------------------------
+ruta de las extenciones para desinstalar pluggins
+C:\Users\DELL\AppData\Roaming\Sublime Text 3\Installed Packages
+

@@ -1,0 +1,25 @@
+import java.math.BigInteger;
+public class EjerciciosBigInteger {             
+  public static void main(String[] args) {
+    big();
+  }
+    
+  public static void big() {
+    //ONE es una constante de la clase. TEN y ZERO también disponibles
+    BigInteger n = BigInteger.ONE; 
+    
+    //Suma
+    n = n.add(BigInteger.valueOf(9));
+            
+    //Resta
+    n = n.subtract(BigInteger.valueOf(4));
+            
+    //Multiplicacion
+    n = n.multiply(BigInteger.valueOf(10));
+            
+    //División
+    n = n.divide(BigInteger.valueOf(2));
+            
+    System.out.println(n);
+  }
+}

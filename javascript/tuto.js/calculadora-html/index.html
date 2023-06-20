@@ -1,0 +1,33 @@
+<doctype html>
+<html>
+<head>
+<meta charset="utf-8"
+<title>calculadora html</title>
+<script src="./index.js" defer></script>
+<style>
+body{
+font-family: sans-serif;
+text-align: center;
+} 
+
+input{
+display: block;
+margin: auto;
+margin-bottom: 15px;
+}
+
+</style>
+<!--live server-->
+</head>
+<body>
+<h1>calculadora html</h1>
+<form action="" method="dialog"><!--method="dialog" les para que no se recarge la pagina. y que en su lugar se ejecute la operacion correspendiente"-->
+    <input type="text" id="op1" placeholder="operador1">
+    <input type="text" id="operacion" placeholder="+,-,*,/">
+    <input type="text" id="op2" placeholder="operador2">
+
+    <input type="submit" value="calcular" id="calcular"><!--onclick=calcular();-->
+</form>
+<p id="resultado"></p>
+</body>
+</html>

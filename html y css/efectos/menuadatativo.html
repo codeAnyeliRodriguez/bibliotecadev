@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/1d648b6a7f.css" crossorigin="anonymous">
+<!-- iconfinder -->
+
+    <title>menu adaptativo</title>
+    <!-- alt + b -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #fffffa;
+        }
+
+        header{
+            width: 100%;
+        }
+
+        header nav{
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            background: black;
+        }
+
+        .menu_bar{
+            display: none;
+     
+        }
+
+        header nav ul{
+            overflow: hidden;
+            list-style: none;
+        }
+
+        header nav ul li{
+         float: left;   
+        }
+
+        header nav ul li a{
+            color: white;
+            padding: 20px;
+            display: block;
+            text-decoration: none;
+        }
+
+        /* iconos */
+        header nav ul li span{
+            margin-right: 10px;
+        }
+
+        /*color focus */
+        header nav ul li a:hover{
+            background: darkgreen;
+        }
+
+        section{
+            padding: 20px;
+        }
+
+        /* mobiles */
+        @media screen and (max-width:567px){
+            header nav{
+                width: 80%;
+                height: 100%;
+                left: -100%;
+                margin: 0;
+               position: fixed;
+            }
+            
+            header nav ul li{
+                display: block;
+                float: none;
+                border-bottom: 1px solid rgba(255, 255, 255, .3);
+            }
+
+            /* bonton para aparecer y desaparecer menu */
+            .menu_bar{
+               display: block;
+               width: 100%;
+               background: #ccc;
+         }
+
+        .menu_bar{
+            display: block;
+            padding: 20px;
+            background: black;
+            color: white;
+            text-decoration: none;
+           font-weight: bold; 
+            font-size:25px ;
+
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .menu_bar span{
+            float: right;
+            font-size: 40px;
+        }
+    }
+    </style>
+    <script src="https://kit.fontawesome.com/1d648b6a7f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="menu_bar">
+            <span class="fa-solid fa-bars"></span>
+            <!-- <a href="#" class="btn-menu">menu</a> -->
+            <p class="btn-menu">menu</p>
+        </div>
+        <nav>
+            <ul>
+            <!-- li*5>a[href='#'] -->
+            <li><a href="#"><span class="-icon-"></span>Inicio</a></li>
+            <li><a href="#"><span class="-icon-"></span>Trabajos</a></li>
+            <li><a href="#"><span class="-icon-"></span>Proyectos</a></li>
+            <li><a href="#"><span class="-icon-"></span>Servicios</a></li>
+            <li><a href="#"><span class="-icon-"></span>contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque quia omnis deleniti necessitatibus quidem a fugit vitae quisquam aut, cumque accusamus consequatur eveniet, odit at possimus itaque laboriosam, velit veritatis!
+<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum, suscipit eius maxime assumenda minima! Nihil voluptates harum molestiae maxime odit, nobis soluta similique deleniti aspernatur reiciendis quam quisquam iure!
+        </p>
+        <!-- https://fontawesome.com/icons/code?s=solid -->
+        <spam class="fas fa-envelope"></spam>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-folder-open"></i>
+        <i class="fa-solid fa-code"></i>
+
+
+    </section>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(main);
+        var contador = 1;
+
+        function main(){
+            $('.menu_bar').click(function(){
+                // $('nav').toggle();
+                if(contador == 1){
+                    $('nav').animate({
+                        left: '0'
+                    });
+                    contador = 0;
+                }else{
+                    contador = 1;
+                    $('nav').animate({
+                        left: '-100%'
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>

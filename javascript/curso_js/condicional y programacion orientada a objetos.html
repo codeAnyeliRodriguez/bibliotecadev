@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style >
+	table{
+		margin: auto;
+	}
+
+</style>	
+</head>
+
+<body id="cuerpo">
+	<form name="forml" method="post" action="" id="miformulario">
+		<table width="25%" border="1" id="mitabla">
+			<tr>
+				<td>nombre:</td>
+				<td><label for="textfield"></label>
+				<input type="text"  name="textfield" id="textfield"></td>
+			</tr>
+			<tr>
+				<td>apellidos:</td>
+				<td><input type="text" name="textfield2" id="textfield2"></td>
+			</tr>
+			<tr>
+				<td>edad:</td>
+				<td><input type="text" name="textfield3" id="textfield3"></td>
+			</tr>
+			<tr>
+				<td>carnet:</td>
+				<td><input type="text" name="textfield4" id="textfield4"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="button" id="button" value="enviar"></td>
+				<td><input type="reset" name="button2" id="button2" value="restablecer"></td>
+			</tr>
+		</table>
+	</form>
+
+	<script>
+		
+		var cuerpo=document.getElementById("cuerpo");
+
+		var colorweb=prompt("introduce el color de fondo.azul/verde/rojo").toLowerCase();
+
+		/*if (colorweb=="azul"){
+
+			cuerpo.styl .backgroundColor="blue";
+
+		}
+
+		else if(colorweb=="rojo"){
+			cuerpo.style.backgroundColor="red";
+		}
+
+		else if(colorweb=="verde"){
+			cuerpo.style.backgroundColor="green";
+		}
+
+		else{
+			alert("ese color no esta contemplado");
+		}*/
+
+
+/*si se van a usar varios if usar else if*/
+
+/* el backgroundColor debe se estar bien escrito con una mayuscula en la c de backgroundColor igual que document.getElementById */
+
+// si quitara el else de else if igual funciona pero cuando se ponga un else solamente aparecera en ente caso "no esta contemplado" en cada color por eso es importante poner else if//
+
+
+/*toLowerCase() transforma el texto en minuscula Azul=azul (som 3 palabras y se usan las mayusculas para diferenciarlas)
+
+toUpperCase() transforma el texo en mayuscula Azul o azul=AZUL (igula son tres palabras y se usan las mayusculas para diferenciarlas) */
+
+// si aplico toLowerCase() las letras de color=="azul" debe azul estar en minucuscula//
+
+//si aplico toUppercase() las letras de color=="AZUL" azul de ve de estar en mayuscula//
+
+//otra forma de hacer los if mas un operador que no se a usado hasta el momento este!=//
+
+if (colorweb!="azul" && colorweb!="verde" && colorweb!="rojo") {
+	alert("ese color no esta contemplado");
+}
+
+else if(colorweb=="azul"){
+	cuerpo.style.backgroundColor="blue";
+}
+
+else if(colorweb=="verde"){
+	cuerpo.style.backgroundColor="green";
+}
+
+else{
+	cuerpo.style.backgroundColor="red";
+}
+
+
+	</script>
+
+
+
+</body>
+</html>

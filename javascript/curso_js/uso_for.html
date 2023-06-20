@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!--bucle for
+
+for(inicio;condicion;incremento/decremento){
+	//codigo a repetir mientras la condicion del bucle sea cierta
+}
+//continuacion del programa-->
+
+<script>
+	
+	/*for(var i=0;i<10;i++){
+		alert("hola");
+	}*/
+
+		//este mensaje se repetira 10 veces//
+
+
+/*for(var i=0;i<20;i+=2){
+		alert("hola");
+
+	}*/
+		//esta seria otra manera de hacer que el mensaje aparesca 10 veces con el bucle for//
+
+	/*for(var i=10;i>0;i--){
+		alert("hola");
+
+	}*/
+		//esta seria otra manera de plantear lo mismo//
+
+		/*for(var i=1;i<=10;i++){
+		alert("saludo "+i);
+
+	}*/
+
+	//saludos contados // 
+
+	/*var meses=["enero", "febrero", "marzo","abril","mayo","junio","julio","agosto","septiembre", "octubre","noviembre", "diciembre"];*/
+
+	
+	/*document.write(meses[0] + "<br/>");
+
+	document.write(meses[1] + "<br/>");*/
+	//-----------------------------------------------------------//
+
+	/*for(var i=0;i<12;i++){
+		document.write(meses[i] + "<br/>");
+	}*/
+
+//-----------------------------------------------------------//
+	/*for(var i=0;i<meses.length;i++){
+		document.write(meses[i] + "<br/>");
+	}*/
+
+//------------------------------------------------------------//
+
+//las anteriores son diferentes maneras de plantear el codigo utilzando en la ultima progracion orientada a objetos con la propiedad .length//
+
+
+var trabajadores=new Array();
+
+var persona="";
+
+var contador=0;
+
+while(persona!="salir"){
+	persona=prompt("introduce trabajador");
+
+	trabajadores[contador]=persona;
+
+	contador++;
+}
+
+trabajadores.pop();
+
+for(var i=0;i<trabajadores.length;i++){
+
+	document.write(trabajadores[i]+"<br/>");
+}
+
+
+	
+</script>
+</head>
+<body>
+	
+</body>
+</html>

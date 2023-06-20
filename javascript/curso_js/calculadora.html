@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+
+		var numl=prompt("introduce el primer nº");
+		var num2=prompt("introduce el segundo nº");
+			//alert(typeof(numl));//
+		//if(!isNaN(num1) && !isNaN(num2)){//
+	
+
+
+		var operacion=prompt("que operacion deseas realizar? suma/resta/multiplicacion/divicion");
+
+		if (operacion=="suma") {
+			//alert(numl+num2);//
+
+			alert(parseInt(numl)+parseInt(num2));
+		}
+
+		else if(operacion=="resta"){
+			alert(parseInt(numl)-parseInt(num2));
+		}
+
+		else if(operacion=="multiplicacion" || operacion=="multiplicación"){
+			alert(parseInt(numl)*parseInt(num2));
+		}
+
+
+		else if(operacion=="divicion" || operacion=="divición"){
+			alert(parseInt(numl)/parseInt(num2));
+		}
+
+
+
+	else {
+		alert("operacion no contemplada");
+	}
+	
+//}//
+
+
+
+else{
+	if(typeof(num1)=="string" ||type of(num2)=="string") {
+		alert("has introducido valores numericos");
+
+	}
+	//alert("no se puede operar los numeros");//
+}
+else{
+   alert("ha ocurrido un error no indentificado");
+}
+
+
+
+//!//
+//operador negado le da la vuelta a lo que esta acontinuacion (expresar lo contrario de lo que alla acontinuacion)
+
+//NaN: es un error que da la calculadora en el navegador cuando intentas sumar texto mas numero fooooh+8//
+
+//isNaN()//
+
+// este if esta concatenando no esta sumando porque todo aquel dato que se introduce en un prompt en principio se considera texto estonces 5 y 7 se considera texto //
+
+// typeof() //
+
+//parseInt()//
+
+//hacer tambulaciones ayuda a que el codigo se lea mucho mejor//
+
+ //en los strings se puede incluir signos como acentos y ñ pero en las variables y en las sintaxis no. //
+
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

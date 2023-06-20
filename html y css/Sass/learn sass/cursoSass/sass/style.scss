@@ -1,0 +1,13 @@
+/* $color1: steelblue;
+
+h2{
+    color: $color1;
+    font-size: 3rem;
+}
+P{
+    color: $color1;
+} */
+
+@use 'navbar'; /* aca de incluye los estilos del parshal navbar */
+
+@use 'reset';

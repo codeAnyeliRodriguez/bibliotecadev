@@ -1,0 +1,17 @@
+Para mejorar tu lógica en JavaScript (y en cualquier otro lenguaje de programación), aquí te dejo algunos consejos:
+
+Practica: La práctica es la clave para mejorar en cualquier habilidad, y la programación no es una excepción. Intenta resolver problemas y desafíos de programación, y escribe código regularmente para que puedas mejorar tu lógica y habilidades de resolución de problemas.
+
+Aprende de otros programadores: Aprende de otros programadores y mira cómo resuelven problemas. Únete a comunidades de programación en línea, asiste a eventos y conferencias, y lee blogs y libros sobre programación.
+
+Descompón el problema: Si estás trabajando en un problema difícil, descompónlo en partes más pequeñas y manejables. Trata de resolver cada parte por separado antes de intentar resolver el problema completo.
+
+Usa pseudocódigo: El pseudocódigo es una forma de escribir el código en un lenguaje que sea fácil de entender, pero que no es un lenguaje de programación real. Escribir el pseudocódigo antes de escribir el código real puede ayudarte a comprender mejor el problema y a planificar la solución.
+
+Piensa en los casos límite: Piensa en los casos límite que pueden surgir al resolver un problema. Por ejemplo, ¿qué sucede si se ingresa un valor negativo? ¿Qué sucede si se ingresa una cadena de texto en lugar de un número?
+
+Haz un seguimiento de tu código: Agrega comentarios a tu código para que puedas recordar lo que hace cada parte de tu código. También puedes agregar mensajes de depuración para ayudarte a encontrar errores y problemas.
+
+Utiliza herramientas de depuración: Utiliza herramientas de depuración como la consola del navegador o herramientas de depuración de IDE para ayudarte a encontrar errores y problemas en tu código.
+
+Espero que estos consejos te ayuden a mejorar tu lógica en JavaScript. ¡Mucho éxito en tu aprendizaje!

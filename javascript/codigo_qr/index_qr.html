@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Código QR con Javascript</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="style_qr.css" />
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+		<!--este script de arriba es una libreria y a salido de aca:https://cdnjs.com/libraries/qrcodejs-->
+		<!--video de referencia de todo el codigo:https://www.youtube.com/watch?v=xWx9_GVHa_k-->
+		<script defer src="app_qr.js"></script>
+		<!--nota: el script debe de ir despues de lo que es la libreria de otro modo no funcionara la libreria-->
+		<!--atributo defer se usa para que el codigo js carge al final despues de que cargo el documento-->
+	</head>
+	<body>
+		<div class="contenedor">
+			<form action="" id="formulario" class="formulario">
+				<input type="text" id="link" placeholder="Escribe el texto o URL" />
+				<button class="btn">Generar QR</button>
+			</form>
+
+			<div id="contenedorQR" class="contenedorQR"></div>
+		</div>
+	</body>
+</html>

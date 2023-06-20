@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../aprogramar"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "desarrolladora"
+	}
+}

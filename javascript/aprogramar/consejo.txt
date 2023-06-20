@@ -1,0 +1,22 @@
+CONSEJOS
+1-mira el video completo
+2-toma notas a mano
+3-cuando el video termine si podes de memoria intenta reproducir lo aprendido.
+4-al otro dia repite el punto 3 usando tu memoria
+5-tipea el codigo, evita ayudarte copiando y pegandocodigo(grave error),escribe para memorizar
+5-no metas cosas diferentes en tu cabeza, si estas con js nada de python u otro.
+6-7 apoyate con un libro cuando tengas un tiempo y no estes frente a un pc.
+8-la teoria es pesada, pero necesaria para entender intenta digerirla.
+9-google es tu mejor amigo, busca lo que necesites.
+10-si no comprendes un tema no te amaragues, sigue con otro, o busca ayuda pero no tires todo al diablo
+11- es posible acordarse de todo, nos pasa a todos.imposible acordarse de todo.
+12-esto lleva tiempo, no esperes ser programador en 15 dias, noexiste tal cosa. Es como querer ser medico en 15 dias, imposible.
+13-intenta juntarte con gente que estudie lo mismo que tu. participa en foro, etc.
+14-pone comentarios en el codigo que te explique que es lo que hace ese codigo.
+15-aprendiendo ingles basico o tecnico.
+
+salud
+1-toma breaks cada hora de estudio.
+2-cuida tu postura frente al pc.
+3-tienes que hacer ejercicio al menos 3 veces por semana, recomiendan minimo 3 min. por cada semana
+4-Exponerse al sol al menos 20 min. por dia. 

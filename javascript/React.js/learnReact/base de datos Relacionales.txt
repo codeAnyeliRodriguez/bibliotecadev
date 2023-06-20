@@ -1,0 +1,10 @@
+base de datos Relacionales
+
+coleccion de datos interrelacionados y estructurados
+almacenados en conjunto sin redundancias perjudiciales o
+innecesarias; su finalidad es servir a una aplicacion  o mas,
+de la mejor manera posible; los datos se almacenan de 
+modo que resulte independiente de los programas que los usan
+nuevos deatos y para modificar o extraer los datos 
+almacenados.
+65

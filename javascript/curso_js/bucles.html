@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		
+		#contenedor{
+
+			width: 25%;
+			background-color: #ffc;
+			margin: auto;
+			padding: 15px;
+		}
+	</style>
+
+	<script>
+		/*var nombre, edad, poblacion;
+
+		nombre=prompt("introduce tu nombre por favor","escribe aqui el nombre");
+		while(!isNaN(nombre)){
+
+			nombre=prompt("introduce un mensaje valido","escribe aqui el nombre")
+
+		}
+		edad=prompt("introduce tu edad, por favor","introduce aqui la edad");
+
+
+				while(edad<=0 || edad>105 || isNaN(edad)){
+
+					edad=prompt("introduce una edad valida","escribe aqui la edad");
+				}
+
+
+		poblacion=prompt("introduce poblacion","introduce aqui la poblacion","introduce aqui la poblacion");
+			while(!isNaN(poblacion)){
+
+				poblacion=prompt("introduce la poblacion correcta","introduce aqui la poblacion");
+			}*/
+
+
+			var nombre, edad, poblacion;
+
+		//nombre=prompt("introduce tu nombre por favor","escribe aqui el nombre");//
+
+		do{
+
+		nombre=prompt("introduce un mensaje valido","escribe aqui el nombre")
+
+		}while(!isNaN(nombre));
+
+
+		//edad=prompt("introduce tu edad, por favor","introduce aqui la edad");//
+
+		do{
+				
+
+			edad=prompt("introduce una edad valida","escribe aqui la edad");
+
+		}while(edad<=0 || edad>105 || isNaN(edad));
+
+
+		//poblacion=prompt("introduce poblacion","introduce aqui la poblacion","introduce aqui la poblacion");//
+			
+		do{
+				poblacion=prompt("introduce la poblacion correcta","introduce aqui la poblacion");
+			}while(!isNaN(poblacion));
+
+
+
+
+//los mensaje segundos mensajes en parentesis son para que internet explorer muestre un mensaje que posteriormente sera reemplazado por el valor que vallamos a introducir (escribe aqui el nombre, escribe aqui la edad,escribe aqui la poblacion)
+	</script>
+</head>
+<body>
+
+	<!--				bucles
+
+determinados:  			indeterminados:
+for							while
+							do while
+
+ambos repiten codigo
+while= mientras
+
+				bucle while sintaxis
+while(condicion){
+	//codigo a repetir mientras la condicion del bucle sea cierta
+}
+
+//continuacion del programa-->
+
+
+
+<!--bucle do-while
+
+do{
+	//codigo a repetir mientras la  condicion sea cierta 
+}while (condicion);
+
+//continuacion del programa--> 
+
+<script>
+	
+	/*var meses=["enero", "febrero", "marzo", "abril", "mayo", "junio","julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+	var contador=0;
+
+	while (contador<meses.length){
+
+		document.write(meses[contador]+"<br/>");
+
+		contador++;
+
+	}*/
+</script>
+
+
+<div id="contenedor">
+	<p>nombre: 
+	 <script>
+ 		document.write(nombre);
+	 </script>
+	</p>
+
+	<p>edad:
+	<script>
+		document.write(edad);
+	</script>
+	</p>
+
+	<p>poblacion:
+	<script>
+		document.write(poblacion); 
+	</script>
+	</p>
+	
+
+</div>
+	
+</body>
+</html>

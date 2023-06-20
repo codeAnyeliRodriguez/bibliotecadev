@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script>
+	/*sintaxis if
+
+if(condicion){
+	//codigo a ejecutar si la condicion es verdad
+}
+----------------------------------------------------------------
+if(condicion){
+	//codigo a ejecutar si la condicion es verdad
+}
+
+else{
+	//codigo a ejecutar si la accion no es verdad
+}
+
+como construimos la condicion?
+
+operador		significado
+  ==			igual que... 									-operadores de comparacion
+  !=			diferente que...								-//			// 		//	
+  >				mayor que...
+  <				menor que...
+  >=			mayor o igual que...
+  <=			menor o igual que...							
+  ===			estrictamente igual que...(comprueba tambien tipos) -operadores de 
+  !==			estrictamente diferente que...(comprueba tipos)		comparacion estrictos
+
+
+operador	significado
+&&			y logico				-operadores logicos
+||			o logico 				-	//			//*/	
+
+var precioCoche=60000;
+
+//var dineroAhorrado=75000;//
+
+var dineroAhorrado=prompt("introduce cuanto dinero tienes ahorrado");
+
+//var edad=prompt("introduce tu edad");//
+
+var loteria=prompt("te a tocado la loteria??");
+
+/*if (dineroAhorrado>=precioCoche) {
+	alert("puedes comprar el coche")
+}*/
+
+/*if (dineroAhorrado>=precioCoche && edad >=18){
+	alert("puedes comprar el coche")
+}*/
+
+//utilizando el operador logico o || solo una de las condiciones se tiene que cumplir ser cierta para que el resultado se pueda cumplir  en ese caso que puedas comprar el coche. igual que el operador logico y && puedes enlazar todas las condiciones que quieras. si no cumple ninguna se las condiciones con el operador logico entonces el resultado sera negativo y se cumplira el else el lugar del if. if= y si no//
+
+if(dineroAhorrado>=precioCoche || loteria=="si"){
+	alert("puedes comprar el coche");
+}
+
+else{
+	alert("no puedes comprar el coche. no tienes suficientes ahorros");
+}
+
+alert("continuamos con la ejecucion del programa");
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+
+Código	Resultado
+\'	comilla simple
+\"	comilla doble
+\\	barra invertida
+\n	línea nueva
+\t	tabulador
+\r	retorno del carro
+\b	retroceso
+\f	fuente de formulario
+
+si (la condición es verdadera) {
+  la sentencia es ejecutada
+}

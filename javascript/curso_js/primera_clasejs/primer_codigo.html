@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hello wold</title>
+
+	<link rel="stylesheet" href="C:\Users\DELL\Desktop\desarrolladora\curso_js\primera_clasejs\primer_codigo.CSS">
+
+<!--codigo javascript en el head-->
+	<!--<script>
+	alert("hola mundo");
+	</script>-->
+
+<!--comentario pequeno en la parte superior de la pagina-->
+	<!--<script>document.write("hello wold");
+</script>-->
+<!-- <script src="http://code.jquery.com/jquery-latest.js"></script> -->
+</head>
+
+<body>
+	<!--puede ir en el h1 en lugar de escribir un titulo o en cualquier lado-->
+	<h1><!--<script>document.write("hello wold");
+</script>-->Hello wold</h1>
+
+	<p>bienvenidos al curso de javascript de <span>pildoras informaticas</span></p> <img src="C:\Users\DELL\Desktop\desarrolladora\curso_js\primera_clasejs\64763.jpg" width="35%">
+
+	<!--enlace a libreria-->
+	<!--<script src="C:\Users\DELL\Desktop\desarrolladora\curso_js\primera_clasejs\jQueryv.1.6.3.min.js"></script>-->
+
+<!--efecto de fade in al cargar la pagina dura min segundos-->
+	<script>
+		$(function(){
+			$("body").hide().fade in(5000);
+		});
+	</script>
+
+<!--archivo javascript externo lleva etiqueta de apertura y cierre y va antes del body-->
+
+<script src="C:\Users\DELL\Desktop\desarrolladora\curso_js\primera_clasejs\primer_codigo.js"></script>
+
+<!--este saldra despues que el anterior enlazado a un archivo independiente. los script se ejecutan de arriba a abajo por orden de carga-->
+<script>
+	alert("adios alumnos");
+</script>
+</body>
+
+</html>

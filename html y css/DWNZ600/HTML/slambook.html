@@ -1,0 +1,111 @@
+<html>
+ <head>
+ <meta charset="utf-8"/> 
+<link href="" rel="stylesheet"> 
+
+<title>slambook</title>
+</head> 
+<body>
+  <form action="enviar.php" method="post">
+    <h1>slambook</h1>
+    <section id="pregunta">
+      <p>
+        <label form="name">nombres y apellidos </label>
+        <input type="text" name="nombres" id="name">
+      </p>
+      <p>
+        <label for="birth">fecha de nacimiento:</label>
+        <input type="date" name="nacimiento" id="birth">
+      </p>
+      <fieldset>
+        <legend>sexo:</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="sexo" value="hombres">
+              hombres
+            </label>
+          </li>
+
+          <li>
+            <label>
+              <input type="radio" name="sexo"               value="mujeres"checked>
+              mujeres
+            </label>
+          </li>
+
+         <li>
+           <label>
+             <input type="radio" name="sexo" value="otros">
+               otros
+           </label>       
+          </li>
+
+        </ul>
+      </fieldset>
+      <p>
+        <label for="phone">numero de telefono:</label>
+        <input type="tel" name="telefono" id="phone">
+      </p>
+      <p>
+        <label for="photo">sube tu foto de perfil(opcional)</label>
+        <input type="file" name="foto" id="photo" multiple accept="image/*,video/*">
+      </p> 
+      <p>
+        <label for="color">color favorito:</label>
+        <input type="color" name="color"> 
+      </p>
+      <p>
+        <label for="hour">hora que te despiertas:</label>
+        <input type="time" name="hora" id="hour">
+      </p>
+      <p>
+        <label for="number">numero favorito</label>
+        <input type="number" id="number" min="4" max="8" step="2">
+      </p>
+      <p>
+        <label for="mydatetimelocal">fecha y hora mas importante </label>
+        <input type="datetime-local" name="fechayhora" id="mydatetimelocal">
+      </p>
+      <p>
+        <label for="month">elige un mes y un año</label>
+        <input type="month" name="mes" id="month">
+      </p>
+      <p>
+        <label for="week">elige una fecha:</label>
+        <input type="week" name="semana" id="week">
+      </p>
+      <p>
+        <label for="volume">volumen favorito</label>
+        <input type="range" name="volumen" id="volume">
+      </p>
+      <fieldset>
+      <ul>
+        <li>
+          <label for="">
+            <input type="checkbox" name="confirmacion">juro que todas mis respuestas seran verdaderas.
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" name="confirmacion">acepto que cualquier otro usuario vea mis respuestas.
+          </label>
+        </li>
+
+      </ul>
+      </fieldset>
+      <input type="hidden" name="idioma" value="spanish">
+    </section>
+    <section id="botones">
+      <p>
+        <input type="submit">
+      </p>
+      <p>
+        <input type="reset">
+      </p>
+    </section>
+  </form>
+
+</body> 
+</html>
+

@@ -1,0 +1,17 @@
+create database prueba;
+drop database prueba;
+show databases;
+use usuarios;
+create table datosusuarios(nombre varchar(30), clave varchar(10) edad int(2));
+drop table datosusuarios;
+describe datosusuarios;
+alter table datospersonales drop edad;
+ALTER TABLE datospersonales ADD COLUMN edad int(2);
+
+introducir informacion:
+INSERT INTO datospersonales (nif, nombre, apellido, edad) VALUES ('123456789M', 'Maria','gomez',27);
+
+consulta:
+select nif, nombre, apellido, edad from datospersonales;
+SELECT nombre, apellido FROM datospersonales;
+SELECT * FROM datospersonales;

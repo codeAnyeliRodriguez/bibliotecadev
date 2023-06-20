@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+	<script>
+//esta variable va dentro del script. es una manera de declarar una variable//
+	/*var nombre;
+
+		nombre="juan"*/
+
+//f12=consola se pueden ver los errores de sintax//
+
+
+		/*var nombre="juan";
+
+		var puntuacion=0;
+
+		var record;
+
+		record=5000;
+		
+		alert(nombre);*/
+
+/*estas variables se pueden escribir en una sola linea cada una es un espacio reservado en la memoria ran que el navegador asigna*/
+
+/*alert(5+6*3);
+alert((5+6)*3);*/
+
+/*el orden de los parentesis afecta la operacion si esta de esta forma alert(5+6*3); se ejecutara primero la multiplicacion por lo que el resultado sera 23 pero si esta de esta manera alert((5+6)*3); se ejecutara primero la suma por lo que el resultado sera 33.*/
+
+  /*var precioUnidad, cantidad, total, //declaracion de 3 variables en una linea//
+
+  precioUnidad=5;
+
+  cantidad=100;
+
+  total=precioUnidad*cantidad;
+
+  alert("el importe total de la compra es:"+total+"€");*/
+
+ /* + tiene 2 usos concatenar(unir) y sumar*/
+
+ //este es para comentar codigo de una linea//
+
+  /*este es para un comentario de varias lineas si me puedo explallar yo soy Anyeli y este es mi codigo estos comentarios son transpentes para el navegador solo es de utilidad para el programdor */
+
+//operadores basicos//
+/*operador 		operacion 					ejemplo
+		+						suma/concatenar 		7+12
+		-						resta 							9-8
+		* 				multiplicacion 				8*7
+		/ 					divicion 						23/6 */
+
+		/*var camisetas, pantalones, totalArticulos;
+
+		camisetas="5";
+
+		pantalones=5;
+
+		totalArticulos=camisetas+pantalones;
+
+		alert(totalArticulos);*/
+
+	/*la anterior variable esta en error el resultado da 55 porque es interpretado como texto el primer numero entre comillas y no se puede sumar un numero con un texto. las soluciones serian quitar las comillas del numero(que es interpretado como texto) o hacer lo que viene a continuacion que es agregar una funcion predefinida llamada Numer(...) "esta funcion transforma a valor numerico aquel texto aquel texto que introduscas entre sus parentesis" a camisetas en este caso*/
+
+		var camisetas, pantalones, totalArticulos;
+
+		camisetas="5";
+
+		pantalones=5;
+
+		totalArticulos=Number(camisetas)+pantalones;
+
+		alert(totalArticulos);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

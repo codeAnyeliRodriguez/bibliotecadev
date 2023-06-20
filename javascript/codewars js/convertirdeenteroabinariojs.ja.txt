@@ -1,0 +1,3 @@
+En JavaScript, puedes utilizar el método toString() para convertir un número entero a una cadena que representa el número en una base numérica determinada. Para convertir un entero a binario, simplemente especifica la base numérica como 2.
+
+Por ejemplo, para convertir el número decimal 42 a binario, se hace lo siguiente:

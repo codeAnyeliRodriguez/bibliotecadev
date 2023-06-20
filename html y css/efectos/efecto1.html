@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto Maquina de escribir</title>
+    <style>
+        #texto-maquina-escribir {
+  border-right: 0.1em solid #000; /* Línea vertical intermitente */
+  padding-right: 10px; /* Espacio entre el texto y la línea vertical */
+  animation: escribir 2s steps(40, end), blink-caret 0.5s step-end infinite; /* Animación */
+}
+
+@keyframes escribir {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+
+    </style>
+ <!--    <script>
+        // Obtener el elemento HTML
+var texto_maquina_escribir = document.getElementById("texto-maquina-escribir");
+
+// Obtener el texto del elemento HTML
+var texto = texto_maquina_escribir.innerHTML;
+
+// Limpiar el texto del elemento HTML
+texto_maquina_escribir.innerHTML = "";
+
+// Crear un elemento span para cada letra del texto
+for (var i = 0; i < texto.length; i++) {
+  var span = document.createElement("span");
+  span.innerHTML = texto.charAt(i);
+  texto_maquina_escribir.appendChild(span);
+}
+
+// Añadir la clase "typewriter" al elemento HTML
+texto_maquina_escribir.classList.add("typewriter"); -->
+
+<!-- para que se ejecute luego que cargue la pagina -->
+// Esperar a que la página se cargue completamente
+document.addEventListener("DOMContentLoaded", function() {
+
+  // Obtener el elemento HTML
+  var texto_maquina_escribir = document.getElementById("texto-maquina-escribir");
+
+  // Obtener el texto del elemento HTML
+  var texto = texto_maquina_escribir.innerHTML;
+
+  // Limpiar el texto del elemento HTML
+  texto_maquina_escribir.innerHTML = "";
+
+  // Crear un elemento span para cada letra del texto
+  for (var i = 0; i < texto.length; i++) {
+    var span = document.createElement("span");
+    span.innerHTML = texto.charAt(i);
+    texto_maquina_escribir.appendChild(span);
+  }
+
+  // Añadir la clase "typewriter" al elemento HTML
+  texto_maquina_escribir.classList.add("typewriter");
+  
+});
+
+    </script>
+</head>
+<body>
+    <p id="texto-maquina-escribir">Escribe aquí tu texto</p>
+
+</body>
+</html>

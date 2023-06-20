@@ -1,0 +1,76 @@
+/* @use 'variables'; */
+//$display:'display';
+//$selector:'.hero ';
+$primary: cripson;
+
+:root{
+    --primary: $primary;
+}
+
+//#{$selector}{
+.nav{
+
+    background-color: steelblue;
+
+    &__container{
+        width: 90%;
+        margin:0 auto;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1em;
+
+       /*  &--active{
+            width: 100%;
+        } */
+    }
+
+    &__item{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &--active{
+        text-decoration: underline;
+
+        // &:hover{
+        //     color: #000;
+        // }
+    }
+
+    @media (min-width: 764px){
+        &__container{
+            justify-content: flex-end;
+        }
+    }
+}
+
+// .nav{
+//    /*  background-color: variables.$color; */
+//    background-color: steelblue;
+
+//    ul{
+//     color: #000;
+//     li{
+//         color: #fff;
+//     }
+//    }
+// }
+
+
+// .nav.ul{
+//     /* esto es un ul dentro de nav */
+// }
+
+// .nav.ul.li{
+//     /* esto es un li detro de un ul dentro de nav */
+// }
+//     .nav.ul.li.a{
+//         /* esto es un a detro de un li dentro de un ul dentro de un nav */
+//     }
+
+/*para hacer un parshal en sass se pone un_ en el nombre del archivo  */
+/* este archivo es un prashal y no se compila solo se llama desde otro archivo sass */
+
+

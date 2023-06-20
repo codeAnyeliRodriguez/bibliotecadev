@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+   <!--  <link href="C:\Users\HP\Desktop\desarrolladora\animaciones css\guia de animaciones css\style.css" rel="stylesheet"> -->
+ <!-- con javascript se puede añadir un boton para que la animacion empieze -->
+ <style>
+    #cuadrado{
+    width: 200px;
+    height: 200px;
+    background: #aaa;
+    animation-name: mianimacion;
+    animation-direction: 4s; /*esta etiqueta define el tiempo de la animacion*/
+    animation-delay: 2s;/* cuanto durara la animacion antes de empezar */
+    position: relative;
+    animation-direction: reverse;/* direccion de la animacion en este caso la animacion va en reversa */
+    animation-timing-function: ease;/* cambiamos la velocidad con la que se va a mover el cuadrado linar, ease*/
+    animation-iteration-count: 2;/* repetidion de la animacion 2, infinite */
+}
+
+@keyframes mianimacion {
+    0%{background-color:#aaa;left:0;top:0px;}
+    25%{background-color: red;left:300px;top:0px}
+    50%{background-color:green;left:300px;top:300px;}
+    75%{background-color: pink;left:0px;top:300px;}
+    100%{background-color:blue;left:0px;top:0px;}
+}
+    </style> 
+</head>
+<body>
+    <div id="cuadrado"></div>
+    
+</body>
+</html>

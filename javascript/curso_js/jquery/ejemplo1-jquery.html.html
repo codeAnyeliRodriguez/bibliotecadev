@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<!--agregando jquery
+
+google cdn jquery
+
+-2 formas
+	-enlazando con us servidor que contenga a su vez JQuery
+		-microsoft:
+			-<script src="http://ajax.aspnetcdn.com/ajax/JQuery/jquery-1.11.1.js></script>
+		
+		-JQuery:
+			<script src=http://code.jquery.com/jquery-1.11.1.js></script>
+		
+		-google:
+			<script
+			src="http://ajax.googleapis.com/ajax/libs/jquery/11.1.1/jquery.min.js></script>
+	
+	-descargando tu propia copia de JQuery
+	
+-Estructura dentro del head:
+	<script src="js/jquery-1.11.1.js"></script>
+	<script>
+	$(document).ready(function(){
+	//aqui va tu codigo
+	});
+	</script>
+
+-forma reducida:
+	$(function(){
+	//aqui va tu codigo
+	})
+	
+importante!!: Este codigo ha de ir dentro del head pero siempre despues que el codigo css.	
+-->
+<meta charset="UTF-8">
+<title>hola alumnos</title>
+<!--<link href="css/micss.css" rel="stylesheet">-->
+<style>
+body{
+	background-color: darkblue;
+}
+h1{
+color: yellow;
+text-align: center;
+border-bottom:2px solid white;
+border-top: 2px solid white;
+}
+
+p{
+	color: yellow;
+}
+span{
+	font-size:35px;
+}
+</style>
+
+<script src="jquery-3.6.1.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		//aqui va el codigo javascript
+			$("body").hide().fadeIn(5000);
+			//este codigo hace un efecto fade in con la libreria jquery el numero 5000 es solo el numero de milisegundos(tiempo) que va a durar
+		});
+</script>
+<!--este bloque pone en espera la libreria jquery en lo que se carga la pagina luego se carga la libreria y el codigo javascript.-->
+<!--esta libreria debe de estar siempre despues del codigo css-->
+<!--el codigo javascript siempre va despues del codigo css porque el codigo javascript accede al codigo css por lo que es recomendable que el codigo css ya alla cargado-->
+<!--DOM: document object model(modelo de objetos del documento) nodos-->
+<!-- el dom se representa como un grafico de arbol esa es la manera en la que los navegadores entienden el codigo-->
+<!--seleccionando objetos con jquery
+	-utilizando Javascript
+		-document.getElementById()
+		-document.getElementByTagName()
+	
+	-utilizando selectores css y su sintaxis
+		-<p class="contacto">C/Gran Via 55</p>
+		-$(".contacto");_________________________________________objeto JQuery
+		-<p id="contacto">C/Gran Via 55</p>
+		-$("#contacto");__________________________________________objeto JQuery
+		-<p>C/gran via 55</p>
+		-("p");
+		
+		-<p id="mensaje">Esto es un elemento para todos </p>
+	
+	-altenativas para seleccionar el elemento desde Javascript:
+		-var el_mensaje=document.getElementById("mensaje").value;
+		-var el_mensaje=$("#mensaje").value;
+	
+https://www.youtube.com/playlist?list=PLU8oAIHdN5BmpUDdnWsgLIIhflosElaVN	
+	-->
+</head>
+<body>
+<h1>Hola alumnos</h1>
+<p>Bienvenidos al curso de Javascript de <span>Pildoras Informanticas</span></p>
+<img src="css-en-el-head_.jpeg" width="35%">
+<!--los inline css se da el valor de igualda con el signo de igual(=) no con dos puntos(:)-->
+
+</body>
+</html>

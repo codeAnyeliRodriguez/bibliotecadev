@@ -1,0 +1,77 @@
+claro
+
+Nombre
+claro
+
+APN
+internet.ideasclaro.com.do
+
+Proxy
+No definido
+
+puerto
+No definido
+
+Nombre de usuario
+No definido
+
+contraseña
+No definido
+
+servidor
+No definido
+
+MMSC
+No definido
+
+Proxy MMS
+No definido
+
+puerto MMS
+No definido
+
+MCC
+370
+
+MNC
+02
+
+Tipo de autentificacion
+PAP o CHAP
+
+Tipo de APN
+default
+
+Protocolo de APN
+IPv4
+
+Protocolo APN em itinerancia
+IPv4
+
+Activar/desactivar el APN
+APN activado
+
+portador
+sin especificar
+
+Tipo de OMV
+ninguna
+
+Valor OMV
+No definido
+
+-------------
+Nombre
+Claro DR
+
+APN
+mms.ideasclaro.com.do
+
+Tipo de autentificacion
+PAP 
+
+Tipo de APN
+default,supl,tethering
+
+Protocolo de APN
+IPv4/IPv6

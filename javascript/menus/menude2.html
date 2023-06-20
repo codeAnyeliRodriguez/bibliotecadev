@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menudes2</title>
+    <style>
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  position: relative;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+nav li:hover > ul {
+  display: inherit;
+}
+
+nav a {
+  display: block;
+  padding: 0 10px;
+  color: #333;
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+nav ul ul li {
+  float: none;
+  width: 200px;
+}
+
+nav ul ul a {
+  padding: 10px;
+  color: #fff;
+  background: #333;
+}
+
+nav ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
+nav li:hover a {
+  color: #fff;
+  background: #333;
+}
+
+    </style>
+
+    <script>
+        var dropdowns = document.querySelectorAll('nav ul li > ul');
+
+for (var i = 0; i < dropdowns.length; i++) {
+  dropdowns[i].parentNode.querySelector('a').addEventListener('click', function(e) {
+    e.preventDefault();
+    var dropdown = this.parentNode.querySelector('ul');
+    dropdown.classList.toggle('show');
+  });
+}
+
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li>
+            <a href="#">Categorías</a>
+            <ul>
+              <li><a href="#">Categoría 1</a></li>
+              <li><a href="#">Categoría 2</a></li>
+              <li><a href="#">Categoría 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      
+    
+</body>
+</html>
