@@ -1,0 +1,1253 @@
+Bandera gabonesa
+En este acertijo, dibujarás otra bandera. Esta vez, las franjas de la bandera son horizontales, no verticales.
+
+INSTRUCCIONES
+Completa la bandera gabonesa.
+
+Agrega 2 nuevas funciones drawBox() con el argumento yellow
+Usa la función newLine() para comenzar una nueva fila de cuadros
+Agrega 3 funciones drawBox(), esta vez con el argumento blue
+drawBox(green);
+drawBox(green);
+drawBox(green);
+newLine();
+drawBox(yellow);
+drawBox(yellow);
+drawBox(yellow);
+newLine();
+drawBox(blue);
+drawBox(blue);
+drawBox(blue);
+___
+Asistente para bandera gabonesa
+En este acertijo, aprenderás una forma más rápida para dibujar una bandera. La función drawBoxes() toma un string como un argumento, y puede usar solo 1 letra para crear un cuadro de color.
+
+Por ejemplo, drawBoxes('brb') dibujará un cuadro azul, luego un cuadro rojo y después otro cuadro azul.
+
+INSTRUCCIONES
+Completa la bandera gabonesa.
+
+Agrega una función newLine()
+Luego, usa la función drawBoxes('bbb') para crear una franja azul
+drawBoxes('ggg');
+newLine();
+drawBoxes('yyy');
+newLine();
+drawBoxes('bbb');
+___
+Accesos directos a la bandera gabonesa
+En este acertijo, crearás la bandera gabonesa con solo 1 línea de códigos. Como puedes ver, generalmente hay varias formas de lograr el mismo resultado en programación.
+
+INSTRUCCIONES
+Actualiza la función drawBoxes() para terminar la bandera gabonesa.
+
+Edita el string para que tengas 3 letras para cada franja, con un espacio entre cada uno de los colores: verde, amarillo y azul
+
+drawBoxes('ggg yyy bbb'edit);
+-------
+Un toque de azar
+En este acertijo, usarás la función pickRandom() para que el código elija el color del cuadro.
+
+INSTRUCCIONES
+Actualiza la segunda función drawBox() para usar pickRandom(color) en lugar de red
+
+drawBox(pickRandom(color));
+drawBox(pickRandom(color));
+___
+De Polonia a San Marino
+En este acertijo, usarás una variable para almacenar datos, y luego cambiar el valor de esa variable.
+
+Por ejemplo, var insect = 'Grasshopper' guarda el string 'Grasshopper' en la variable insect.
+
+INSTRUCCIONES
+Cambia la bandera de Polonia para que sea la bandera simplificada de San Marino cambiando el valor de la variable stripeColor.
+
+Cambia red a  blue
+
+var stripeColor = white;
+drawBox(stripeColor);
+drawBox(stripeColor);
+drawBox(stripeColor);
+newLine();
+stripeColor = blue;
+drawBox(stripeColor);
+drawBox(stripeColor);
+drawBox(stripeColor);
+blue;
+-------
+Hoy es el día
+En este acertijo, declararás una nueva variable.
+
+Por ejemplo, var month = 'August' crea una variable llamada month y le asigna el valor 'August'.
+
+INSTRUCCIONES
+Declara una nueva variable para recordar qué day es.
+
+Crea una variable llamada day.
+Asígnale el string 'Friday'.
+Imprima la variable usando print(day).
+
+var month = 'August';
+print(month);
+var day = 'Friday';
+print(day);
+___
+y=17;
+x=y;
+print(x);
+En el ejemplo que sale encima, se da x el valor 17 porque y almacena el valor 17. Esto significa que el número 17 se imprimirá.
+
+¿Cuál será el resultado del siguiente código?
+
+var y = 5;
+var x = y;
+print(x);
+
+5
+------
+Respuestas mágicas
+En este acertijo, editarás un arreglo para guardar una lista de palabras usando un código.
+
+Agrega al arreglo para darle a la función pickRandom() más palabras entre las cuales elegir.
+
+INSTRUCCIONES
+Agrega otro string al arreglo
+var answer = pickRandom([
+  'yes',
+  'no',
+  'puede ser',
+  ___
+]);
+print(answer);
+___
+Hornea un pastel
+En este acertijo, usarás un arreglo para guardar una lista de los ingredientes necesarios para hornear un pastel.
+
+INSTRUCCIONES
+Cambia 'flour' por un arreglo [], por ejemplo, ingredients = []
+Agrega algunos strings nuevos como 'flour', 'sugar', 'eggs' a los ingredientes array
+
+var ingredients = [
+  'flour',
+  'sugar',
+  'eggs'edit,
+  ___
+];
+cook(ingredients);
+-----------
+Tablero de ajedrez
+En este acertijo, usarás una indexación de arreglo para acceder a elementos dentro de un arreglo.
+
+La indexación de arreglo comienza en 0. Por ejemplo, myArray[0] conecta el 1er elemento en el arreglo llamado myArray. Mientras que myArray[1] conecta el 2° elemento.
+
+INSTRUCCIONES
+Usa una indexación de arreglo para crear un patrón de tablero de ajedrez.
+
+Actualiza los números en drawBox(colors[]) para que sea 0 para negro, y 1 para blanco
+
+var colors = [
+  'black',
+  'white',
+  ___
+];
+drawBox(colors[0]);
+drawBox(colors[1]);
+drawBox(colors[0]);
+newLine();
+drawBox(colors[1]);
+drawBox(colors[0]);
+drawBox(colors[1]);
+newLine();
+drawBox(colors[0]);
+drawBox(colors[1]);
+drawBox(colors[0edit]);
+-------
+Editor if
+En este acertijo, usarás una if statement y el operador de igualdad === para ejecutar un bloque de código si la prueba es verdadera.
+
+Si la prueba dentro de los paréntesis () es verdadera, entonces se ejecuta el bloque {}. Por ejemplo:
+
+  if (x === 2) {
+      print(x);
+  }
+Si x es igual a 2, entonces se ejecutará print(x).
+
+INSTRUCCIONES
+Dentro del bloque de código {} de la if statement:
+
+Agrega drawBox(blue)
+¿Necesitas ayuda? Utiliza el foro de asistencia de Grasshopper.
+
+var color = pickRandom([
+  blue,
+  green,
+  ___
+]);
+print(color);
+if (color === blue) {
+  drawBox(blue);
+  ___
+}
+----------
+Lanza una moneda
+En este acertijo, usarás if statements para controlar el código de flujos. Las if statements te permiten controlar si se ejecuta un código. Si la prueba dentro de los paréntesis () es verdadera, entonces se ejecuta el código dentro del bloque {}.
+
+JavaScript distingue entre mayúsculas y minúsculas. Esto significa que las strings 'tails', 'Tails' y 'tAiLs' no son iguales.
+
+INSTRUCCIONES
+Agrega una nueva if statement al final del código
+Dentro de los paréntesis () de tu nueva if statement, prueba si answer es igual a 'tails'
+Usa la función drawBoxes() dentro de tu nueva if statement para dibujar algo
+
+var answer = pickRandom([
+  'heads',
+  'tails',
+  ___
+]);
+print(answer);
+if (answer === 'heads') {
+  drawBoxes('gwg ggg gwg');
+}
+if (answer === 'tails') {
+  drawBoxes('gwg ggg gwg'edit);
+}
+-----------
+Lanza una moneda nuevamente
+En este acertijo, usará una if...else statement para lanzar una moneda. Las if...else statements le permiten controlar qué código se ejecuta cuando la prueba es verdadera, y qué código se ejecuta cuando la prueba es falsa.
+
+INSTRUCCIONES
+Agrega una función drawBoxes() dentro del bloque else {} de la if...else statement
+Usa un string como un argumento en tu nueva función drawBoxes()
+
+if...else
+Las if...else realizan una prueba para decidir qué código ejecutar. Si la prueba es verdadera, se ejecuta el bloque {} if. Si la prueba es falsa, se ejecuta el bloque {} else.
+
+CÓDIGO DE EJEMPLO
+var number = pickRandom(10);
+if (number === 7) {
+    print('The number is 7!');
+} else {
+    print('The number is not 7​.');
+}
+Este código elige un número al azar de 1 a 10. Si number es 7, imprimirá 'The number is 7!'. Si number es otra cosa, imprimirá 'The number is not 7.'
+
+TECLAS RELACIONADAS
+var answer = pickRandom([
+  'heads',
+  'tails',
+  ___
+]);
+print(answer);
+if (answer === 'heads') {
+  drawBoxes('gwg ggg gwg');
+} else {
+  drawBoxes('rrr wrw wrw');
+}
+------------
+uego de adivinanzas
+En este acertijo, crearás pistas para adivinar dónde se encuentra oculto un guisante entre 3 cáscaras diferentes.
+
+Usarás un operador de comparación !==, lo que significa que es distinto de. Por ejemplo, 5 !== 4 sería true debido a que 5 no es igual a 4.
+
+INSTRUCCIONES
+Usa el operador distinto de !== para verificar dónde está oculto el guisante.
+
+Agrega una if statement que pruebe (pea !== 3)
+Imprima un mensaje cuando pea no esté debajo de la cáscara 3
+------------
+var pea = pickRandom([
+  1,
+  2,
+  3,
+  ___
+]);
+if (pea !== 1) {
+  print('Not under shell 1');
+}
+if (pea !== 3) {
+  print('mensaje'edit);
+}
+----------
+Se puede declarar las variables vacías sin ningún valor, y luego pasarlas un valor.
+-----------
+var fruit; print(fruit) fruit = 'pineapple'; print(fruit);
+
+Al principio fruit se imprimirá como undefined, pero la segunda vez se imprimirá como ’pineapple’.
+--------------
+var fruit; print(fruit) fruit = 'pineapple'; print(fruit);
+
+Al principio fruit se imprimirá como undefined, pero la segunda vez se imprimirá como ’pineapple’.
+
+¿Como se puede asignar de nuevo los valores de bananas y numberBananas para imprimir \"Let's make banana bread\"?
+
+var bananas;
+var numberBananas;
+if (bananas !== 'green') {
+    if (numberBananas > 5) {
+        print("Let's make banana bread");
+    }
+}
+bananas='yellow'
+numberBananas=6;
+---------------
+Matemáticas modificadoras
+En este acertijo, usarás el operador más y el operador menos para actualizar el valor de una variable.
+
+INSTRUCCIONES
+Reemplaza el número 0 en x = x + 0 para aumentar el valor de la variable x
+Luego, reemplaza el número 0 en x = x - 0 para disminuir el valor de la variable x
+------------
+Matemáticas modificadoras
+En este acertijo, usarás el operador más y el operador menos para actualizar el valor de una variable.
+
+INSTRUCCIONES
+Reemplaza el número 0 en x = x + 0 para aumentar el valor de la variable x
+Luego, reemplaza el número 0 en x = x - 0 para disminuir el valor de la variable x
+------------
+var x = 5;
+x = x + 4;
+print('x is ' + x);
+x = x - 4edit;
+print('x is now ' + x);
+-----------
+Simplemente más matemáticas
+En este acertijo, usarás el operador de multiplicación * y el operador de división / para actualizar el valor de una variable.
+
+INSTRUCCIONES
+Cambia el 1 en y = y * 1 por un número mayor para aumentar el valor de y
+Luego, reemplaza el 1 en y = y / 1 con un número mayor para disminuir el valor de y
+------------------
+var y = 10;
+y = y * 5;
+print(y);
+y = y / 2edit;
+print(y);
+-------------
+En la programación, es muy común crear una variable usando otra variable: var days = 2; var hours = days * 24;
+
+El código arriba convierte 2 days a 48 hours porque hay 24 hours en 1 day.
+
+El código arriba convierte 2 days a 48 hours porque hay 24 hours en 1 day.
+
+Un minuto tiene 60 segundos. ¿Cómo convertirías minutes en seconds?
+
+var minutes = 35;
+
+var seconds=minutes * 60;
+--------------
+Abre el candado
+En este acertijo, usarás el operador y && para combinar 2 verificaciones en 1 if statement.
+
+Por ejemplo, la if statement if(bColor === 'blue' && gColor === 'green') solo ejecutaría el código en el bloque {} si bColor tiene el valor 'blue' y gColor tiene el valor 'green'.
+
+INSTRUCCIONES
+Dentro de la prueba () de la segunda if statement:
+
+Cambia foundKey === 'yes' a foundKey === 'no'
+--------
+Abre el candado
+En este acertijo, usarás el operador y && para combinar 2 verificaciones en 1 if statement.
+
+Por ejemplo, la if statement if(bColor === 'blue' && gColor === 'green') solo ejecutaría el código en el bloque {} si bColor tiene el valor 'blue' y gColor tiene el valor 'green'.
+
+INSTRUCCIONES
+Dentro de la prueba () de la segunda if statement:
+
+Cambia foundKey === 'yes' a foundKey === 'no'
+
+print('pinNumber is ' + pinNumber);
+print('foundKey is ' + foundKey);
+if (foundKey === 'yes' && pinNumber === 10) {
+  print('You opened the lock!');
+}
+if (foundKey === 'no'edit && pinNumber === 10) {
+  print('The pin number is right, but you are missing the key.');
+}
+-------
+Describe los números
+En este acertijo, usarás más operadores como el operador mayor que >, el operador menor que <, y el operador o ||.
+
+INSTRUCCIONES
+Actualiza la prueba de la segunda if statement para verificar: x > 10 o y > 10.
+
+print('x is ' + x);
+print('y is ' + y);
+if (x > 3 && y < 11) {
+  print('x is greater than 3, and y is less than 11');
+}
+if (x > 10 || y > 10edit) {
+  print('x or y, or both, are greater than 10');
+}
+-----------
+Ciclado de strings
+En este acertijo, usarás una for...of loop para imprimir cada letra en un string, línea por línea.
+
+Los for...of loops le permiten repetir el mismo bloque de código varias veces. Por ejemplo, for (var element of 'hello') {} se ejecutaría dentro del bloque {} 5 veces, porque el string 'hello' tiene 5 caracteres
+
+INSTRUCCIONES
+Imprime cada letra del string 'grasshopper' en su propia línea.
+
+Agrega una función print() dentro del bloque {} del for...of loop
+Dentro de la función print(), inserta la variable ciclado letter
+----------
+
+
+grasshopperexplainer
+
+2
+Nov '20
+Explicador de Ciclado de strings
+
+Objetivo de este acertijo: Imprimir la palabra 'grasshopper' con cada letra en una nueva línea
+
+Tutorial de la solución: El código debe ser algo así: print('g'); print('r'); print('a'); etc., pero usando un for loop. Este tipo de for loop tiene tres partes: un elemento que va a ciclar, una variable temporal para almacenar cada elemento que se pase por el ciclo, y el código dentro del ciclo que se ejecuta cada vez. En este caso, el elemento que debe ciclar son las letras de la palabra “grasshopper”, y la variable temporal en que almacenamos cada letra se llamará letter. Entonces, el for loop tomará la primera letra en el string 'grasshopper', que es 'g', y lo almacenará en la variable letter. Dentro del ciclo, debes imprimir lo que esté almacenando esa variable. Una vez que se imprime, la variable temporal pasa a la siguiente letra de la palabra y luego se imprime nuevamente.
+
+Solución del código de ejemplo:
+(Pulsa a continuación para revelar)
+
+for (var letter of 'grasshopper') {
+  print(letter);
+}
+Conceptos de JavaScript: Bloque de código (for loop), ciclos, declaración de variable, funciones de llamada, identificadores
+
+Conceptos de Grasshopper 
+---------
+for (var letter of 'grasshopper') {
+  print(letter);
+  ___
+}
+----------------
+Arcoíris más largo
+En este acertijo, usarás un for...of loop para ciclar en un arreglo de colores, y crear un patrón de arcoíris.
+
+INSTRUCCIONES
+Dentro del bloque {} del for...of loop:
+
+Agrega una tercera función drawBox() usando la variable ciclado x como argumento
+Agrega una función newLine() después de la tercera función drawBox()
+
+La variable ciclado x almacenará primero 'red'. Luego, el for...of loop ejecuta las funciones drawBox(x) para crear los cuadros rojos.
+
+A continuación, la variable x cambia su valor al siguiente elemento en el arreglo, 'orange', y repite el código drawBox(x).
+
+x se actualiza y el código se repite para cada color en el arreglo.
+
+for (var x of [
+  'red',
+  'orange',
+  'yellow',
+  'green',
+  'blue',
+  'indigo',
+  'violet',
+  ___
+]) {
+  drawBox(x);
+  drawBox(x);
+  drawBox(x);
+  newLine();
+  ___
+}
+----------
+Decodificador de imagen
+En este acertijo, usarás una if statement dentro de un for...of loop para revelar una imagen.
+
+Cada vez que el for...of loop itere, la if statement que está anidada en su interior probará la letter actual en img.
+
+INSTRUCCIONES
+Actualiza la función drawBoxes() para usar la variable ciclado letter en lugar del string 'e'
+
+for (var letter of img) {
+  if (letter !== 'e') {
+    drawBoxes(letter);
+    ___
+  }
+}
+-------------
+Un for...of loop se ejecuta en cada elemento del arreglo, comenzando en la parte superior. Cada vez, el ciclo usará ese elemento como la variable element ciclado dentro del bloque {}.
+---------------
+Recuento con ciclos
+En este acertijo, usarás un classic for loop para repetir el código una cantidad definida de veces.
+
+INSTRUCCIONES
+Actualiza los paréntesis () del classic for loop para continuar ciclando hasta que i sea 10
+Cambia el argumento en la función print() para usar la variable ciclado i, en lugar de 'hello'
+
+for (var i = 0; i < 10edit; i = i + 1) {
+  print(i);
+}
+--------------
+Feliz Año Nuevo
+En este acertijo, usarás un classic for loop para crear una cuenta regresiva hasta el día de Año Nuevo.
+
+INSTRUCCIONES
+Cambia la variable ciclado i para que tenga un valor de 10 en lugar de 1
+Cambia la prueba para que siga ciclando mientras i > 0, en lugar de i < 11
+Cambia la actualización para disminuir i en 1 cada ciclo. Por ejemplo, i = i - 1 en lugar de i = i + 1
+
+for (var i = 10; i > 0; i = i - 1edit) {
+  print(i);
+}
+print('Happy New Year!');
+
+Usaste un classic for loop para crear una cuenta regresiva.
+------------
+Recuerde que un classic for loop tiene 3 partes: for(var i = 2; i < 7; i = i +1) { print(i); }
+
+Donde la iteración empieza, o sea donde empieza i: var i = 2; Donde i dejará de contar y no imprimir: i < 7; Y por cuanto contará: i: i = i + 1
+
+Donde la iteración empieza, o sea donde empieza i: var i = 2; Donde i dejará de contar y no imprimir: i < 7; Y por cuanto contará: i: i = i + 1
+
+for(var i = 2; i < 7; i = i + 1) { print(i); } El classic for loop arriba imprimirá: 2 3 4 5 6
+
+Donde la iteración empieza, o sea donde empieza i: var i = 2; Donde i dejará de contar y no imprimir: i < 7; Y por cuanto contará: i: i = i + 1
+
+for(var i = 2; i < 7; i = i + 1) { print(i); } El classic for loop arriba imprimirá: 2 3 4 5 6
+
+¿Cuál será la salida de este código?
+
+for (var i = 0; i < 5; i = i + 1){
+    print(i);
+}
+------------
+Generador de nombres de bandas
+En este acertijo, usarás un ciclo dentro de otro ciclo para ayudar a generar nuevas ideas de nombres de bandas. Esto se llama usar un ciclo anidado.
+
+INSTRUCCIONES
+Ayuda a generar nuevas ideas de nombres de bandas al combinar dos arreglos [] usando ciclos de anidamiento
+
+Agrega 2 strings al arreglo del ciclo exterior, como 'Happy' y 'Hungry'
+Agrega 2 strings al arreglodel ciclo interior, como 'Squids' y 'Twins'
+
+for (var adj of [
+  'Raging',
+  'Happy',
+  'Hungry',
+  ___
+]) {
+  for (var noun of [
+    'Pharmacists',
+    'Squids',
+    'Twins'edit,
+    ___
+  ]) {
+    print('The ' + adj + ' ' + noun);
+  }
+}
+----------
+Usaste ciclos anidados para crear un generador de nombres de bandas.
+--------
+Colores personalizados
+En este acertijo, editarás las propiedades de un object para crear el color magenta.
+
+Los objects te permiten almacenar muchas propiedades dentro de una variable.
+
+INSTRUCCIONES
+Edita las propiedades en el object someCustomColor para dibujar un cuadro magenta:
+
+Actualiza la propiedad green para que sea 0
+Actualiza la propiedad blue para que sea 255
+¿Necesitas ayuda? Utiliza el foro de asistencia de Grasshopper.
+
+var someCustomColor = {
+  red: 255,
+  green: 0,
+  blue: 255edit,
+  ___: ___
+};
+drawBox(someCustomColor);
+---------
+Invéntate un nombre
+En este acertijo, agregarás un par propiedad-valor a un object. Luego, usa esa propiedad en una función print().
+
+INSTRUCCIONES
+Agrega una propiedad last dentro del object name y agrega un string como el valor
+Actualiza la función print() para imprimir el valor de name.last
+
+var name = {
+  first: 'Martin ',
+  middle: 'Luther ',
+  last: 'king',
+  ___: ___
+};
+print(name.first + name.middle + name.last);
+Correcto.
+Guía de Grasshopper
+CONCEPTOS DE ESTA LECCIÓN
+CONCEPTOS DE ESTE PROYECTO
+SOLUCIÓN DE EJEMPLO
+
+Creaste una propiedad dentro de un object, y luego accediste a la propiedad para imprimir su valor.
+-------
+Se puede acceder al valor de una propiedad usando la notación por punto. Por ejemplo, car.transmission.
+
+Qué grado de azul puedes lograr
+En este acertijo, verificarás la propiedad de un object como parte de una prueba de la if statement. Si esa propiedad es mayor que > 200, entonces el object se usará en drawBox().
+
+INSTRUCCIONES
+Elimina la function drawBox()
+Agrega una if statement
+Dentro del () de prueba de la if statement, agrega una verificación de rgbObject.blue > 200
+Dentro del {} del bloque de código de la if statement, agrega drawBox(rgbObject)
+----------
+Qué grado de azul puedes lograr
+En este acertijo, verificarás la propiedad de un object como parte de una prueba de la if statement. Si esa propiedad es mayor que > 200, entonces el object se usará en drawBox().
+
+INSTRUCCIONES
+Elimina la function drawBox()
+Agrega una if statement
+Dentro del () de prueba de la if statement, agrega una verificación de rgbObject.blue > 200
+Dentro del {} del bloque de código de la if statement, agrega drawBox(rgbObject)
+
+print(rgbObject.blue);
+if (rgbObject.blue > 200) {
+  drawBox(rgbObject);
+  ___
+}
+
+Probaste la propiedad de un object con una prueba de if statement, para controlar cuándo se usó el código drawBox().
+-----------
+Defina su meta
+El primer acertijo es bastante simple, así te acostumbras a no tener código de inicio.
+
+INSTRUCCIONES
+Usa una función print() para imprimir el string 'I am going to climb a mountain
+
+Escribiste un programa de código nuevo sin ningún código de inicio.
+
+print('I am going to climb a mountain');
+---------------
+Prepara tu Bolso
+Para escalar una montaña, debes asegurarte de tener todo el equipamiento correcto.
+
+En este acertijo, creará un object llamado myBackpack, y lo llenará con el equipamiento que necesitas.
+
+INSTRUCCIONES
+Crea una variable llamada myBackpack
+Asigna el {} de un object a esa variable
+Agrega una propiedad food dentro del object y otórgale el valor 'bananas'
+Agrega una propiedad equipment dentro del object y otórgale el valor 'map'
+Agrega una propiedad clothing dentro del object y otórgale el valor 'hat'
+Usa la función print() para imprimir la propiedad de alimento del object usando myBackpack.food
+
+var myBackpack = {
+  food: 'bananas',
+  equipment: 'map',
+  clothing: 'hat',
+  ___: ___
+};
+print(myBackpack.food);
+
+Creaste un object para almacenar todo el equipamiento que necesitas para escalar la montaña.
+---------------
+Obtenga más provisiones
+En tu camino a la montaña, un guardabosques verificó tu mochila y te dijo que empacaras algunas provisiones más.
+
+INSTRUCCIONES
+Reemplaza 'bananas' por un arreglo que almacene 2 o más alimentos
+Reemplaza 'map' por un arreglo que almacene 2 o más equipos
+Reemplaza 'hat' por un arreglo que almacene 2 o más prendas de vestir
+
+
+Actualizaste las propiedades del object myBackpack para tener arreglos del equipamiento que necesitas para escalar la montaña.
+
+var myBackpack = {
+  ___edit: ___,
+  food: [
+    'bananas',
+    'nuts',
+    'energy bar',
+    ___
+  ],
+  equipment: [
+    'map',
+    'compass',
+    ___
+  ],
+  clothing: [
+    'scarf',
+    'jacket',
+    'hat',
+    ___
+  ],
+  ___: ___
+};
+print(myBackpack.food);
+print(myBackpack.equipment);
+print(myBackpack.clothing);
+---------------
+Actualiza tu avance
+¡Estás escalando la montaña! En este acertijo, calcularás el avance de la elevación.
+
+INSTRUCCIONES
+El pie de la montaña comienza a 100 pies, y has escalado otros 455 pies.
+
+Asigna un nuevo valor a la variable elevation, agregando 455 a elevation
+Usa la función print() para imprimir la elevation actualizada.
+
+elevation = elevation + 455edit;
+print(elevation);
+
+Actualizaste la variable elevation para descubrir que has escalado más de 500 pies.
+------------
+Mochila equivocada
+¡Oh no! Decidiste detenerte para disfrutar de un bocadillo y te diste cuenta de que tomaste la mochila de otra persona cuando el guardabosques las revisaba más temprano. No empacaste esta mochila y no sabes qué contiene. Decides verificar qué alimentos contiene esta otherBackpack.
+
+INSTRUCCIONES
+Crea un for...of loop para examinar cada elemento almacenado en otherBackpack.food
+Usa una función print() con la variable ciclado element como un argumento
+
+for (var element of otherBackpack.food) {
+  print(element);
+}
+
+Creaste un for...of loop para ver todo lo guardado en la propiedad otherBackpack.food
+-----------
+El ascenso final
+Estás casi en la cima, pero debes escalar rocas en los últimos 10 pies para llegar a la cima. Esperemos que la otherBackpack tenga cuerda dentro de su propiedad equipment.
+
+INSTRUCCIONES
+Agrega un for...of loop para ciclar por todos los elementos dentro de otherBackpack.equipment
+Agrega una if...else statement dentro del {} del bloque del for...of loop , y prueba si element es igual a 'rope'
+Si el elemento por el cual está ciclando es 'rope', imprime un mensaje que indique que encontraste la cuerda
+Dentro del {} del bloque else, imprime un mensaje que indique que no encontraste la cuerda
+
+for (var element of otherBackpack.equipment) {
+  if (element === 'rope') {
+    print('I found some rope!');
+  } else {
+    print('no encontre la cuerda'edit);
+  }
+}
+
+Usaste un for...of loop con una if...else statement anidada para buscar la cuerda necesaria para terminar de escalar hasta la cima.
+-------
+Fundamentos II
+Aprovechando los conocimientos que adquiriste en Fundamentos, aprende cómo manipular strings y arreglos, usa enfoques alternativos ante problemas similares y crea tus propias funciones.
+
+
+-----------
+Postal posterior al ascenso
+En este acertijo, usarás la propiedad .length para verificar el número total de caracteres en un string.
+
+Por ejemplo, 'Code is fun!'.length devuelve el número 12 (los espacios y los símbolos también se cuentan).
+
+INSTRUCCIONES
+Agrega otra if statement que pruebe message.length < 80
+Agrega una nueva función print() dentro del segundo {} del bloque de la if statement’s, y usa el argumento 'The message fits on a postcard'
+--------
+print(message);
+if (message.length > 80) {
+  print('The message is too long for a postcard.');
+}
+if (message.length < 80) {
+  print('Hello from the top of code Muntain.'edit);
+}
+
+-------
+Usaste la propiedad .length para encontrar el número total de caracteres en un string.
+--------
+El método .length cuenta todos los caracteres, incluidos espacios, símbolos y letras. En el string 'I code', hay 6 caracteres, incluidos espacios.
+------------
+Bot de chat
+En este acertijo, harás un bot de chat usando el método includes, y unas pocas if statements. El método .includes() se puede usar en un string para verificar si contiene un valor específico.
+
+Por ejemplo, 'I love coding'.includes('love') busca el string 'I love coding' para el argumento 'love'. Dado que 'I love coding' contiene 'love', todo el comando devuelve true.
+
+INSTRUCCIONES
+La primera if statement ya está completa. Responderá si 'hello' está en cualquier lugar en el string chat.
+
+Actualiza la segunda if statement reemplazando chat === 'bye' por chat.includes('bye')
+----------
+print(chat);
+if (chat.includes('hello')) {
+  print('Hi, can I help you pick a destination?');
+}
+if (chat.includes('bye'edit)) {
+  print('See you later, have a great trip!');
+}
+----------
+Usaste el método includes para actualizar el bot de chat y lograr que sea más receptivo.
+-----------
+A un día
+En este acertijo, usarás el método .replace() para reemplazar parte de un string.
+
+El método .replace() busca un valor y, si lo encuentra, reemplazará el primer valor con un nuevo string. Por ejemplo, para cambiar el string 'lemons' a 'lemonade', usarías .replace('lemons', 'lemonade').
+
+INSTRUCCIONES
+Cambia el segundo argumento en .replace() de 'mato' a 'morrow'
+--------
+var message = 'Today we are going shopping!';
+message = message.replace('day', 'morrow');
+print(message);
+-----------
+Usaste el método .replace() para buscar un string y reemplaza algunas de sus letras.
+-----
+El string ’day’ es parte del string 'Happy days', de modo que se devuelve el valor true y se imprime.
+------
+El método replace() buscará el valor guardado en greeting, para el string 'hopper'. Si lo encuentra, reemplazará 'hopper' por 'jumper'.
+-----
+En programación, el ámbito determina dónde se puede usar una variable. Las variables pueden tener un ámbito global o local.
+
+Una variable global se puede usar en cualquier parte del código. Una variable local solo se puede usar dentro del bloque donde está declarada.
+
+Una variable local solo se puede usar dentro del bloque donde se declara.
+
+La palabra clave var generalmente crea las variables globales. La palabra clave let le permite crear las variables locales.
+
+En el siguiente código, la variable myLocalNumber se declara usando la tecla let. Esto significa que solo existe dentro del bloque de la if statement. impossibleCalculation no funcionará debido a que la variable myLocalNumber no existe fuera de la if statement.
+
+var myGlobalNumber = 5;
+if (myGlobalNumber > 3) {
+   let myLocalNumber = 4;
+}
+var impossibleCalculation = myGlobalNumber + myLocalNumber
+--------
+Crea una variable local dentro de la if statement por usar la tecla let y definela como un número o una string:
+
+TU CÓDIGO
+if (myGlobalNumber > 3) {
+  let numero = 4edit;
+}
+
+Es más seguro usar las variables locales que las variables globales, especialmente si las variables tienen nombres parecidos.
+
+¿Qué se imprimirá?
+
+var x = 17;
+if (x > 10) {
+  let x = 10;
+}
+print(x);
+ 
+ 17
+
+ ¡Listo!
+Completaste El ámbito de la variable.
+---------
+Guardián del color
+A veces, es necesario mantener separadas las variables y así asegurarse de no cambiarlas por error. Las variables declaradas con let no se pueden usar fuera del bloque de código donde viven.
+
+INSTRUCCIONES
+Dentro del {} del bloque de código del for...of loop:
+
+Agrega drawBox(color)
+var color = 'yellow';
+drawBox(color);
+for (let color of [
+  'blue',
+  'green',
+  ___
+]) {
+  drawBox(color);
+  ___
+}
+drawBox(color);
+
+
+Usaste var y let para declarar dos variables. La variable declarada con var no se vio afectada por la otra variable declarada con let, a pesar de que tenían el mismo nombre.
+------
+La if statement es true, pero la variable let solo funciona dentro de su bloque de código. La variable x no se actualiza antes de imprimirse.
+--------
+Caminos o rieles
+En este acertijo, usarás un operador ternario para decidir si tomar un auto o un tren según el menor tiempo de viaje.
+
+El operador ternario usa un signo de interrogación ? y dos puntos : para reemplazar toda una if...else statement con una sola línea de código. Por ejemplo. For example: prueba ? hazEstoSiesVerdadero : delocontrarioHazEsto.
+
+INSTRUCCIONES
+Al final del código:
+
+Agrega un operador ternario que pruebe si el valor de car es menor que el valor de train
+Imprime 'Drive a car' si la prueba es true
+Imprime 'Buy train tickets' si la prueba es false
+¿Necesitas ayuda? Utiliza el foro de asistencia de Grasshopper.
+
+-------
+grasshopperexplainer
+
+1
+Mar '21
+Explicación de Caminos o rieles
+
+Objetivo de este acertijo: Usar un operador ternario en lugar de una if statement.
+
+Tutorial de la solución: Usa el primer operador ternario como ejemplo. Pulsa el área debajo de donde se define la variable car. Pulsa los botones para poner car < train en esta nueva línea.
+
+Asegúrate de que train esté resaltado y pulsa el botón ? : para adjuntar el operador ternario a la comparación.
+
+Ahora, si la comparación es verdadera, se ejecutará el código a la izquierda de los dos puntos :. Agrega print('Drive a car') a la sección después de ?, pero antes del símbolo :.
+
+Si la comparación es falsa, se ejecutará el código a la derecha del símbolo :. En el espacio después del símbolo :, agrega una declaración print() con el string ‘Buy train tickets’.
+
+Solución del código de ejemplo:
+(Pulsa a continuación para revelar)
+
+var timeOffWork = 7;
+var daysNeeded = 5;
+
+timeOffWork > daysNeeded ? print('Go on vacation') : print('Go to work');
+
+var train = 3;
+var car = 2;
+
+car < train ? print('Drive a car') : print('Buy train tickets');
+Conceptos de JavaScript: variables, operador ternario, operadores de comparación
+
+Conceptos de Grasshopper 20: print()
+-------
+var timeOffWork = 7;
+var daysNeeded = 5;
+timeOffWork > daysNeeded ? print('Go on vacation') : print('Go to work');
+var train = 3;
+var car = 2;
+car < train ? print('Drive a car') : print('Buy a tickets');
+___
+Usaste un operador ternario para escribir toda una if...else statement en una sola línea de código.
+---------
+Un operador ternario es una forma más corta de escribir if...else statements.
+--------
+Matemáticas más simples
+En este acertijo, usarás los operadores de incremento y decremento para actualizar rápidamente una variable.
+
+El operador de incremento ++ agrega 1 a una variable, mientras que el operador de decremento -- resta 1. Por ejemplo, count++ es lo mismo que count = count + 1.
+
+INSTRUCCIONES
+Actualiza x después del primer print() función, usando el operador de decremento --
+
+Usaste el operador de incremento ++ y el operador de decremento -- para actualizar rápidamente una variable.
+
+let x = 5;
+x++;
+print('x is ' + x);
+x--;
+print('x is now ' + x);
+---
+Se acerca el invierno
+En este acertijo, actualizarás rápidamente variables usando los operadores de asignación de suma += y asignación de resta -=.
+
+La hormiga ha guardado 40 semillas para el invierno, mientras que el saltamontes no ha guardado ninguna. La generosa hormiga decide darle un regalo de 10 semillas al saltamontes.
+
+INSTRUCCIONES
+Actualiza el código para que gift se reste de ant y se sume a grasshopper.
+
+Cambia ant -= 1 a ant -= gift
+Cambia grasshopper += 1 a grasshopper += gift
+--------
+let ant = 40;
+let gift = 10;
+let grasshopper = 0;
+ant -= gift;
+grasshopper += gift;
+print('The Ant has ' + ant + ' seeds, and the Grasshopper has ' + grasshopper + ' seeds');
+------
+Usaste los operadores de asignación de suma += y asignación de resta -= para actualizar rápidamente una variable.
+
+a variable x se declara con un valor de 3. Luego, x se actualiza para aumentar su valor en 2 usando el operador +=.
+---------
+Inicio de sesión en la consola
+En este acertijo, aprenderás cómo funciona la función print(). print() es una función personalizada que generalmente no funciona fuera de Grasshopper.
+
+Puedes usar console.log() igual como usarías print(). Por ejemplo, console.log('hello') generará el texto "hello".
+
+INSTRUCCIONES
+Agrega otro console.log() al código usando un string de texto como un argumento
+--------
+print('In Grasshopper, the print() function logs strings and numbers to the console window');
+console.log('console.log can also log to the console window');
+console.log('and also works outside grasshopper.');
+___
+-------
+Usaste console.log() para generar texto. Esto es útil para depurar, probar el resultado o ver advertencias y mensajes de error sobre el código.
+
+-----
+El método .log() se puede adjuntar a console para imprimir strings en el área de la consola de la pantalla
+-------
+Casa de cambio
+En este acertijo, aprenderás acerca de las declaraciones de funciones. Las declaraciones de funciones guardan un bloque de código que se puede usar cada vez que se llame el nombre de la función.
+
+INSTRUCCIONES
+La declaración de función inYen() tomará un número en dólares estadounidenses y lo convertirá a yen japonés.
+
+Actualiza el 0 en el último console.log() con inYen(100).
+--------
+Money Changer es-419 Explainer
+Puzzle Explainer
+Mar 2021
+Sep 2021
+
+grasshopperexplainer
+
+1
+Mar '21
+Explicador de Casa de cambio
+
+Objetivo de este acertijo: Usar la función inYen para convertir dólares estadounidenses en yenes japoneses.
+
+Tutorial de la solución: El código de inicio tiene la función inYen() ya lista para ti. Si le das un número (de dólares) en su paréntesis (como poner un número en pickRandom()), indicará a cuántos yenes japoneses equivale.
+
+Las líneas de código al final imprimen el número que se convertirá, y luego ejecuta la función inYen() usando ese número.
+
+La última línea de código de inicio imprime “100 US dollars is:”. Para convertir 100 dólares en yenes, usas inYen(100). Eso calculará el número correcto, pero no verás el valor en la pantalla a menos que lo pongas dentro de console.log(). Este comando debe ir en la parte inferior de tu código.
+
+Solución del código de ejemplo:
+
+(Pulsa a continuación para revelar)
+
+
+function inYen(dollars) {
+
+let amount = dollars * 113;
+
+return amount;
+
+}
+
+console.log('20 US dollars is:');
+
+console.log(inYen(20) + ' Japanese yen');
+
+console.log('100 US dollars is:');
+
+console.log(inYen(100) + ' Japanese yen');
+
+Conceptos de JavaScript: operadores aritméticos (*), expresión binaria (concatenación +), funciones de llamada, bloque de código (función), console.log(), alcance de variable (let)
+-----
+function inYen(dollars, ___) {
+  let amount = dollars * 113;
+  return amount;
+};
+console.log('20 US dollars is:');
+console.log(inYen(20) + ' Japanese yen');
+console.log('100 US dollars is:');
+console.log(inYen(100) + 'Japanese yen'
+-----
+Usaste una función para convertir dólares estadounidenses en yen japonés.
+-------
+Un poco más de cambio
+En este acertijo, crearás una declaración de función que usa una declaración return para convertir dólares a baht tailandés. La palabra clave return indica a una función que deje de ejecutarse y devuelva un valor.
+
+INSTRUCCIONES
+Dentro del {} del bloque de código de la función inBaht():
+
+Usa let para crear una variable llamada baht
+Asigna a baht el valor dollars * 33
+Devuelve baht
+------
+Creaste una nueva declaración de función que convierte dólares estadounidenses a baht tailandés y devuelve el resultado.
+-------
+let wallet = 50;
+function inYen(dollars, ___) {
+  let yen = dollars * 113;
+  return yen;
+};
+function inBaht(dollars, ___) {
+  let bath = dollars * 33;
+  return bath;
+};
+console.log(wallet + ' US dollars is:');
+console.log(inYen(wallet) + ' Japanese yen');
+console.log(inBaht(wallet) + ' Thai baht');
+-------
+La función half() devuelve el valor del argumento dividido por 2.
+-------
+Al máximo
+En esta lección, agregaste una llamada a una función a una declaración de función. Completa la declaración de la función maximum() agregando una llamada a la función larger().
+
+INSTRUCCIONES
+Dentro del for...of loop de la declaración de la función maximum():
+
+Cambia max = num a max = larger(max, num)
+-----
+Agregaste una llamada a una función a una declaración de función para completar la función maximum().
+--------
+function larger(a, b, ___) {
+  return a > b ? a : b;
+};
+function maximum(array, ___) {
+  let max = 0;
+  for (let num of array) {
+    max = larger(max, num);
+    ___
+  }
+  return max;
+};
+console.log(list);
+console.log(maximum(list));
+-------
+Reemplazo de recursividad
+En este acertijo, usarás una función para corregir recursivamente todos los errores ortográficos en un string.
+
+INSTRUCCIONES
+En la última línea de la declaración de la función updateAllNames():
+
+Cambia return string a return updateAllNames()
+Actualiza los argumentos para que sean (string, oldPart, newPart), respectivamente
+-----
+Hiciste una función recursiva que se vuelve a ejecutar hasta que todos los errores ortográficos en un documento se hayan corregido.
+----------
+function updateAllNames(string, oldPart, newPart, ___) {
+  if (string.includes(oldPart) === false) {
+    return updateAllNames(string, oldPart, newPart);
+  }
+  string = string.replace(oldPart, newPart);
+  return updateAllNames(string, oldPart, newPart);
+  ___
+};
+console.log(travelDocument);
+console.log(updateAllNames(travelDocument, 'grasshoper', 'grasshopper'));
+-------
+La recursividad se detiene cuando se cumple una condición final, o caso base. En esta prueba, la función sumUpTo() se ejecutará hasta number === 1.
+------
+Mi asistente
+En este acertijo, usarás una función que toma otra función como un argumento. La función que se está usando como un argumento es una función de devolución de llamada.
+
+INSTRUCCIONES
+Agrega otra llamada a la función myAssistant()
+Para el primer argumento: dale una hora como un string
+Para el segundo argumento: usa setAlarm o turnOnLights como la función de la devolución de llamada
+------
+1
+Mar '21
+Explicador de Mi asistente
+
+Objetivo de este acertijo: Usar una función de devolución de llamada para cambiar qué tarea hace myAssistant.
+
+Tutorial de la solución: myAssistant es una función que toma 2 entradas: un string que se almacenará en el parámetro time , y otra función que se almacenará en el parámetro callbackFunction.
+
+Cuando usas una función como la entrada de otra función, se llama “función de devolución de llamada” o simplemente “devolución de llamada”. Esto es distinto de las funciones de anidamiento que hiciste con print(pickRandom(10)) o drawBox(pickrandom(color)) porque print() y drawBox() en realidad solo usan la salida final de la llamada pickRandom(). El asistente toma el nombre de la función para que pueda ejecutar esa función dentro de sí mismo.
+
+El código de inicio tiene el comando myAssistant('6pm', recordShow). recordShow es el nombre de una función que se creó en algún código oculto adicional. '6pm' se almacenará en el parámetro time y recordShow se almacenará en el parámetro callbackFunction.
+
+Cuando se ejecuta myAssistant(), registra un mensaje que te permite saber que comenzó. Luego, usa sus parámetros, time y callbackFunction, para ejecutar el comando callbackFunction(time). Dado que sabemos qué hay almacenado en cada uno de esos parámetros, el comando es el mismo que recordShow('6pm'). Esto llamará a la función recordShow() con el argumento '6pm'.
+
+En la parte inferior de tu código, puedes hacer que el “configure una alarma” o “encienda las luces” usando setAlarm o turnOnLights como la función de devolución de llamada. Solo recuerda que el primer argumento de myAssistant() debe ser la hora (un string) y el segundo argumento es el nombre de una función (ya sea setAlarm o turnOnLights)
+
+Solución del código de ejemplo:
+
+(Pulsa a continuación para revelar)
+
+
+function myAssistant (time, callbackFunction) {
+
+console.log('I am your personal assistant, and I am happy to help with your request');
+
+callbackFunction(time);
+
+}
+
+myAssistant('6pm', recordShow);
+
+myAssistant('10am', setAlarm);
+
+Conceptos de JavaScript: funciones de devolución de llamada, funciones de llamada, bloque de código (función), console.log()
+
+Código adicional (código oculto que se ejecuta antes del código del acertijo):
+
+
+function setAlarm(time) {
+
+console.log('Your alarm has been set for ' + time);
+
+}
+
+function turnOnLights(time) {
+
+console.log('Your lights will be turned on at ' + time);
+
+}
+
+function recordShow(time) {
+
+console.log('Your show will be recorded at ' + time);
+
+}
+------
+function myAssistant(time, callbackFunction, ___) {
+  console.log('I am your personal assistant, and I am happy to help with your request');
+  callbackFunction(time, ___);
+};
+myAssistant('6pm', recordShow);
+myAssistant('setAlarm', setAlarm);
+-----
+Usaste una función de devolución de llamada para agregar nuevas tareas para tu aplicación Assistant.
+---
+Actualización del asistente
+En esta lección, usarás la palabra clave import para importar una función para usarla como una devolución de llamada. Una declaración import es una forma para usar código que está almacenado en otro lugar.
+
+Usa la función de devolución de llamada turnOffFan dentro de una llamada a la función myAssistant() para programar cuándo apagar el ventilador.
+
+INSTRUCCIONES
+Al final del código:
+
+Agrega myAssistant()
+Usa un string como el primer argumento para definir la hora
+Usa turnOffFan como el segundo argumento para usarlo como una devolución de llamada
+---
+import { recordShow, setAlarm, turnOffFan, turnOnFan, turnOffLight, turnOnLight } from 'assistantFunctions';
+function myAssistant(time, callbackFunction, ___) {
+  console.log('Scheduling:');
+  callbackFunction(time, ___);
+  ___
+  console.log('Complete.');
+};
+myAssistant('8am', turnOnFan);
+myAssistant('9am', turnOffFan);
+-----
+Usaste funciones importadas como devoluciones de llamada para las funciones myAssistant().
+-----
+¿Cuántos?
+En este acertijo, usarás la propiedad .length para contar el número total de elementos en un arreglo.
+
+INSTRUCCIONES
+Actualiza el valor para que numberOfDestinations sea igual a la propiedad .length de listOfDestinations
+----
+Contaste los elementos en un arreglo usando la propiedad .length.
+----
+Corrige los datos
+En este acertijo, usarás el método .slice() para crear un nuevo arreglo.
+
+El método .slice() crea un nuevo arreglo copiando una subsección de otro arreglo. Toma 2 argumentos: un índice de arreglo donde comenzar a copiar y un índice donde finalizar (fin no incluido).
+
+INSTRUCCIONES
+Actualiza transportation.slice() en el último console.log() para comenzar desde el tercer elemento, en lugar del primer elemento
+------
+import { transportation } from 'grasshopper.travel';
+let cities = [
+  'London',
+  'London',
+  'London',
+  'Lagos',
+  'Lisbon',
+  'Louisville',
+  ___
+];
+console.log(cities.slice(2, 6));
+console.log(transportation.slice(2, 6));
+----
+Usaste el método slice para hacer una copia de un arreglo.
+------
+Un nuevo lugar
+En este acertijo, usarás el método .push() para agregar un nuevo elemento al final de un arreglo.
+
+INSTRUCCIONES
+Dentro del object boatAtlanta:
+
+Cambia el valor de destination de Seattle a 'Atlanta'
+Cambia el valor de transportMode de car a 'boat'
+---------
+import { travelToCities } from 'grasshopper.travel';
+let last = travelToCities[travelToCities.length - 1];
+console.log(last.destination);
+let boatAtlanta = {
+  destination: 'Atlanta',
+  transportMode: 'boat'edit,
+  cost: 200,
+  country: 'Hoptopia',
+  ___: ___
+};
+travelToCities.push(boatAtlanta);
+last = travelToCities[travelToCities.length - 1];
+console.log(last.destination);
+-----
+Editaste un object antes de agregarlo a un arreglo usando el método push.
+----

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento oncopy</title>
+  <style>
+    .boton,
+    .num,
+    .whatsapp {
+      display: inline-block;
+    }
+
+    #no-copiable {
+      -webkit-user-select: none;
+      /* Para navegadores basados en WebKit, como Chrome y Safari */
+      -moz-user-select: none;
+      /* Para navegadores basados en Gecko, como Firefox */
+      -ms-user-select: none;
+      /* Para navegadores basados en Edge */
+      user-select: none;
+      /* Estándar */
+    }
+  </style>
+  <script>
+    // Función para copiar el mensaje al portapapeles
+    function copiarAlPortapapeles(mensaje) {
+      // Crear un elemento de texto temporal
+      var tempInput = document.createElement("textarea");
+      tempInput.value = mensaje;
+
+      // Añadir el elemento al DOM
+      document.body.appendChild(tempInput);
+
+      // Seleccionar y copiar el contenido del elemento de texto
+      tempInput.select();
+      document.execCommand("copy");
+
+      // Eliminar el elemento de texto temporal del DOM
+      document.body.removeChild(tempInput);
+
+      // Mostrar una notificación o realizar otras acciones
+      console.log("Mensaje copiado al portapapeles: " + mensaje);
+    }
+
+    // Llamar a la función para copiar el mensaje personalizado
+    var mensajePersonalizado = "¡Hola! Este es un mensaje personalizado.";
+    copiarAlPortapapeles(mensajePersonalizado);
+
+  </script>
+</head>
+
+<body>
+  <p>Maria te quiere<br />
+    conocer a 500 metros</p>
+  <p class="whatsapp">Su whatsapp:</p>
+  <p oncopy="copiarAlPortapapeles" class="num" id="no-copiable">+1222123400000</p>
+  <input type="button" onclick="copiarAlPortapapeles(mensajePersonalizado);" value="copiar" name="" id="" class="boton">
+</body>
+
+</html>

@@ -147,6 +147,24 @@ Un bucle para gobernarlos a todos.
 ¡Eres un mago, Harry!
 ¡Enciende los motores;
 ¡Victoria perfecta!
+¡Hasta lo más alto!
+¡A buen paso dale prisa!
+¡Hasta lo más alto!
+¡Por el poder de Grayskull!
+Está vivo. ¡Está vivo!
+¡Buena esa!
+¡Sabíamos que lo lograrías!
+¡Hasta lo más alto!
+¡Feliz desarrollo!
+¡En tu cara, código!
+¡Así se hace!
+¡Con calma y a codificar!
+¡Eres lo máximo!
+¡Sabíamos que lo lograrías!
+¡Buena suerte con tu proyecto!
+¡Corre como el viento!
+Eso no fue volar. Eso fue caer con estilo
+
 
 -----
 Mientras HTML y CSS controlan el contenido y el estilo de una página, JavaScript se utiliza para hacerlo interactivo. En la certificación Algoritmos de JavaScript y Estructuras de Datos, aprenderás los fundamentos de JavaScript incluyendo variables, arreglos, objetos, bucles y funciones.
