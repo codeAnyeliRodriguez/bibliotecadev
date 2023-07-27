@@ -1,0 +1,9 @@
+generadores de codigo css
+favicons: https://formito.com/tools/favicon
+tooltips: https://cssarrowplease.com/
+button generator: https://www.bestcssbuttongenerator.com/
+generador de divs: https://neumorphism.io/#e0e0e0
+generador de paleta de colores: https://mycolor.space/
+generador de gradientes: https://codioful.com/
+generador de formas irregulares: https://www.blobmaker.app/
+generador de waves: https://getwaves.io/

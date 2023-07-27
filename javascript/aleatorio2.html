@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>aleatorio </title>
+</head>
+<body>
+  <h1>aleatorio</h1>
+  <p>juego de adivinar un numero aleatorio hecho en js</p>
+  <div id="display-numero" style="border: 1px solid gray; width: 20px; height: 20px; text-align: center;">?</div>
+  <br />
+  <div id="display-resultado" style="height: 20px;"></div>
+  <br />
+
+  <input type="text" name="" id="text1">
+  <button onclick="playgame()">Jugar</button>
+  <button onclick="resetgame()">Reset</button>
+  <script>
+    let numero1 = Math.floor(Math.random() * 10 + 1);
+    let userInput = 0;
+    let intentos = 0;
+    let salida = "Hola Mundo";
+
+    function playgame(){
+      userInput=parseInt(document.getElementById("text1").value);
+
+      if(userInput !== numero1){
+        salida = `${userInput} no es el numero a adivianar. intenta otra vez`;
+        intentos++;
+      }
+
+      if(userInput == numero1){
+        salida =`${userInput} haz adivinado!`;
+        document.getElementById("display-numero").innerHTML= numero1;
+      }
+
+      document.getElementById("display-resultado").innerHTML= `${salida}. Este es su intento numero: ${intentos}`; 
+      document.getElementById("text1").select();
+    }
+
+    function resetgame(){
+     numero1 = Math.floor(Math.random() * 10 + 1);
+     document.getElementById("display-numero").innerHTML = "?";
+     document.getElementById("display-resultado").innerHTML = "A Jugar!";
+     document.getElementById("text1").value = "";
+     document.getElementById("text1").focus();
+     intentos = 0;
+    }
+  </script>
+</body>
+</html>

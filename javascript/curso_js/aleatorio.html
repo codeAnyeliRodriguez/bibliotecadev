@@ -1,168 +1,59 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<!-- Bucle do -while
-		Do{
-			//codigo a repetir mientras la condicion del bucle sea cierta
-		}while (condicion);
 
-		//continuacion del programa
-		-->
-	<!--Math.random()-->
-	<script>
-/* 		var aleatorio=Math.round(Math.random()*100);
-
-		//alert(aletatorio);//
-
-		var minum, intentos;
-
-		minum=0;
-
-		intentos=0; 
-
-		do{
-			minum=prompt("introduce un n entre 0 y 100");
-
-			if(aleatorio>5050minum){
-				alert("mas alto");
-
-				}
-
-			if(aleatorio<minum){
-				alert("mas bajo");
-
-				}
-			
-
-		}while(aleatorio!=minum);
-
-		alert("correcto");
- */
-
-
-
-/* 		var aleatorio=Math.round(Math.random()*100);
-
-		var minum, intentos;
-
-		minum=0;
-
-		intentos=0; 
-
-		do{
-			minum=prompt("introduce un n entre 0 y 100");
-
-			if(aleatorio>minum){
-				alert("mas alto");
-
-				}
-
-			if(aleatorio<minum){
-				alert("mas bajo");
-
-				}
-			
-			intentos++;
-
-		}while(aleatorio!=minum);
-
-		alert("correcto. has conseguido " + intentos + " intentos");
- */
-//consultar en google internet para saber mas de las particularidades de la instruccion Math.random//	
-
-	</script>
 </head>
+
 <body>
-	<!-- <table>
-		<tr>
-			<td><label for="textfield"></label>
-			<input type="text" name="textfield" id="c_mensaje"></td>
-
-			<td><label for="textfield"></label>
-				<input type="text" name="textfield2" id="c_intentos"></td>
-
-		</tr>
-	</table> -->
+<table width="25%" border="0">
+	<tr>
+		<td><label for="textfield"></label>
+		<input type="text" name="textfield" id="c_mensaje"></td>
+		<td><label for="textfield2"></label>
+		<input type="text" name="textfield2" id="c_intentos"></td>
+	</tr>
+</table>
 
 	<script>
-		
-		/* var aleatorio=Math.round(Math.random()*100);
-
+		var aleatorio = Math.round(Math.random() * 100);
 		var minum, intentos;
-
-		minum=0;
-
-		intentos=0; 
-
-		var mensaje=document.getElementById("c_mensaje");
-
-		var intentos_consumidos=document.getElementById("c_intentos")
-
-		do{
-			minum=prompt("introduce un n entre 0 y 100");
-
-			if(aleatorio>minum){
-				mensaje.value="mas alto";
-
-				mensaje.style.fontSize="18px";
-
-				}
+		minum = 0;
+		intentos = 0;
+		var mensaje = document.getElementById("c_mensaje");
+		var intentos_consumidos = document.getElementById("c_intentos");
+		do {
+			minum = prompt("Introduce un n entre 0 y 100");
+			if(aleatorio > minum){
+				alert("Mas alto");
+				// document.write("Mas alto" + "<br />");
+				mensaje.value = "Mas alto";
+				
+				mensaje.style.fontSize = "18px";
+			}
 
 			if(aleatorio<minum){
-				mensaje.value="mas bajo";
+				alert("Mas bajo")
+				// document.write("Mas bajo" + "<br />");
+				mensaje.value = "Mas bajo";
 
-				mensaje.style.fontSize="18px";
+				mensaje.style.fontSize = "18px";
 
-				}
-			
+			}
 			intentos++;
-
-			intentos_consumidos.value=intentos;
-
-			intentos_consumidos.style.fontSize="18pxs";
-
-			intentos_consumidos.style.color="red";
-
-			intentos_consumidos.style.textAlign="center";
-
-		}while(aleatorio!=minum);
-
-		mensaje.value="correcto!";
-
-		mensaje.style.color="red";
- */
-
- var aleatorio=Math.round(Math.random()*100);
-
-		var minum, intentos;
-
-		minum=0;
-
-		intentos=0; 
-
-		do{
-			minum=prompt("introduce un n entre 0 y 100");
-
-			if(aleatorio>minum){
-				//alert("mas alto");
-				 document.write("mas alto" + "<br/>");
-				
-				}
-
-			if(aleatorio<minum){
-				// alert("mas bajo");
-				document.write("mas bajo" + "<br/>");
-				
-				}
-			intentos++;
-
-		}while(aleatorio!=minum);
-
-		document.write("correcto. has consumido" + intentos + "intentos");
-		
+			intentos_consumidos.value = intentos;
+			intentos_consumidos.style.fontSize = "18";
+			intentos_consumidos.style.color = "red";
+			intentos_consumidos.style.textAlign = "center";
+		} while (aleatorio != minum);
+		// alert("correcto. Has consumido " + intentos + " intentos");
+		// document.write("correcto. Has consumido " + intentos + " intentos");
+		mensaje.value = "correcto!";
+		mensaje.style.color = "red";
 
 	</script>
-
 </body>
-</html>
