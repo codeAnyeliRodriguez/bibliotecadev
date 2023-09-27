@@ -1,0 +1,51 @@
+infovid: https://www.youtube.com/watch?v=NQ5KR5TqUwE
+figlet
+--------figlet npm--------
+doc: https://www.npmjs.com/package/figlet
+
+commants:
+npm init -y
+npm install figlet
+
+instalacion global: 
+npm install -g figlet-cli
+
+execute:
+figlet -f "Dancing Font" "Hi"
+#--------
+
+------ascii-art-------
+doc: https://www.npmjs.com/package/image-to-ascii
+
+comants:
+npm install ascii-art
+in code:
+   npm install --save ascii-art
+cli:
+   npm install -g ascii-art
+or (Beta):
+
+    npm install -g ascii-art-cl
+web:
+  npm install --save ascii-art-webcomponents
+
+#------
+---------images-to-ascii-----
+doc: https://www.npmjs.com/package/image-to-ascii
+
+comants:
+npm install --save image-to-ascii
+
+# Chocolatey (package manager for Windows)
+chocolatey: https://chocolatey.org/install
+
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+# (Restart of cmd/PowerShell is required)
+choco install graphicsmagick
+
+#-----
+
+-----text-image.com-----
+https://www.text-image.com/
+------------------------

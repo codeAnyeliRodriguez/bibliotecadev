@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .container{
+      width: 400px;
+      height: 400px;
+      background: blue;
+      margin: 40px auto;
+      overflow: hidden;
+    }
+    .spiderman{
+      width: 200px;
+      margin: 0 auto;
+      display: block;
+      animation: spiderman 5s infinite;
+    }
+    @keyframes spiderman{
+      0%{
+        transform: translateY(-50px);
+        }
+      30%{
+          transform: translateY(0) rotate(5deg);
+        }
+      50%{
+          transform: rotate(-5deg);
+        }
+      75%{
+          transform: rotate(5deg);
+        }
+      100%{
+          transform: translateY(-50px);
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="spider.png" class="spiderman">
+  </div>
+</body>
+</html>

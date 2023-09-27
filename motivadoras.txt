@@ -164,7 +164,7 @@ Está vivo. ¡Está vivo!
 ¡Buena suerte con tu proyecto!
 ¡Corre como el viento!
 Eso no fue volar. Eso fue caer con estilo
-
+¡Buena suerte con tus proyectos! 😊
 
 -----
 Mientras HTML y CSS controlan el contenido y el estilo de una página, JavaScript se utiliza para hacerlo interactivo. En la certificación Algoritmos de JavaScript y Estructuras de Datos, aprenderás los fundamentos de JavaScript incluyendo variables, arreglos, objetos, bucles y funciones.

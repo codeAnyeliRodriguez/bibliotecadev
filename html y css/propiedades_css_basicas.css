@@ -1,0 +1,350 @@
+propiedades css basicas
+
+/*https://jairogarciarincon.com/clase/html-y-css/propiedades-css-basicas#:~:text=Los%20m%C3%A1s%20comunes%20son%20solid,o%20none%20(sin%20borde).*/
+
+margin y padding
+
+/*En HTML cada elemento es considerado como una caja. El margen (margin) es en realidad el espacio alrededor del elemento, el que se encuentra por fuera del borde de esa caja.
+
+Por contra, el estilo padding es el espacio alrededor del contenido del elemento pero dentro de sus bordes.
+
+Para definir tanto margin como padding, se pueden usar diferentes nomenclaturas. Los siguientes ejemplos muestran las más comunes:*/
+div{
+	margin-top: 10px;/*margen superior*/
+	margin-bottom: 8px;/*margen inferior*/
+	margin-left: 5px;/*margen izquierdo*/
+	margin-right: 5px;/*margen derechos*/
+}
+
+div{
+	margin: 10px 5px 8px 6px;/*margen superior, derecho, inferior y izquierdo, en el sentido de las agujas del reloj*/
+
+}
+
+div{
+	margin: 10px 20px;/*margen superior e inferior 10px, margen derecho e izquierdo 20px*/
+}
+
+div{
+	margin: 10px;/*todos los margenes del div son de 10px*/
+}
+
+div{
+	padding-top: 10px;/*padding superior*/
+	padding-bottom: 8px;/*padding inferior*/
+	padding-left: 6px;/*padding izquierdo*/
+	padding-right: 5px;/*padding derecho*/
+}
+
+div{
+	padding: 10px 5px 8px 6px;/*padding superior, derecho, inferior, izquierdo, en el sentido de las agujas del reloj*/
+
+
+}
+
+div{
+	padding: 10px 20px;/*padding superior e inferior 10px, padding derecho e izquierdo 20px*/
+}
+
+div{
+	padding: 10px;/*todos los padding del div son de 10px*/
+}
+
+------------------------------------------------------------------------------------------
+width y height
+
+/*Las propiedades width y height (ancho y alto) nos permiten establecer el ancho y/o alto de un elemento. El valor por defecto es auto y se puede establecer en pixeles, ems, rems o %.
+
+IMPORTANTE: El valor establecido se define dentro del padding del elemento, con lo que no incluye los valores de las propiedades padding, margin y border.
+
+Las propiedades min-width, max-width, min-height y max-height anulan, respectivamente, las anteriores width y height.*/
+------------------------------------------------------------------------------------------------------------------------------------
+estilos de texto
+
+h1{
+	text-align: left;/* alineacion de texto izquierda*/
+	text-align: center;/*alineacion de texto centrada*/
+	text-align: right;/*alineacion de texto derecha*/
+	text-align: justify;/*alineacion de texto justificada*/
+}
+
+/*text decoration*/
+h1{
+	text-decoration: underline;/*(subrayado)*/
+	text-decoration: overline;/*linea por encima del texto*/
+	text-decoration: line-through;/*(tachado)*/
+	text-decoration: none;/*sin decoracion*/
+}
+
+/*text transformation*/
+h1{
+	text-transform: uppercase;/*(mayusculas)*/
+	text-transform: lowercase;/*(minusculas)*/
+	text-transform: capitalize;/*(primera mayuscula)*/
+	text-decoration: none;/*sin transformacion*/
+}
+
+/*text indentitation*/
+p{
+	text-indent: 50px;/*indentacion de la primera linea de un parrafo*/
+}
+/*letter spacing*/
+p{
+	letter-spacing: 3px;/*espacio entre caracteres(admite valores negativos)*/
+}
+
+/*line height*/
+
+p{
+	line-height: 1.5;/*espacio entre lineas de texto*/
+}
+
+/*text direccion*/
+p{
+direction: rtl;/*escribe el texto de derecha a izquierda*/
+}
+
+/*word spacing*/
+p{
+	word-spacing: 10px;/*espacio entre palabras del parrafo*/
+}
+
+/*text shadow*/
+p{
+	text-shadow: 4px 2px blue;/*anade una sombra azul al texto de 4px en horizontal y 2px vertical*/
+}
+---------------------------------------------------------------------------------------------------------------
+fuentes
+
+/*Las propiedades de fuentes de CSS definen la familia, el tamaño, el peso (negrita) y las variantes.
+
+En CSS; hay dos tipos de nombres de familia:
+
+familias genéricas: las que tienen una apariencia similar (serif, sans-serif o monospace)
+familias de fuentes: fuentes específicas (Times New Roman, Georgia, Arial, Verdana, Courier New, Lucida Console, etc.)*/
+
+
+/*declaracion de familia de fuentes (al menos dos siempre)*/
+p{
+	font-family: "times new roman", serif;/*utiliza la times new roman si esta disponible, si no el grupo serif por defecto.*/
+}
+
+/*declaracion de una fuente llamada mifuente a partir de unos archivos en la carpeta fonts*/
+ 
+@font-face{
+	font-family: 'mifuente';
+	src: url('../fonts/mifuente.eot');/*IE9*/
+	src: url('../fonts/mifuente.eot?#iefix') format('embedded-opentype'),/*IE6-IE8*/
+	url('../fonts/mifuente.woff2') format('woff2'),/*navegadores super actuales*/
+	url('../fonts/mifuente.woff') format('woff'), /* Navegadores actuales */
+    url('../fonts/mifuente.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/mifuente.svg#svgFontName') format('svg'); /* iOS antiguo */
+}
+
+p{
+	body: "mifuente", serif; /*utilizara la mifuente si esta disponible, y si no el grupo serif por defecto.*/
+}
+	@import url('https: //fonts.googleapis.com/css?family=roboto');
+	@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+body{
+	font-family: "roboto", sans-serif;/*utilizara robotosi esta disponible, y si no el grupo sans-serif por defecto.*/
+}
+
+/*font-style*/
+
+h1{
+	font-style: normal;/*texto normal*/
+	font-style: italic;/*texto cursivo*/
+	font-style: oblique;/*similar a cursiva, menos soportado por los navegadores*/
+}
+
+/*font-size*/
+h1{
+	font-size: 16px;/*(tamano en pixels)*/
+	font-size: 1em;/*(tamano en em, que permite al usuario re-dimencionar la fuente desde el menu del navegador. 1em= 16px).*/
+}
+
+/*combinacion de font-size*/
+body{
+	font-size: 100%; /*(tamano en porcentaje)*/
+}
+
+h1{
+	font-size: 2.5em;/*(tamano pixels)*/
+}
+
+/*responsive font-size(se adapta a los dispositivos)*/
+
+h1{
+	font-size: 10vn/*(10% del ancho del viwport o ventana del navegador)*/
+}
+
+/*font variant*/
+
+p{
+	font-variant: small-caps;/*las minusculas se convierten en mayusculas pequenas*/
+	font-variant: normal;/*texto normal*/
+}
+
+/*unidades: medidas en px, pt, rem, em,y %
+
+Hasta ahora hemos utilizado los píxeles (px) para definir nuestros estilos, bien sea el tamaño de las fuentes, como los márgenes, paddings, etc. También podíamos haber declarado los tamaños en pt o puntos, una medida más utilizada el medio gráfico pero igualmente absoluta y cuya correspondencia aproximada es de 0.75pt por cada 1px.
+
+No obstante, en un entorno cada vez más adaptable o responsive, en el que tenemos que asegurarnos de que nuestra página web se vea bien en todos los tipos de dispositivos debemos, frente a los valores absolutos en píxeles o puntos, acostumbrarnos a utilizar medidas relativas.
+
+La más común es emphasis o em, que tomará la relación del tamaño de letra base del documento. Por defecto, si no indicamos el tamaño de letra en la hoja de estilos, el navegador aplica un tamaño de 16px. De este modo, si queremos un tamaño de letra de 24px, sólo tendremos que definir en la hoja de estilos que sea de 24/16 = 1.5em.
+
+¿Y cuáles son las ventajas de definir los tamaños de fuente en pixeles frente a em? Principalmente son dos:
+
+En cualquier momento el usuario puede optar por cambiar el tipo de letra del navegador haciendo zoom, y si están definidas en em, todas cambiarán proporcionalmente.
+El programador, con cambiar el tamaño de fuente base, puede modificar proporcionalmente el contenido de todos los estilos relativos.
+
+
+Existe una unidad de medida aún más relativa que la anterior, que sería el relative emphasis o rem. En este caso, las unidades dependerán del tamaño del elemento anterior. Esto es, tal y como muestra el ejemplo siguiente, si el tamaño fuente base del body es de 16px y tenemos un div con tamaño de fuente 1.5rem, esto equivaldría a un tamaño de fuente de 24px. Si ahora dentro de ese contenedor queremos añadir un párrafo con un tamaño de fuente que sea la mitad que el del div, sólo tendremos que poner 0.5rem*/
+
+body{
+	font-size: 16px;/*tamano de letra por defecto del documento*/
+}
+
+div{
+	font-size: 1.5em;/*tamano calculado de la letra equivalente a 24px (16*1,5)*/
+}
+
+p{
+	font-size: 0.5rem;/*tamano calculado de letra equivale a 12px(24/12),por estar dentro del div en html*/
+
+}
+
+/*pts		px		em 		porcentaje
+6pt			8px		0.5em 	50%
+7pt 		9px 	0.55em 	55%
+7.5pt 		10px 	0.625em 62.5%
+8pt 		11px 	0.7em 	70%
+9pt 		12px 	0.75em 	75%
+10pt 		13px 	0.8em 	80%
+10.5pt 		14px 	0.875em 87.5%
+11pt 		15px 	0.95em 	95%
+12pt 		16px 	1em 	100%-------
+13pt 		17px 	1.05em 	105%
+13.5pt 		18px 	1.12em 	112.5%
+14pt 		19px 	1.2em 	120%
+14.5pt 		20px 	1.25em 	125%
+15pt 		21px 	1.3em 	130%
+16pt 		22px 	1.4em 	140%
+17pt 		23px 	1.45em 	145%
+18pt 		24px 	1.5em 	150%
+20pt 		26px 	1.6em 	160%
+22pt 		29px 	1.8em 	180%
+24pt 		32px 	2em 	200%
+26pt 		35px 	2.2em 	220%
+27pt 		36px 	2.25em 	225%
+28pt 		37px 	2.3em 	230%
+29pt 		38px 	2.35em 	235%
+30pt 		40px 	2.45em 	245%
+32pt 		42px 	2.55em 	255%
+34pt 		45px 	2.75em 	275%
+36pt 		48px 	3em 	300%*/
+
+border
+
+/*Para establecer bordes a nuestro elemento, existen varias propiedades que podemos utilizar. Estas son las más comunes:
+
+border-color: Establece el color del borde en cualquier formato de color aceptado (#000, rgb(0,0,0), etc.)
+border-width: Establece el ancho del borde en px, em, etc.
+border-style: Establece el estilo del borde. Los más comunes son solid (continuo), dotted (con puntos), dashed (con rayas), double (doble borde) o none (sin borde).
+border: Es un estilo rápido para definir los 3 anteriores. Por ejemplo: border: 1px solid #000;
+
+
+Además, es posible redondear los bordes mediante la propiedad border-radius utilizando una nomenclatura similar a la de margin y padding:*/
+
+.div1{
+	border-radius: 15px 50px 30px 5px;/*4 valores (superior izquierdo, superior derecho, e inferior izquierdo)*/		
+}
+
+div2{
+	border-radius: 15px 50px;/* 2 valores (superior izquierdo e inferior derecho, superior derecho, e inferior izquierdo)*/
+}
+
+.div3{
+	border-radius: 15;/*unico valor para las 4 esquinas*/
+}
+
+border-radius:15px 50px 30px 5px,
+
+border-radius: 15px 50px,
+
+border-radius: 15px,
+
+/*Por último, cualquiera de las propiedades anteriores se puede aplicar para una sola sección del elemento, por ejemplo, border-top, border-bottom-color, border-left-radius, etc.*/
+
+background
+
+/*Otra de las propiedades más utilizadas en nuestros elementos es la de aplicar un fondo de cualquier tipo. Si queremos aplicar un color de fondo, debemos utilizar la propiedad:
+
+background-color: permite aplicar un color de fondo en cualquier formato de color aceptado (#000, rgb(255,0,0), rgba(255,0,0,0.1), etc.)
+
+Por el contrario, si queremos utilizar una imagen de fondo, podemos utilizar las siguientes propiedades:*/
+
+div{
+	background-color: red;/* permite aplicar un color de fondo en cualquier formato de color aceptado(#000, rgb(255,0,0)), rgba(255,0,0,0.1),etc*/	
+}
+
+div{
+	background-image: url("ruta-hasta-la-imagen/imagen.jpg");/*permite aplicar una imagen de fondo*/
+	background-repeat: no-repeat;/*indica si debemos repetir el fondo cuando el elemento sea mas grande que la imagen. las opciones mas comunes son no-repeat,repeat(por defecto), repeat-x, repeat-y*/
+	background-size: 100px 100px;/* permite establecer el tamno de la imagen de fondo, tambien puede ser en porcentajes u otra medidda*/
+	background-position: 10px 50px;/* permite especificar la posicion en la que debe empezar la imagen de fondo en de par de valores x e y*/
+}
+
+div{
+	background: #00ff00 url(smiley.gif) no-repeat;/*permite establecer varias propiedades de las anteriores de forma simultanea*/
+}
+
+colores
+/*En HTML, los colores pueden ser identificados mediante nombres como green, violet o tomato. Existen hasta 140 colores disponibles.*/
+
+p{
+	color: tomato; /*utilizando un leyword. */
+	color: rgb(255, 99, 71); /* utilizando los valores rgb ( red, green, blue entre 0 y 255). */
+	color: rgba(255, 99, 71, 0.5);/*como el anterior con una transparencia del 50%. */
+	color: #ff6347;/*utilizando el valor HEX (red, green, blue en hexagecimal entre 00 Y ff).*/
+	color: hhsl(9, 100%, 64%);/*utilizando los valores HSL (hue o matriz en la rueda de color de 0 a 360, saturacion o saturacion de 0 a 100%, lightness de 0 100%). */
+	color: hsla(9, 100%, 64%, 0.5);/*como el anterior con una transparencia del 50%.*/
+}
+
+uso de initial, inherit e important
+
+/*forzar que todos los h1 utilicen su font-size por defecto*/
+
+h1{
+	font-size: initial;
+}
+
+/*forzar que todos los h1 dentro de section utilizen el color de fuente declarado en la section*/
+section h1{
+	color: inherit;
+}
+
+/*forzar que todos los h1 dentro de section tengan un color de fuente concreto, incluso cuando en otros lugares del css se haya escrito otra cosa*/
+section h1{
+	color: red !important;
+}
+
+/*No obstante, el uso de !important no está recomendado, y solo se debe utilizar cuando queramos sobre-escribir otras librerías de CSS o plugins basados en Javascript que inyecten estilos in-line*/
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+img{
+	transform: rotate(45deg);
+}
+/*responsive design*/
+/*https://aukera.es/blog/diseno-responsive/*/
+
+<meta name="viewport" content="width=device-width"/>
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*aleatorias*/
+
+<div role="alert"> your session will expire in 60 seconds.</div>

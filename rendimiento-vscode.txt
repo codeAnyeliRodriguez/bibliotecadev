@@ -1,0 +1,5 @@
+https://www.freecodecamp.org/espanol/news/rendimiento-de-vs-code-como-optimizar-visual-studio-code-y-elegir-las-mejores-extensiones/
+
+https://awebytes.wordpress.com/2019/07/07/vs-code-configuracion-para-optimizar-rendimiento/
+
+code --disable-extensions

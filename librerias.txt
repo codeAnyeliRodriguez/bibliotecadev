@@ -1,0 +1,1497 @@
+
+Librerías de desarrollo de la interfaz
+Ahora que estás familiarizado con HTML, CSS y JavaScript, mejora tus habilidades aprendiendo algunas de las librerías de interfaz más populares en la industria.
+
+In the Front End Development Libraries Certification, you'll learn how to style your site quickly with Bootstrap. You'll also learn how to add logic to your CSS styles and extend them with Sass.
+
+Después, construirás un carrito de compras y otras aplicaciones para aprender a crear poderosas aplicaciones de página única (SPAs) con React y Redux.
+------------
+Bootstrap
+Bootstrap es un framework de la interfaz utilizado para diseñar páginas y aplicaciones web. Tiene un enfoque de desarrollo web centrado en los dispositivos móviles e incluye estilos y clases CSS pre-configurados, además de algunas funciones de JavaScript.
+
+En este curso, aprenderás cómo crear sitios web responsivos con Bootstrap, y utilizarás sus clases incluidas para estilizar botones, imágenes, formularios, navegación y otros elementos.
+-----------------
+Utiliza diseño responsivo con contenedores de fluido de Bootstrap
+En la seccion de HTML5 y CSS de freeCodeCamp construimos un 'Cat Photo App'. Ahora volvamos a él. Esta vez, vamos a estilizarlo utilizando el popular framework CSS responsivo de Bootstrap.
+
+Bootstrap averiguará cuan ancha es tu pantalla y responderá redimensionando tus elementos HTML - de ahí el nombre diseño responsivo.
+
+Con diseño responsivo, no hay necesidad de diseñar una versión móvil de tu sitio web. Se verá bien en dispositivos con pantallas de cualquier ancho.
+
+Puedes añadir Bootstrap a cualquier aplicación agregando el siguiente código en la parte superior de tu HTML:
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+En este caso, ya lo hemos añadido por ti en esta página, tras bambalinas. Ten en cuenta que para cerrar la etiqueta link puedes utilizar > o />.
+
+Para comenzar, debemos anidar todo nuestro HTML (menos la etiqueta link y el elemento style) en un elemento div con la clase container-fluid.
+---------------
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+-----------------------
+¡Eres imparable!
+-----------------
+Haz que las imágenes se adapten a dispositivos móviles
+Primero, agrega una nueva imagen debajo de la existente. Establece su atributo src a https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg.
+
+Sería genial si esta imagen pudiera tener exactamente el ancho de la pantalla de nuestro teléfono.
+
+Afortunadamente, con Bootstrap, todo lo que necesitamos hacer es agregar la clase img-responsive a nuestra imagen. Hazlo, y la imagen debería caber perfectamente en el ancho de tu página.
+----------
+¡La cuchara no existe, Neo!
+-----------
+Centrar texto con Bootstrap
+Ahora que estamos usando Bootstrap, podemos centrar nuestro encabezado para que luzca mejor. Lo único que necesitamos hacer es agregar la clase text-center a nuestro elemento h2.
+
+Recuerda que puedes agregar varias clases al mismo elemento separando cada una de ellas con un espacio, de la siguiente manera:
+
+<h2 class="red-text text-center">your text</h2>
+-----------------
+¡Eres más fuerte de lo que crees!
+-----------------
+Crea un botón de Bootstrap
+Bootstrap tiene sus propios estilos para los elementos button, que se ven mucho mejor que los de HTML puro.
+
+Crea un nuevo elemento button debajo de la foto grande de tu gatito. Dale las clases btn y btn-default, así como el texto de Like.
+---------------
+¡Récord de juego!
+-----------------
+Crea un botón Bootstrap como elemento de bloque
+Normalmente, tus elementos button con las clases btn y btn-default son tan anchos como el texto que los contiene. Por ejemplo:
+
+<button class="btn btn-default">Submit</button>
+Este botón será tan ancho como la palabra Submit.
+
+
+Al convertirlos en elementos de bloque con la clase adicional btn-block, tu botón se estirará para llenar completamente el espacio horizontal de tu página y cualquier elemento siguiente se posicionará en una "nueva línea" debajo del bloque.
+
+<button class="btn btn-default btn-block">Submit</button>
+Este botón tomará el 100% del ancho disponible.
+
+
+Ten en cuenta que estos botones aún necesitan la clase btn.
+
+Agrega la clase de Bootstrap btn-block a tu botón de Bootstrap.
+--------------------
+¡Más rápido que la vista!
+---------------
+Prueba el arcoíris de colores del botón de Bootstrap
+La clase btn-primary es el color principal que usarás en tu aplicación. Es útil para resaltar acciones que deseas que tu usuario realice.
+
+Reemplaza la clase btn-default de Bootstrap por btn-primary en tu botón.
+
+Ten en cuenta que este botón aún necesitará las clases btn y btn-block.
+--------------
+¡Por el poder de Grayskull!
+--------------
+Llama a acciones opcionales con btn-info
+Bootstrap viene con varios colores predefinidos para los botones. La clase btn-info se utiliza para llamar la atención sobre las acciones opcionales que el usuario puede realizar.
+
+Crea un nuevo botón de Bootstrap a nivel de bloque debajo de tu botón de Like con el texto Info, y agrégale la clase de Boostrap btn-info.
+
+Ten en cuenta que estos botones todavía necesitan las clases btn y btn-block.
+---------------
+¡Al infinito, y más allá!
+--------------
+Advierte a tus usuarios de una acción peligrosa con btn-danger
+Bootstrap viene con varios colores predefinidos para botones. La clase btn-danger es el color del botón que usarás para notificar a los usuarios que el botón realiza una acción destructiva, como eliminar la foto de un gato.
+
+Crea un botón con el texto Delete y dale la clase btn-danger.
+
+Ten en cuenta que estos botones todavía necesitan las clases btn y btn-block.
+--------------
+Reclama la propiedad de tus sueños!
+------------
+Utiliza la cuadrilla (grid) Bootstrap para poner elemento de lado a lado
+Bootstrap utiliza un sistema responsivo de cuadrilla de 12 columnas, el cual hace que sea fácil poner elementos en dos filas y especificar la anchura relativa de cada elemento. La mayoría de las clases de Bootstrap pueden ser aplicadas a un elemento div.
+
+Bootstrap tiene diferentes atributos de ancho de columna que usa dependiendo cuan ancha es la pantalla del usuario. Por ejemplo, los teléfonos tienen pantallas más angostas y las laptops tienen pantallas más anchas.
+
+Tomemos por ejemplo la clase de Bootstrap col-md-*. Aquí, md significa mediano y * es un número que especifica cuántas columnas de ancho deben tener los elementos. En este caso, el ancho de columna de un elemento en una pantalla de tamaño mediano, como una laptop, está siendo especificado.
+
+En el 'Cat Photo App' que estamos creando, vamos a usar col-xs-*, donde xs significa extra pequeño ("extra small" como una pantalla de teléfono), y * es el número de columnas que va a tomar el elemento en anchura.
+
+Pon los botones Like, Info y Delete lado a lado, anidando los tres dentro de un elemento <div class="row">, luego, cada uno de ellos dentro de un elemento <div class="col-xs-4">.
+
+La clase row es aplicada a un div, y los botones mismos pueden ser anidados dentro de él.
+---------------
+¡Lo tienes!
+-------------
+Adiós CSS Personalizado. Hola Bootstrap
+Podemos limpiar nuestro código y hacer que nuestro 'Cat Photo App' se vea más convencional utilizando los estilos incorporados de Bootstrap en lugar de los estilos personalizados que creamos antes.
+
+No te preocupes - habrá mucho tiempo para personalizar nuestro CSS después.
+
+Borra las declaraciones de CSS .red-text, p y .smaller-image de tu elemento style para que las únicas declaraciones en tu elemento style sean h2 y thick-green-border.
+
+Luego, borra el elemento p que contiene un enlace muerto. Después, borra la clase red-text de tu elemento h2 y reemplázalo con la clase de Bootstrap text-primary.
+
+Finalmente, remueve la clase smaller-image de tu primer elemento img y reemplázalo con la clase img-responsive.
+-----------------
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<div class="container-fluid">
+  <h2 class="red-text text-center">CatPhotoApp</h2>
+
+  <p>Click here for <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary">Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info">Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger">Delete</button>
+    </div>
+  </div>
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+------------
+¡Eres más fuerte de lo que crees!
+-----------
+Puedes usar spans para crear elementos en línea. ¿Recuerdas cuando usamos la clase btn-block para hacer que el botón ocupe toda la fila completa?
+
+Eso ilustra la diferencia entre un elemento "inline" y un elemento "block".
+
+Usando el elemento en línea span, puedes alinear varios elementos, e incluso estilizar diferentes partes de la misma línea de manera diferente.
+
+Usando un elemento span, anida la palabra love dentro del elemento p que actualmente tiene el texto Things cats love. Luego dale a span la clase text-danger para cambiar el texto a rojo.
+
+Así es como harías esto para el elemento p que tiene el texto Top 3 things cats hate:
+
+<p>Top 3 things cats <span class="text-danger">hate:</span></p>
+------------
+Está vivo. ¡Está vivo!
+----------
+Crea un título personalizado
+Haremos un encabezado simple para nuestro 'Cat Photo App' colocando el título y la imagen del gato relajándose en la misma fila.
+
+Recuerda que Bootstrap utiliza un sistema de cuadrícula responsivo, el cual hace más fácil poner elementos en filas y especificar el ancho relativo de cada elemento. La mayoría de las clases de Bootstrap pueden ser aplicadas a un elemento div.
+
+Anida tu primera imagen y tu elemento h2 dentro de un solo elemento <div class="row">. Anida tu elemento h2 dentro de <div class="col-xs-8"> y tu imagen en un <div class="col-xs-4"> para que estén en la misma línea.
+
+¿Observas cómo la imagen ahora tiene el tamaño adecuado para ajustarse al texto?
+---------------
+¡Es el momento perfecto para ser histérico!
+----------
+Agrega iconos Font Awesome a nuestros botones
+Font Awesome es una conveniente librería de iconos. Estos iconos pueden ser fuentes web o gráficos vectoriales. Estos iconos son tratados como fuentes. Puedes especificar su tamaño usando píxeles, y ellos asumirán el tamaño de fuente de su elemento HTML padre.
+
+Puedes incluir Font Awesome en cualquier aplicación agregando el siguiente código al principio de tu HTML:
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+En este caso, ya lo hemos añadido por ti en esta página tras bambalinas.
+
+El elemento i fue originalmente usado para crear elementos itálicos, pero ahora es comúnmente usado para iconos. Puedes añadir las clases de Font Awesome al elemento i para convertirlo en un icono, por ejemplo:
+
+<i class="fas fa-info-circle"></i>
+Ten en cuenta que el elemento span también es aceptable para usar con iconos.
+
+Usa Font Awesome para añadir un icono thumbs-up a tu botón de "Like", dándole un elemento i con las clases fas y fa-thumbs-up. Asegúrate de dejar el texto Like junto al icono.
+-------------
+¡Justo en el blanco!
+--------------
+Agrega iconos Font Awesome a todos nuestros botones
+Font Awesome es una conveniente librería de iconos. Estos pueden ser fuentes web o gráficos vectoriales. Estos iconos son tratados como fuentes. Puedes especificar su tamaño usando píxeles, y ellos asumirán el tamaño de fuente de su elemento HTML padre.
+
+Utiliza Font Awesome para agregar un icono info-circle a su botón info y un icono trash al botón borrar.
+
+**Nota:**El elemento span es una alternativa aceptable al elemento i para las direcciones a continuación.
+
+// ejecutando pruebas
+Debes añadir un elemento <i class="fas fa-info-circle"></i> dentro de tu elemento botón info.
+Debes añadir un elemento <i class="fas fa-trash"></i> dentro de tu elemento botón delete.
+// pruebas completadas
+----------
+¡Corre como el viento!
+---------
+Botones de radio con estilo responsivo
+¡Puedes utilizar también las clases col-xs-* de Bootstrap en elementos form! De esta forma nuestros botones de radio se distribuirán uniformemente a través de la página, sin importar el ancho de la resolución de pantalla.
+
+Anida tus dos botones de radio dentro de un elemento <div class="row">. Luego, anida cada uno de ellos dentro de un elemento <div class="col-xs-6">.
+
+Nota: Como recordatorio, los botones de radio son elementos input con el valor de tipo radio.
+
+----------
+¡Dale que vas!
+-----------
+Casillas de verificación con estilo responsivo
+Dado que las clases de Bootstrap col-xs-* son aplicables a todos los elementos form, ¡también puedes usarlas para tus casillas de verificación! De esta manera, las casillas de verificación se distribuirán uniformemente por toda la página, independientemente de la amplitud de la resolución de la pantalla.
+
+Anida las tres casillas de verificación en un elemento <div class="row">. Luego, anida cada uno de ellos en un elemento <div class="col-xs-4">.
+---------------
+¡Lo tienes!
+-----------
+Estiliza entradas de texto como controles de formulario
+Puedes agregar el icono fa-paper-plane de Font Awesome agregando <i class="fa fa-paper-plane"></i> dentro de tu elemento button de envío.
+
+Dale a tu campo de entrada de texto la clase form-control. Dale a tu botón de envío de formulario las clases btn btn-primary. También asígnale a este botón el icono de Font Awesome fa-paper-plane.
+
+Todos los elementos textuales <input>, <textarea>, y <select> con la clase .form-control tienen un ancho de 100%.
+------------
+¡Al batimóvil!
+----------
+Alinea elementos de formulario de manera responsiva con Bootstrap
+Ahora coloquemos tus input de formulario y tu button de envío en la misma línea. Vamos a hacer esto de la misma forma que antes: Usando un elemento div con la clase row, y otros elementos div dentro de este usando la clase col-xs-*.
+
+Coloca juntos tu campo de texto input y tu button de envío dentro de un div con la clase row. Anida tu campo de texto input dentro de un div con la clase col-xs-7. Anida tu button de envío del formulario dentro de un div con la clase col-xs-5.
+
+Este es el ultima desafio que vamos a hacer para nuestro 'Cat Photo App' por ahora. ¡Esperamos que hayas disfrutado aprendiendo Font Awesome, Bootstrap y diseño responsivo!
+--------
+CatPhotoApp code
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+    </div>
+  </div>
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+    </div>
+  </div>
+  <p>Things cats <span class="text-danger">love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <div class="row">
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+      </div>
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Loving</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Lazy</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Crazy</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-7">
+    <input type="text" class="form-control" placeholder="cat photo URL" required></div>
+      <div class="col-xs-5">
+    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button></div>
+ </div>
+  </form>
+
+
+</div>
+---------
+¡Ovación de pie!
+---------
+Crea un encabezado de Bootstrap
+Ahora construyamos algo desde cero para practicar nuestras habilidades de HTML, CSS y Bootstrap.
+
+Construiremos una zona de juegos de jQuery, que pronto utilizaremos en nuestros desafíos de jQuery.
+
+Para empezar, crea un elemento h3, con el texto jQuery Playground.
+
+Colorea tu elemento h3 con la clase text-primary y céntralo con la clase text-center de Bootstrap.
+---------
+¡Aprobado con honores!
+----------
+Aloja nuestra página dentro de un container-fluid div de Bootstrap
+Ahora vamos a asegurarnos que todo el contenido de tu página es mobile-responsive.
+
+Anidemos tu elemento h3 dentro de un elemento div con la clase container-fluid.
+-------
+¡Eres un mago, Harry!
+-------
+Crea una fila Bootstrap
+Ahora crearemos una fila Bootstrap para nuestros elementos en línea.
+
+Crea un elemento div debajo de la etiqueta h3, con la clase row.
+--------
+¡Sabíamos que lo lograrías!
+--------
+Divide tu fila de Bootstrap
+Ahora que tenemos una fila de Bootstrap, vamos a dividirla en dos columnas para hospedar nuestros elementos.
+
+Crea dos elementos div dentro de tu fila, ambos con la clase col-xs-6.
+-------
+¡Jaque mate!
+--------
+Crea Bootstrap wells
+Bootstrap tiene una clase llamada well que puede crear una sensación visual de profundidad en tus columnas.
+
+Anida un elemento div con la clase well dentro de cada uno de tus elementos col-xs-6 div.
+-------
+¡Corre como el viento!
+-------
+Agrega elementos dentro de tus recursos de Bootstrap
+Ahora estamos a varios elementos div de profundidad en cada columna de nuestra fila. Esto es lo más profundo que necesitaremos ir. Ahora podemos agregar nuestros elementos button.
+
+Anida tres elementos button dentro de cada uno de los elementos div que posean una clase well.
+-------
+¡En tu cara, código!
+---------
+Aplica el estilo predeterminado de botón de estilo de Bootstrap
+Bootstrap tiene otra clase de botón llamada btn-default.
+
+Aplica las clases btn y btn-default a cada uno de tus elementos button.
+--------
+¡Bingo!
+------
+Crear una clase para seleccionar con selectores jQuery
+No es necesario que todas las clases tengan su correspondiente CSS. A veces creamos clases sólo con el propósito de seleccionar aquellos elementos más fácilmente utilizando jQuery.
+
+Dale a cada uno de tus elementos button la clase target.
+-------
+¡Triunfo superlativo!
+------
+Añade atributos de "id" a elementos de Bootstrap
+Recuerda que además de los atributos de clase, puedes darle a cada uno de tus elementos un atributo id.
+
+Cada "id" debe ser único en un elemento específico y utilizarse una sola vez por página.
+
+Vamos a dar un "id" único a cada uno de nuestros elementos div con la clase well.
+
+Recuerda que puedes dar un "id" a un elemento de esta manera:
+
+<div class="well" id="center-well">
+Agrega el "id" left-well al elemento de la izquierda con la clase "well". Agrega el "id" right-well al elemento de la derecha con la clase "well".
+------
+Eso no fue volar. Eso fue caer con estilo
+--------
+Etiqueta wells de Bootstrap
+Para mayor claridad, vamos a etiquetar nuestros dos wells con sus ids.
+
+Sobre tu "left-well", dentro de su elemento div col-xs-6, agrega un elemento h4 con el texto #left-well.
+
+Sobre tu "right-well", dentro de su elemento div col-xs-6 agrega un elemento h4 con el texto #right-well.
+-------
+¡Te felicito!
+----------
+Dale un id único a cada elemento
+También vamos a querer poder usar jQuery para seleccionar cada botón por su id único.
+
+Dale a cada uno de tus botones un id único, empezando con target1 y finalizando con target6.
+
+Asegúrate de que target1 a target3 se encuentren en #left-well y target4 a target6 se encuentren en #right-well.
+---------
+¡Estallido supersónico!
+--------
+Etiqueta botones de Bootstrap
+Así como etiquetamos nuestros "wells", también queremos etiquetar nuestros botones.
+
+Dale a cada uno de tus elementos button, texto que corresponde a su id.
+-------
+¡Esto es pan comido!
+--------
+Usa comentarios para aclarar el código
+Cuando empecemos a usar jQuery, vamos a modificar elementos HTML sin necesidad de cambiarlos en HTML.
+
+Vamos a asegurarnos de que todos sepan que no deben modificar nada de este código directamente.
+
+Recuerda que puedes empezar un comentario con <!-- y terminarlo con -->
+
+Agrega un comentario en la parte superior de tu HTML que diga Code below this line should not be changed
+--------
+¡Lo hiciste!
+-----------
+Bien hecho. Acabas de completar Bootstrap.
+--------
+jQuery
+jQuery es una de las librerías de JavaScript más utilizadas en el mundo.
+
+En 2006, cuando se lanzó, los principales navegadores manejaban JavaScript de forma ligeramente diferente. jQuery simplificó el proceso de escribir JavaScript del lado del cliente, y también garantizó que tu código funcionara de la misma manera en todos los navegadores.
+
+En este curso, aprenderás a usar jQuery para seleccionar, eliminar, copiar y modificar diferentes elementos de la página.
+------------
+Aprende como funciona la etiqueta script y la función "document ready"
+Ahora estamos listos para aprender jQuery, la herramienta de JavaScript más popular de todos los tiempos.
+
+Antes de empezar a usar jQuery, necesitamos agregar algunas cosas a nuestro HTML.
+
+Primero, agrega un elemento script en la parte superior de tu página. Asegúrate de cerrarlo en la siguiente línea.
+
+Tu navegador ejecutará cualquier JavaScript dentro de un elemento script, incluyendo jQuery.
+
+Dentro de tu elemento script, agrega este código: $(document).ready(function() { a tu script. Luego ciérralo en la siguiente línea (todavía dentro de tu elemento script) con: });
+
+Aprenderemos más sobre functions más tarde. Lo importante a saber es que el código que pongas dentro de esta function (función) se ejecutará tan pronto como tu navegador haya cargado tu página.
+
+Esto es importante porque sin tu document ready function, tu código podría ejecutarse antes de que se procese tu HTML, lo que causaría errores.
+---------------
+¡Nunca bajes la guardia!
+--------
+Apunta a elementos HTML con selectores usando jQuery
+Ahora tenemos una función document ready.
+
+Ahora vamos a escribir nuestra primera declaración de jQuery. Todas las funciones de jQuery comienzan con un $, usualmente conocido como un operador de signo de dólares.
+
+jQuery a menudo selecciona un elemento HTML con un selector, y luego le hace algo a ese elemento.
+
+Por ejemplo, hagamos que todos tus elementos button reboten. Simplemente agrega este código dentro de tu función document ready:
+
+$("button").addClass("animated bounce");
+Ten en cuenta que ya hemos incluido tanto la librería jQuery como la librería Animate.css en segundo plano para que puedas usarlos en el editor. Así que estás usando jQuery para aplicar la clase Animate.css bounce a tus elementos button.
+-------
+¡Nunca bajes la guardia!
+---------
+Apunta a elementos por clase usando jQuery
+¿Ves cómo hemos hecho que todos tus elementos button reboten? Los seleccionamos con $("button"), luego agregamos algo de clases CSS a ellos con .addClass("animated bounce");.
+
+Acabas de usar la función .addClass() de jQuery, que te permite agregar clases a los elementos.
+
+Primero, apuntemos tus elementos div con la clase well usando el selector $(".well").
+
+Ten en cuenta que, al igual que con las declaraciones CSS, escribes un . antes del nombre de la clase.
+
+Luego usa la función .addClass() de jQuery para agregar las clases animated y shake.
+
+Por ejemplo, puedes hacer que todos los elementos con la clase text-primary se agiten agregando lo siguiente a tu función document ready function:
+
+$(".text-primary").addClass("animated shake");
+------
+Guía del desafío freeCodeCamp: Elementos de destino por clase usando jQuery
+Guía
+julio de 2016
+agosto 2019
+
+autocaravana
+Gran colaborador
+
+6
+Oct '19
+Elementos de destino por clase usando jQuery 26
+Puede encontrar elementos con el selector de clase jQuery. // $(.nombreDeLaClase)
+En este ejemplo, te permite seleccionar elementos con la clase “.bien”
+Soluciones
+Solución 1 (haga clic para mostrar/ocultar)
+<script>
+  $(document).ready(function() {
+    $(".well").addClass("animated bounce");
+    $(".well").addClass("shake");
+  });
+</script>
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+------
+¡Tienes agallas!
+-----
+Apunta a elementos por id usando jQuery
+También puedes apuntar a elementos por su atributo id.
+
+Primero apunta a tu elemento button con el id target3 usando el selector $("#target3").
+
+Ten en cuenta que, al igual que con las declaraciones CSS, escribes un # antes del nombre del id.
+
+Luego usa la función .addClass() de jQuery para agregar las clases animated y fadeOut.
+
+Así es como harás que el elemento button con el id target6 se desvanezca:
+
+$("#target6").addClass("animated fadeOut");
+---------
+
+Target Elements by id Using jQuery 14
+Solutions
+Solution 1 (Click to Show/Hide)
+<script>
+  $(document).ready(function() {
+    $("button").addClass("animated bounce");
+    $(".well").addClass("animated shake");
+    $("#target3").addClass("fadeOut");
+  });
+</script>
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+--------
+¡Eres imparable!
+------------
+Elimina tus funciones jQuery
+Estas animaciones fueron geniales al principio, pero ahora distraen un poco.
+
+Elimina las tres funciones de jQuery que están dentro de tu document ready function, pero deja intacta tu función document ready function en sí.
+-------
+¡Prístina Luna, dame el poder!
+-----
+Apunta al mismo elemento con múltiples selectores jQuery
+Ahora conoces tres maneras de seleccionar elementos: por tipo: $("button"), por clase: $(".btn"), y por id $("#target1").
+
+Aunque es posible agregar múltiples clases en una sola llamada .addClass(), vamos a agregarlos al mismo elemento de tres maneras diferentes.
+
+Usando .addClass(), agrega solo una clase a la vez al mismo elemento, de tres maneras diferentes:
+
+Agrega la clase animated a todos los elementos con el tipo button.
+
+Agrega la clase shake a todos los botones con la clase .btn.
+
+Agrega la clase btn-primary al botón con id #target1.
+
+Nota: Solo debes apuntar a un elemento y agregar solo una clase a la vez. En total, tus tres selectores individuales terminarán agregando las tres clases shake, animated, y btn-primary a #target1.
+--------
+¡Eres un jugador estrella!
+--------
+Elimina clases de un elemento con jQuery
+De la misma manera en que puedes agregar clases a un elemento con la función addClass() de jQuery, puedes eliminarlos con la función removeClass() de jQuery.
+
+Así es como lo harías para un botón específico:
+
+$("#target2").removeClass("btn-default");
+Eliminemos la clase btn-default de todos nuestros elementos button.
+---
+¡Ovación de pie!
+---
+Cambia el CSS de un elemento usando jQuery
+También podemos cambiar el CSS de un elemento HTML utilizando directamente jQuery.
+
+jQuery tiene una función llamada .css() que te permite cambiar el CSS de un elemento.
+
+Así es como cambiaríamos su color a azul:
+
+$("#target1").css("color", "blue");
+Esto es ligeramente diferente a una declaración CSS normal, porque la propiedad CSS y su valor están entre comillas y separados con coma en lugar de con dos puntos.
+
+Elimina tus selectores de jQuery, dejando document ready function vacío.
+
+Selecciona target1 y cambia su color a rojo.
+--------
+¿Nivel de poder? ¡Supera los 9000!
+----------
+Deshabilita un elemento usando jQuery
+También puedes cambiar las propiedades que no son CSS de tus elementos HTML con jQuery. Por ejemplo, puedes desactivar botones.
+
+Cuando deshabilitas un botón, se mostrará en gris y no se podrá hacer clic sobre este.
+
+jQuery tiene una función llamada .prop() que te permite ajustar las propiedades de los elementos.
+
+Así es como deshabilitarías todos los botones:
+
+$("button").prop("disabled", true);
+Deshabilita solo el botón target1.
+----
+¡La cuchara no existe, Neo!
+---
+Cambia el texto dentro de un elemento usando jQuery
+Con jQuery, puedes cambiar el texto entre las etiquetas de abertura y cierre de un elemento. Puedes incluso cambiar el código HTML.
+
+jQuery tiene una función llamada .html() que te permite agregar etiquetas HTML y texto dentro de un elemento. Cualquier contenido anterior dentro del elemento será completamente reemplazado con el contenido que proporciones usando esta función.
+
+Así es como reescribirías y enfatizarías el texto de nuestro título:
+
+$("h3").html("<em>jQuery Playground</em>");
+jQuery también tiene una función similar llamada .text() que solamente altera el texto sin agregar etiquetas. En otras palabras, esta función no evaluará ninguna etiqueta HTML que le pasemos, pero en cambio, la tratará como el texto por el que quieres reemplazar el contenido existente.
+
+Cambia el botón con id target4 enfatizando su texto.
+
+Vea nuestro artículo de noticias para <em> aprender la diferencia entre <i> y <em> y sus usos.
+
+Ten en cuenta que mientras la etiqueta <i> tradicionalmente se usaba para enfatizar texto, fue adaptada para ser usada como etiqueta para iconos. La etiqueta <em> ahora es ampliamente aceptada como la etiqueta de énfasis. Cualquiera de las dos servirá para este desafío.
+--------
+¡Hacia adelante!
+------
+Remueve un elemento usando jQuery
+Ahora vamos a eliminar un elemento HTML de su página utilizando jQuery.
+
+jQuery tiene una función llamada .remove() que eliminará completamente un elemento HTML
+
+Remueve el elemento #target4 de la página utilizando la función .remove().
+------
+¡Así se hace!
+-----
+¡Jaque mate!
+--------
+Usa appendTo para mover elementos con jQuery
+Ahora intentemos mover elementos de un div a otro.
+
+jQuery tiene una función llamada appendTo() que te permite seleccionar elementos HTML y agregarlos a otro elemento.
+
+Por ejemplo, si quisiéramos mover target4 desde nuestro "right well" a nuestro "left well", usaríamos:
+
+$("#target4").appendTo("#left-well");
+Mueve tu elemento target2 desde tu left-well a tu right-well.
+-----
+¡A conquistar el mundo!
+-------
+Clona un elemento usando jQuery
+Además de mover elementos, también puedes copiarlos de un lugar a otro.
+
+jQuery tiene una función llamada clone() que hace una copia de un elemento.
+
+Por ejemplo, si quisiéramos copiar target2 de nuestro left-well a nuestro right-well, usaríamos:
+
+$("#target2").clone().appendTo("#right-well");
+¿Notaste que esto implica pegar dos funciones jQuery juntas? Esto es llamado function chaining (encadenamiento de funciones) y es una forma conveniente de lograr cosas con jQuery.
+
+Clona tu elemento target5 y agrégalo a tu left-well.
+----
+Apunta al padre de un elemento usando jQuery
+Cada elemento HTML tiene un elemento parent (padre) del cual inherits (hereda) propiedades.
+
+Por ejemplo, tu elemento jQuery Playground h3 tiene el elemento padre de <div class="container-fluid">, que en sí mismo tiene el padre body.
+
+jQuery tiene una función llamada parent() que te permite acceder al padre del elemento que hayas seleccionado.
+
+Aquí hay un ejemplo de cómo usarías la función parent() si quieres dar al elemento padre del elemento left-well un color de fondo azul:
+
+$("#left-well").parent().css("background-color", "blue")
+Dale al padre del elemento #target1 un color de fondo rojo.
+--------
+¡Lo hiciste!
+------
+Apunta al hijo de un elemento usando jQuery
+Cuando los elementos HTML se colocan un nivel por debajo de otro, se denominan hijos de ese elemento. Por ejemplo, los elementos botón en este desafío con el texto #target1, #target2, y #target3 son todos hijos del elemento <div class="well" id="left-well">.
+
+jQuery tiene una función llamada children() que te permite acceder a los hijos del elemento que hayas seleccionado.
+
+Aquí hay un ejemplo de cómo usarías la función children() para dar a los hijos de tu elemento left-well el color blue:
+
+$("#left-well").children().css("color", "blue")
+Dale a todos los hijos de tu elemento right-well el color naranja.
+-------
+¡Victoria perfecta!
+-----
+Apunta a un hijo específico de un elemento usando jQuery
+Has visto por qué los atributos id son muy convenientes para apuntar con los selectores de jQuery. Pero no siempre tendrás tan buenos id's con los que trabajar.
+
+Afortunadamente, jQuery tiene algunos otros trucos para apuntar a los elementos correctos.
+
+jQuery usa selectores de CSS para apuntar elementos. El selector target:nth-child(n) de CSS, te permite seleccionar todos los enésimos elementos con el tipo de elemento o la clase apuntada.
+
+Así es como le darías al tercer elemento en cada "well" la clase de rebote:
+
+$(".target:nth-child(3)").addClass("animated bounce");
+Haz que el segundo niño en cada uno de sus elementos de "well" rebote. Debes seleccionar los hijos de los elementos con la clase target.
+------
+Apunta a elementos pares utilizando jQuery
+También puedes apuntar a elementos basado en sus posiciones, usando los selectores :odd o :even.
+
+Ten en cuenta que jQuery es indexado desde el cero, lo que significa que el primer elemento de una selección tiene la posición 0. Esto puede ser un poco confuso, ya que contra-intuitivamente, :odd selecciona el segundo elemento (posición 1), cuarto elemento (posición 3), y así sucesivamente.
+
+Así es como apuntas a todos los elementos impares con la clase target y les das clases:
+
+$(".target:odd").addClass("animated shake");
+Intenta seleccionar todos los elementos pares target y darle las clases de animated y shake. Recuerda que even se refiere a la posición de los elementos con un sistema de indexado desde cero en mente.
+-----
+
+
+7
+octubre '19
+Apunta a elementos pares usando jQuery 6
+Sugerencias
+Pista # 1
+Así es como apuntaría a todos los odd-numberedelementos con el objetivo de clase y les daría clases:
+
+$('.target:odd').addClass('animated shake');
+Esto hará temblar a todos los pares:
+
+$('.target:even').addClass("shake");
+La forma correcta de hacerlo sería $ ("button: even")…
+
+Soluciones
+Solución 1 (haga clic para mostrar/ocultar)
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+    $("#left-well").children().css("color", "green");
+    $(".target:nth-child(2)").addClass("animated bounce");
+    $(".target:even").addClass("animated shake");
+  });
+</script>
+
+<!-- Only change code above this line. -->
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+--------
+¡Supercalifragilísticoespialidoso!
+------
+Usa jQuery para modificar la página completa
+Hemos terminado de jugar con nuestra área de juego de jQuery. ¡Vamos a derribarlo!
+
+jQuery también puede seleccionar al elemento body.
+
+Así es como haríamos que el cuerpo entero se desvaneciera: $("body").addClass("animated fadeOut");
+
+Pero hagamos algo más dramático. Agrega las clases animated y hinge a tu elemento body.
+--------
+$("body").addClass("animated hinge");
+-------
+<script>
+  $(document).ready(function() {
+    $("#target1").css("color", "red");
+    $("#target1").prop("disabled", true);
+    $("#target4").remove();
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
+    $("#target1").parent().css("background-color", "red");
+    $("#right-well").children().css("color", "orange");
+    $("#left-well").children().css("color", "green");
+    $(".target:nth-child(2)").addClass("animated bounce");
+    $(".target:even").addClass("animated shake");
+
+$("body").addClass("animated hinge");
+  });
+</script>
+
+<!-- Cambia solo el código encima de esta línea -->
+
+<div class="container-fluid">
+  <h3 class="text-primary text-center">jQuery Playground</h3>
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>#left-well</h4>
+      <div class="well" id="left-well">
+        <button class="btn btn-default target" id="target1">#target1</button>
+        <button class="btn btn-default target" id="target2">#target2</button>
+        <button class="btn btn-default target" id="target3">#target3</button>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h4>#right-well</h4>
+      <div class="well" id="right-well">
+        <button class="btn btn-default target" id="target4">#target4</button>
+        <button class="btn btn-default target" id="target5">#target5</button>
+        <button class="btn btn-default target" id="target6">#target6</button>
+      </div>
+    </div>
+  </div>
+</div>
+---------
+Un bucle para gobernarlos a todos.
+--------
+Bien hecho. Acabas de completar jQuery.
+---------
+SASS
+Sass, o "Syntactically Awesome StyleSheets", es una extensión del lenguaje CSS. Añade características que no están disponibles en el CSS básico, lo que facilita la simplificación y el mantenimiento de las hojas de estilo de tus proyectos.
+
+En este curso de Sass, aprenderás cómo almacenar datos en variables, anidar CSS, crear estilos reutilizables con mixins, añadir lógica y bucles a tus estilos, y más.
+-----------
+Almacena datos con variables Sass
+Una característica de Sass que es diferente de CSS es que utiliza variables. Se declaran y establecen para almacenar datos, de forma similar a JavaScript.
+
+En JavaScript, las variables se definen mediante las palabras clave let y const. En Sass, las variables comienzan con un $ seguido del nombre de la variable.
+
+Aquí hay un par de ejemplos:
+
+$main-fonts: Arial, sans-serif;
+$headings-color: green;
+Y para usar las variables:
+
+h1 {
+  font-family: $main-fonts;
+  color: $headings-color;
+}
+Un ejemplo en el que las variables son útiles es cuando un número de elementos tiene que ser del mismo color. Si se cambia ese color, el único lugar para editar el código es el valor de la variable.
+
+Crea una variable $text-color y asígnala como red. Luego, cambia el valor de la propiedad color para el .blog-post y h2 a la variable $text-color.
+---------
+¡Legen... aguarda... dario!
+------
+Anida CSS con Sass
+Sass permite anidar las reglas CSS, que es una forma útil de organizar una hoja de estilo.
+
+Normalmente, cada elemento está dirigido a una línea diferente para darle estilo, así:
+
+nav {
+  background-color: red;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+Para un proyecto grande, el archivo CSS tendrá muchas líneas y reglas. Aquí es donde la anidación puede ayudar a organizar tu código colocando reglas de estilo hijo dentro de los respectivos elementos padres:
+
+nav {
+  background-color: red;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+Utiliza la técnica de anidación mostrada anteriormente para reorganizar las reglas CSS para ambos hijos del elemento .blog-post. Para fines de prueba, el h1 debe ir antes del elemento p.
+-----
+¡A conquistar el mundo!
+----------
+Crea CSS reutilizable con Mixins
+En Sass, un mixin es un grupo de declaraciones de CSS que pueden reutilizarse a través de la hoja de estilo.
+
+Las nuevas funciones de CSS tardan en ser adoptadas por completo y estar listas para su uso en todos los navegadores. A medida que se agregan funciones a los navegadores, las reglas CSS que las utilizan pueden necesitar prefijos de proveedor. Consideremos box-shadow:
+
+div {
+  -webkit-box-shadow: 0px 0px 4px #fff;
+  -moz-box-shadow: 0px 0px 4px #fff;
+  -ms-box-shadow: 0px 0px 4px #fff;
+  box-shadow: 0px 0px 4px #fff;
+}
+Es mucho teclear para reescribir esta regla para todos los elementos que tienen un box-shadow, o para cambiar cada valor para probar diferentes efectos. Mixins son como funciones para CSS. Aquí está cómo escribir una:
+
+@mixin box-shadow($x, $y, $blur, $c){ 
+  -webkit-box-shadow: $x $y $blur $c;
+  -moz-box-shadow: $x $y $blur $c;
+  -ms-box-shadow: $x $y $blur $c;
+  box-shadow: $x $y $blur $c;
+}
+La definición empieza con @mixin seguido de un nombre personalizado. Los parámetros ( $x, $y, $blur, y $c en el ejemplo anterior) son opcionales. Ahora cada vez que se necesite una regla box-shadow, una sola línea llamando al mixin reemplaza el tener que escribir todos los prefijos del proveedor. Se llama a un mixin con la directiva @include:
+
+div {
+  @include box-shadow(0px, 0px, 4px, #fff);
+}
+Escribe un mixin para border-radius y dale un parámetro $radius. Debe utilizar todos los prefijos de proveedor del ejemplo. Luego usa el mixin border-radius para dar al elemento #awesome un border radius de 15px.
+---------
+Crear CSS reutilizable con Mixins 375
+Problema Explicación
+Mixines una de las excelentes características que permiten a los desarrolladores usar SASSen lugar de simple CSS, ¡ya que le permite tener una Functiondentro de su hoja de estilo!
+
+Para crear un mixin debes seguir el siguiente esquema:
+
+@mixin custom-mixin-name($param1, $param2, ....) {
+    // CSS Properties Here...
+}
+Y para usarlo en su (s) elemento (s), debe usar @includeseguido de su Mixinnombre, de la siguiente manera:
+
+element {
+    @include custom-mixin-name(value1, value2, ....);
+}
+Enlaces relevantes
+Sass: @mixin y @include (sass-lang.com) 163
+border-radius - CSS: hojas de estilo en cascada | MDN (mozilla.org) 103
+Sugerencias
+Pista 1
+La pista va aquí
+
+Pista 2
+La pista va aquí
+
+Soluciones
+Solución 1 (haga clic para mostrar/ocultar)
+<style type='text/scss'>
+
+  @mixin border-radius($radius){
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+    -ms-border-radius:$radius;
+    border-radius:$radius;
+  }
+
+  #awesome {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    @include border-radius(15px);
+  }
+</style>
+
+<div id="awesome"></div>
+Código Explicación
+La explicación del código va aquí
+------
+¡A buen paso dale prisa!
+------
+Usa @if y @else para agregar lógica a tus estilos
+La directiva @if en Sass es útil para probar un caso específico: funciona igual que la sentencia if en JavaScript.
+
+@mixin make-bold($bool) {
+  @if $bool == true {
+    font-weight: bold;
+  }
+}
+Y al igual que en JavaScript, @else if y @else prueban más condiciones:
+
+@mixin text-effect($val) {
+  @if $val == danger {
+    color: red;
+  }
+  @else if $val == alert {
+    color: yellow;
+  }
+  @else if $val == success {
+    color: green;
+  }
+  @else {
+    color: black;
+  }
+}
+Crea un mixin llamado border-stroke que toma un parámetro $val. El mixin debe comprobar las siguientes condiciones utilizando @if, @else if, y @else:
+
+light - 1px solid black
+medium - 3px solid black
+heavy - 6px solid black
+Si $val no es light, medium, o heavy, el borde debe establecerse en none.
+----------
+¿Qué clase de brujería es esta?
+-----
+SASS
+Usa @for para crear un bucle Sass
+La directiva @for agrega estilos en un bucle, muy similar a un bucle for en JavaScript.
+
+@for se utiliza de dos maneras: "de principio hasta el fin" o "de principio a fin". La principal diferencia es que el "de principio a fin" excluye el número final como parte de la cuenta, y "de principio hasta el fin" incluye el número final como parte de la cuenta.
+
+Aquí hay un ejemplo de principio hasta el fin:
+
+@for $i from 1 through 12 {
+  .col-#{$i} { width: 100%/12 * $i; }
+}
+La parte #{$i} es la sintaxis para combinar una variable (i) con texto para hacer una cadena. Cuando el archivo Sass se convierte en CSS, tiene este aspecto:
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+...
+
+.col-12 {
+  width: 100%;
+}
+Esta es una manera poderosa de crear un diseño de cuadrícula (grid). Ahora tienes doce opciones de ancho de columna disponibles como clases CSS.
+
+Escribe una directiva @for que tome una variable $j que vaya de 1 a 6.
+
+Debes crear 5 clases llamadas .text-1 a .text-5 donde cada una tiene un font-size establecido en 15px multiplicado por el índice.
+-----
+Use @for para crear un bucle Sass 32
+Problema Explicación
+La sintaxis básica de @forbucle en SASS:
+For - bucle pasante:
+@for $i from <start number> through <end number> {
+  // some CSS
+}
+Para - para hacer un bucle:
+@for $i from <start number> to <end number> {
+  // some CSS
+}
+Tenga en cuenta que la principal diferencia es que "de principio a fin" excluye el número final y "de principio a fin" incluye el número final.
+2. Por ejemplo:
+
+For - bucle pasante:
+@for $i from 1 through 3 {
+  // some CSS
+}
+
+// 1 2 3
+Para - para hacer un bucle:
+@for $i from 1 to 3 {
+  // some CSS
+}
+
+// 1 2
+Directriz de la Directriz SASS 41
+El @forciclo puede ser útil cuando se combina con las pseudoclases de CSS :nth-*. Excepto en estos escenarios, prefiera un @eachbucle si tiene que iterar sobre algo.
+
+@for $i from 1 through 10 {
+  .foo:nth-of-type(#{$i}) {
+    border-color: hsl($i * 36, 50%, 50%);
+  }
+}
+Utilícelo siempre $icomo nombre de variable para ceñirse a la convención habitual y, a menos que tenga una muy buena razón para hacerlo, nunca utilice la topalabra clave: utilice siempre through. Muchos desarrolladores ni siquiera saben que Sass ofrece esta variación; su uso puede generar confusión.
+
+También asegúrese de respetar esas pautas para preservar la legibilidad:
+
+Siempre una nueva línea vacía antes de @for;
+Siempre una nueva línea vacía después de la llave de cierre (}) a menos que la siguiente línea sea una llave de cierre (}).
+Soluciones
+Solución 1 (haga clic para mostrar/ocultar)
+<style type='text/scss'>
+  @for $j from 1 through 5 {
+    .text-#{$j} { font-size: 15px * $j; }
+  }
+</style>
+
+<p class="text-1">Hello</p>
+<p class="text-2">Hello</p>
+<p class="text-3">Hello</p>
+<p class="text-4">Hello</p>
+<p class="text-5">Hello</p>
+La solución anterior generará el siguiente CSS:
+
+.text-1 {
+  font-size: 15px;
+}
+
+.text-2 {
+  font-size: 30px;
+}
+
+.text-3 {
+  font-size: 45px;
+}
+
+.text-4 {
+  font-size: 60px;
+}
+
+.text-5 {
+  font-size: 75px;
+}
+--------
+¡Bingo!
+------
+Usa @each para asignar elementos en una lista
+El último desafío mostró cómo la directiva @for utiliza un valor inicial y final para hacer un bucle un determinado número de veces. Sass también ofrece la directiva @each que hace un bucle sobre cada elemento de una lista o mapa. En cada iteración, la variable se asigna al valor actual de la lista o del mapa.
+
+@each $color in blue, red, green {
+  .#{$color}-text {color: $color;}
+}
+Un mapa tiene una sintaxis ligeramente diferente. He aquí un ejemplo:
+
+$colors: (color1: blue, color2: red, color3: green);
+
+@each $key, $color in $colors {
+  .#{$color}-text {color: $color;}
+}
+Ten en cuenta que la variable $key es necesaria para hacer referencia a las claves en el mapa. De lo contrario, el CSS compilado tendría color1, color2... en él. Los dos ejemplos anteriores se convierten en el siguiente CSS:
+
+.blue-text {
+  color: blue;
+}
+
+.red-text {
+  color: red;
+}
+
+.green-text {
+  color: green;
+}
+Escribe una directiva @each que recorra una lista: blue, black, red y asigna cada variable a una clase .color-bg, donde la parte color cambia para cada elemento. Cada clase debe establecer el background-color al respectivo color.
+
+--------
+Use @each para mapear elementos en una lista 75
+Problema Explicación
+La directiva @each recorre una lista y, para cada iteración, a la variable se le asigna el valor de la lista.
+
+Ejemplo:
+
+<style type='text/scss'>
+  
+@each $color in white, black, blue {
+  .#{$color}-font {
+    color: $color;
+  }
+}
+
+</style>
+
+<div class="white-font"></div>
+<div class="black-font"></div>
+<div class="blue-font"></div>
+Soluciones
+Solución 1 (haga clic para mostrar/ocultar)
+<style type='text/scss'>
+
+  @each $color in blue, black, red {
+    .#{$color}-bg {background-color: $color;}
+  }
+  
+  div {
+    height: 200px;
+    width: 200px;
+  }
+
+</style>
+
+<div class="blue-bg"></div>
+<div class="black-bg"></div>
+<div class="red-bg"></div>
+La solución anterior generará el siguiente CSS:
+
+.blue-bg {
+   background-color: blue;
+ }
+ 
+.black-bg {
+   background-color: black;
+ }
+ 
+.red-bg {
+   background-color: red;
+ }
+ 
+div {
+  height: 200px;
+  width: 200px;
+}
+------
+¡Dale que vas!
+--------
+SASS
+Aplica un estilo hasta que se cumpla una condición con @while
+La directiva @while es una opción con funcionalidad similar al bucle while de JavaScript. Crea reglas CSS hasta que se cumpla una condición.
+
+El desafío @for dio un ejemplo para crear un sistema de cuadrícula (grid) simple. Esto también puede funcionar con @while.
+
+$x: 1;
+@while $x < 13 {
+  .col-#{$x} { width: 100%/12 * $x;}
+  $x: $x + 1;
+}
+Primero, define una variable $x y establécela a 1. A continuación, utiliza la directiva @while para crear el sistema de cuadrícula while $x sea menor que 13. Después de configurar la regla CSS para width, $x se incrementa por 1 para evitar un bucle infinito.
+
+Usa @while para crear una serie de clases con diferentes font-sizes.
+
+Debe haber 5 clases diferentes desde text-1 hasta text-5. Luego ajusta font-size a 15px multiplicado por el número de índice actual. ¡Asegúrate de evitar un bucle infinito!
+--------
+2
+Mar '20
+Aplicar un estilo hasta que se cumpla una condición con @while 54
+Problema Explicación
+Este programa es muy simple, el truco es recordar cómo funciona el bucle.
+
+Sugerencias
+Pista 1
+**Asegúrese de que su configuración de zoom esté en 100%o , de defaultlo contrario, las pruebas a veces fallan. **
+Pista 2
+Inicializarás el bucle primero con x como:$x: 1
+Pista 3
+Vea el ejemplo para la @whilesintaxis,@while $x < 11
+Pista 4
+para establecer propiedades de clase dentro de un ciclo, las referenciamos encerradas por #{}, por lo tanto, antes de que se convierta en:.text-#{$x}
+Soluciones
+Solución 1 (haga clic para mostrar/ocultar)
+$x: 1;
+@while $x < 11 {
+  .text-#{$x} { 
+    font-size: 15px * $x;
+  }
+  $x: $x + 1;
+}
+-------
+¡Estás en llamas!
+-----
+SASS
+Divide tus estilos en trozos más pequeños con parciales
+Parciales en Sass son archivos separados que contienen segmentos de código CSS. Estos se importan y son utilizados en otros archivos Sass. Esta es una gran manera de agrupar código similar en un módulo para mantenerlo organizado.
+
+Los nombres de los parciales comienzan con el carácter de guión bajo (_), que le dice a Sass que es un pequeño segmento de CSS y no para convertirlo en un archivo CSS. También, los archivos Sass terminan con la extensión de archivo .scss. Para introducir el código en el parcial en otro archivo Sass, utiliza la directiva @import.
+
+Por ejemplo, si todos tus mixins se guardan en un parcial llamado "_mixins.scss", y son necesarios en el archivo "main.scss", es cómo usarlos en el archivo principal:
+
+@import 'mixins'
+Ten en cuenta que el guión bajo y la extensión del archivo no son necesarios en la declaración import - Sass entiende que es un parcial. Una vez que un parcial es importado en un archivo, todas las variables, mixins y otros códigos están disponibles para usar.
+
+Escribe una instrucción @import para importar un nombre parcial _variables.scss en el archivo main.scss.
+------
+Divide tus estilos en trozos más pequeños con parciales 61
+Sugerencias
+Pista 1
+Usar@import
+
+Soluciones
+Solución 1 (haga clic para mostrar/ocultar)
+Usar @importpara importar _variables.scsscomo:
+
+@import 'variables'
+---------
+¡Buena esa!
+------
+Hereda un conjunto de estilos CSS a otro elemento
+Sass tiene una función llamada extend que facilita tomar prestadas las reglas CSS de un elemento y construir sobre ellas en otro.
+
+Por ejemplo, el siguiente bloque de reglas CSS da estilo a la clase .panel. Este tiene un background-color, height y border.
+
+.panel{
+  background-color: red;
+  height: 70px;
+  border: 2px solid green;
+}
+Ahora tienes otro panel llamado .big-panel. Tiene las mismas propiedades base que .panel, pero también necesita width y font-size. Es posible copiar y pegar las reglas de CSS iniciales de .panel, pero el código se vuelve repetitivo a medida que agregas más tipos de paneles. La directiva extend es una forma simple de reutilizar las reglas escritas para un elemento y luego añadir más para otro:
+
+.big-panel{
+  @extend .panel;
+  width: 150px;
+  font-size: 2em;
+}
+El .big-panel tendrá las mismas propiedades que .panel además de los nuevos estilos.
+
+Crea una clase .info-important que hereda .info y también tiene un background-color establecido en magenta.
+--------
+¡Eres una estrella fugaz!
+-------
+Bien hecho. Acabas de completar Sass.
+------
+React js
+React es una librería muy popular de JavaScript para construir interfaces de usuario reutilizables controladas por componentes, para páginas web o aplicaciones.
+
+React combina HTML con la funcionalidad de JavaScript para crear su propio lenguaje de marcado llamado JSX. Además, facilita la administración del flujo de datos a través de la aplicación.
+
+En este curso, aprenderás cómo crear diferentes componentes de React, administrar las propiedades de estado de los datos, usar diferentes métodos de ciclo de vida como componentDidMount y mucho más.
+-----
+Crea un elemento JSX simple
+React es una librería de vistas de código abierto creada y mantenida por Facebook. Es una gran herramienta para hacer la interfaz de usuario (UI) de aplicaciones web modernas.
+
+React usa una extensión de sintaxis de JavaScript llamada JSX que te permite escribir HTML directamente dentro de JavaScript. Esto tiene muchos beneficios. Te permite utilizar el poder programático completo de JavaScript dentro de HTML, y ayuda a mantener tu código legible. En su mayor parte, JSX es similar al HTML que ya has aprendido. Sin embargo, hay algunas diferencias clave que se abordarán a lo largo de estos desafíos.
+
+Por ejemplo, dado que JSX es una extensión sintáctica de JavaScript, se puede escribir JavaScript directamente dentro de JSX. Para hacer esto, simplemente incluye el código que deseas que sea tratado como JavaScript entre llaves: { 'this is treated as JavaScript code' }. Ten esto en cuenta, ya que se utiliza en varios desafíos futuros.
+
+Sin embargo, debido a que JSX no es JavaScript válido, el código JSX debe ser compilado en JavaScript. El transpilador Babel es una herramienta muy popular para este proceso. Para tu comodidad, ya se ha añadido tras bambalinas para estos desafíos. Si escribes JSX no válido sintácticamente, verás que la primera prueba de estos desafíos falla.
+
+Vale la pena señalar que por debajo los desafíos están llamando ReactDOM.render(JSX, document.getElementById('root')). Esta llamada de función es la que coloca tu JSX en la representación ligera del DOM de React. React entonces utiliza capturas instantáneas de su propio DOM para optimizar actualizando sólo partes específicas del DOM.
+
+El código actual utiliza JSX para asignar un elemento div a la constante JSX. Reemplaza el div por un elemento h1 y añade el texto Hello JSX! dentro de él
+---
+¡Ríe y el mundo reirá contigo!
+-----
+Crea un elemento JSX complejo
+El último desafío fue un ejemplo sencillo de JSX, pero JSX también puede representar HTML más complejo.
+
+Una cosa importante que debes saber sobre JSX anidado es que debe devolver un solo elemento.
+
+Este elemento principal contendría a todos los demás niveles de elementos anidados.
+
+Por ejemplo, varios elementos JSX escritos al mismo nivel sin elemento contenedor principal no se transpilarán.
+
+Aquí va un ejemplo:
+
+JSX válido:
+
+<div>
+  <p>Paragraph One</p>
+  <p>Paragraph Two</p>
+  <p>Paragraph Three</p>
+</div>
+JSX inválido:
+
+<p>Paragraph One</p>
+<p>Paragraph Two</p>
+<p>Paragraph Three</p>
+Define una nueva constante JSX que renderice un div que contenga los siguientes elementos en orden:
+
+Un h1, un p y una lista desordenada que contiene tres elementos li. Puedes incluir cualquier texto que desees dentro de cada elemento.
+
+**Nota: ** Al renderizar varios elementos de esta forma, puedes envolverlos todos entre paréntesis, pero no es estrictamente necesario. Observa también que este desafío usa una etiqueta div para envolver a todos los elementos hijos dentro de un solo elemento principal. Si eliminas el div, JSX ya no se podrá transpilar. Ten esto en cuenta, ya que también será así cuando devuelvas elementos JSX en los componentes de React.
+-------
+Crear un elemento JSX complejo 153
+Sugerencias
+Pista 1
+JSX anidado debe devolver un único elemento de nivel superior
+
+Pista 2
+Asegúrese de que su solución tenga un padre divque contenga un h1, un py una lista desordenada ( ul) que contenga tres lielementos
+
+Soluciones
+Solución 1 (haga clic para mostrar/ocultar)
+const JSX = <div>
+  <h1>Heading.</h1>
+  <p>Paragraph</p>
+ <ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+</div>;  
+---
+¡Excelente!
+----
+const JSX=<div>
+<h1>hello</h1>
+<p>este es un parrafo</p>
+<ul>
+<li>lista 1</li>
+<li>lista 2</li>
+<li>liata 3</li>
+</ul>
+</div>
+-------
+Agrega comentarios en JSX
+JSX es una sintaxis que se compila en JavaScript válido. A veces, para facilitar la lectura, es necesario añadir comentarios al código. Como la mayoría de los lenguajes de programación, JSX tiene su propia manera de hacerlo.
+
+Para agregar comentarios dentro de JSX, se utiliza la sintaxis {/* */} para envolver el texto del comentario.
+
+El editor de código tiene un elemento JSX similar al que creaste en el último desafío. Agrega un comentario en algún lugar dentro del elemento div, sin modificar los elementos h1 o p.
+-----
+const JSX = (
+  <div>
+    <h1>This is a block of JSX</h1>
+    <p>Here's a subtitle</p>
+    {/*este es un comentario*/};
+  </div>
+);
+-------
+¡Estás en llamas!
+---
+Renderiza elementos HTML al DOM
+Hasta ahora, has aprendido que JSX es una herramienta conveniente para escribir HTML legible dentro de JavaScript. Con React, podemos renderizar este JSX directamente al DOM HTML usando la API de renderizado de React conocida como ReactDOM.
+
+ReactDOM ofrece un método simple para renderizar elementos React al DOM que se ve así: ReactDOM.render(componentToRender, targetNode), donde el primer argumento es el elemento o componente React que deseas renderizar, y el segundo argumento es el nodo DOM al que se quiere renderizar el componente.
+
+Como era de esperarse, ReactDOM.render() debe llamarse después de las declaraciones de los elementos JSX, al igual que hay que declarar las variables antes de usarlas.
+
+El editor de código tiene un componente JSX simple. Usa el método ReactDOM.render() para renderizar este componente a la página. Puedes pasar elementos JSX definidos directamente como el primer argumento y utilizar document.getElementById() para seleccionar el nodo DOM al que renderizar. Hay un div con id='challenge-node' disponible para que lo uses. Asegúrate de no cambiar la constante JSX.
+----
+Eso no fue volar. Eso fue caer con estilo
+-----
+Problema Explicación
+Para representar un elemento en el DOM, usamos la siguiente sintaxis
+
+ReactDOM.render(<item to be rendered>, <where to be rendered>);
+Use el método Document getElementById()para apuntar a un nodo específico en el DOM
+
+document.getElementByID(<target node>)
+Use el método Document getElementById() como argumento dentro del método ReactDOM render()para resolver este desafío.
+
+Soluciones
+Solución 1 (haga clic para mostrar/ocultar)
+Siguiendo la sintaxis, agregaríamos esta línea de código para representar el elemento JSX divcon el id de desafío-nodo.
+
+ReactDOM.render(JSX, document.getElementById("challenge-node"));
+------

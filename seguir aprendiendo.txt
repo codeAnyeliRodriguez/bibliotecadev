@@ -1,0 +1,10 @@
+recursos para seguir aprendiendo:(https://www.youtube.com/watch?v=m0fGLxY56jw)
+📚 Recursos del video:
+FreeCodeCamp: https://www.freecodecamp.org/
+
+Full Stack Open: https://fullstackopen.com/en/
+
+CS50: https://www.edx.org/es/course/cs50s-i...
+
+The Odin Project: https://www.theodinproject.com/
+

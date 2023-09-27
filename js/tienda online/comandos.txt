@@ -1,0 +1,5 @@
+comandos:
+node -v
+npm -v
+npm init
+npm run start

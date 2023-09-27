@@ -1,0 +1,9 @@
+info:https://www.youtube.com/watch?v=BdhprtWjlY8
+doc: https://www.typescriptlang.org/download
+
+comandos:
+npm install typescript --save-dev
+npm install -g typescript
+
+tsc -init
+tsc main.ts -w

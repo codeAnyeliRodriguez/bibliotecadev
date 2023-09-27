@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #323a46;
+	font-family: arial;
+}
+
+.contenedor{
+	width: 1000px;
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: blue;
+}
+
+header{
+	background: #eb4a33;
+	margin: 20px 0;
+}
+
+header h1{
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+} 

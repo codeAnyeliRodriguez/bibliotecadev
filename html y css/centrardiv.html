@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  html,body{
+    background-color: gray;
+  }
+  .padre{
+  border: 1px dotted darkblue;
+  height: 200px;
+  width: 200px;
+  
+ /* display: flex;
+  align-items: center;
+  justify-content: center;*/
+  display: grid;
+  place-items: center;
+}
+
+.hijo{
+border: 1px dotted yellow;
+background: black;
+color: white;
+height: 25px;
+width: 75px;
+}
+  </style>
+</head>
+<body>
+  <div class="padre">
+    <div class="hijo">:) soy un div</div>
+  </div>
+</body>
+</html>

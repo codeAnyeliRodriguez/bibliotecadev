@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  <h1>localStorage</h1>
+  <div id="elements">
+
+  </div>
+</body>
+<script>
+// info: https://www.youtube.com/watch?v=F6j_V6FUYTI
+
+  /*   localStorage.setItem("patito","lucas 2");
+    console.log(localStorage.getItem("patito")); */
+
+/* lst = [{
+  name: "Anyeli",
+  age: 22
+},{
+name: "heidi",
+age: 24
+}];
+
+localStorage.setItem("List",JSON.stringify(lst)); */
+
+/* lst =JSON.parse(localStorage.getItem("List"));
+console.log(typeof lst); */
+
+ lst = JSON.parse(localStorage.getItem("List"));
+
+lst.forEach(element => {
+  let elements = document.getElementById("elements");
+  let div = document.createElement("div");
+  div.innerHTML = element.name + " "+element.age;
+  elements.appendChild(div)
+}); 
+  </script>
+</html>
