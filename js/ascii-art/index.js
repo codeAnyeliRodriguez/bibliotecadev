@@ -4,8 +4,8 @@ const figlet = require("figlet");
   console.log(err || result);
 }); */
 
-figlet("Hola", {
-  font: 'ghost',
+figlet("Anyeli", {
+  font: '3D-ASCII',
   horizontalLayout: "default",
   verticalLayout: "default",
   width: 80,

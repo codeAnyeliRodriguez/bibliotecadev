@@ -1,0 +1,17 @@
+body{
+    /* background: linear-gradient(to bottom right, black, #1b1b32, #3b3b4f); */
+    background-color: #d1d1d1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+    width: 1000px;
+  }
+
+  #muneca{
+    position: fixed;
+    margin-left: 200px;
+    margin-top: 50px;
+    height: 700px;
+    width: 700px;
+  }
+ 
