@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escribir en el Dom </title>
+</head>
+<body>
+    <form>
+        <input type="text" id="miInput" placeholder="Escribe aquí">
+    </form>
+    <p id="textoMostrado"></p>
+
+    <script>
+        // Accede al elemento de entrada de texto y al párrafo
+        const inputElement = document.getElementById('miInput');
+        const textoMostrado = document.getElementById('textoMostrado');
+
+        // Agrega un evento para detectar cambios en el input de texto
+        inputElement.addEventListener('input', function () {
+            // Obtiene el valor del input de texto
+            const texto = inputElement.value;
+
+            // Actualiza el contenido del párrafo con el texto ingresado
+            textoMostrado.textContent = "Texto ingresado: " + texto;
+        });
+    </script>
+</body>
+</html>
