@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="boton">sumar</button>
+    <script>
+        function ajax() {
+            const http = new XMLHttpRequest();
+            const url = 'servidor.php';
+
+            http.onreadystatechange = function(){
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(this.responseText);
+                }else if(this.status == 404){
+                    console.log('Error al cargar el sitio');
+                }
+            }
+            http.open("POST", url);
+            http.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+            http.send("a=3&b=8");
+        }
+
+        document.getElementById("boton").addEventListener('click',function(){
+            ajax();
+        })
+    </script>
+</body>
+</html>

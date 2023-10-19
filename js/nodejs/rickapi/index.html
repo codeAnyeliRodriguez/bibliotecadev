@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btncharacters">
+        Fetch characters
+    </button>
+
+    <div id="characters">
+
+    </div>
+    <script>
+        const btn = document.getElementById('btncharacters');
+        const div = document.getElementById('characters');
+
+        btn.addEventListener('click',()=>{
+            console.log('Fetch API');
+
+            fetch('https://rickandmortyapi.com/api/character')
+                .then((Response) => Response.json())
+                // .then((data) => console.log(data))
+                .then((data)=> renderCharacters(data.results));
+        });
+
+        function renderCharacters(characters) {
+            characters.forEach(ch =>{
+                div.innerHTML += `<h2>${ch.name}</h2>`;
+                div.innerHTML += `<img src ="${ch.image}">`;
+            })
+        }
+    </script>
+</body>
+</html>
