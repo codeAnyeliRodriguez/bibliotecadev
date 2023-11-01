@@ -69,9 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 ----
-repo-guia: https://github.com/estefaniacn/testimonios-freecodecamp
-###`npx create-react-app testimonios-fcc`
-#  npm start
+-----
+npx create-react-app contador-de-clips
+  npm start
     Starts the development server.
 
   npm run build
@@ -86,9 +86,7 @@ repo-guia: https://github.com/estefaniacn/testimonios-freecodecamp
 
 We suggest that you begin by typing:
 
-  #cd testimonios-fcc
-  #npm start
+  cd contador-de-clips
+  npm start
 
 Happy hacking!
-
-
