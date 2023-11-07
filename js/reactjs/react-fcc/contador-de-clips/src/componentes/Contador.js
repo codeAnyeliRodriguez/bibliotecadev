@@ -1,4 +1,5 @@
-import React from 'React';
+import React from 'react';
+import '../hojas-de-estilo/Contador.css';
 
 function Contador( {numClics} ){
 	return(
@@ -8,4 +9,4 @@ function Contador( {numClics} ){
 	)
 }
 
-export default Contador
+export default Contador;
