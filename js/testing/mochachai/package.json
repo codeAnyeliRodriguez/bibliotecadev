@@ -1,0 +1,20 @@
+{
+  "name": "mochachai",
+  "version": "1.0.0",
+  "description": "this project is a simple example of how to use cha js y mocha js\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[1;5D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[T\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[1;5C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D",
+  "main": "main.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/_mocha || exit 0"
+  },
+  "keywords": [
+    "mocha",
+    "chai",
+    "javascript"
+  ],
+  "author": "Anyeli",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
+}
