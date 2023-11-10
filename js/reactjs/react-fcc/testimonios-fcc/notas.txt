@@ -1,5 +1,0 @@
-retos
-1.como lograr que ciertas partes del texto del props se muestren en negrita
-2.hacer que sea responsive
-3.hacer que el valor de alt cambie dinamicamente
-4.guardar los valores de los props en un archivo separado
